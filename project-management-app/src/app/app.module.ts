@@ -6,6 +6,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProjectComponent } from './project/project.component';
+import { TeamsComponent } from './teams/teams.component';
+import { TasksComponent } from './tasks/tasks.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HeaderComponent,
     FooterComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    ProjectComponent,
+    TeamsComponent,
+    TasksComponent
   ],
   imports: [
     BrowserModule
