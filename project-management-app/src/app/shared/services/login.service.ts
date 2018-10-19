@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class LoginService {
 
   constructor() { }
-  loginUser(loginModel: Login): boolean {
+  public loginUser(loginModel: Login): boolean {
     if (loginModel.username === 'test@test.com' && loginModel.password === '1234') {
       return true;
     }

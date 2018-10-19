@@ -1,6 +1,8 @@
+import { Router } from '@angular/router';
 import { LoginService } from './../shared/services/login.service';
 import { Login } from './../models/login';
 import { Component, OnInit } from '@angular/core';
+
 
 
 @Component({
@@ -11,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
   loginModel: Login;
 
-  constructor(private loginService: LoginService) {
+  constructor(private loginService: LoginService, private router: Router) {
     this.loginModel = new Login();
 }
 
@@ -21,6 +23,11 @@ export class LoginComponent implements OnInit {
   loginSubmit() {
     console.log(this.loginModel.username);
     console.log(this.loginModel.password);
-    let isLogin = this.loginService.loginUser(this.loginModel);
+    const isLogin = this.loginService.loginUser(this.loginModel);
+    if (isLogin) {
+      this.router.navigate(['dashboard']);
+    } else {
+      this.router.navigate(['login']);
+    }
   }
 }
