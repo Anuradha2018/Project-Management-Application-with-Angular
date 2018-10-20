@@ -3,7 +3,7 @@ import { TasksComponent } from './tasks/tasks.component';
 import { ProjectComponent } from './project/project.component';
 import { LoginComponent } from './login/login.component';
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
