@@ -1,6 +1,8 @@
 #main-footer {
-    background: #000;
+    background-color:teal;
     color: #fff;
-    height:50px;
+    height:40px;
+    position: fixed;
+    width: 100%;
   }
   
