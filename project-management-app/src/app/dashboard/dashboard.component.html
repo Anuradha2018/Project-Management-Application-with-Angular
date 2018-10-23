@@ -98,22 +98,15 @@
                 <a class="navbar-brand" href="#">My Projects</a>
               </div>
           <div class="row">
-            <div  *ngFor ="let project of projects" class="col-lg-3 col-md-6 col-sm-6">
-              <div class="card card-stats">
-                 
-                <div class="card-header card-header-success card-header-icon">
-                  <div class="card-icon">
-                    <i class="material-icons">store</i>
+            <div  *ngFor ="let project of projects" class="col-lg-4 col-md-6 col-sm-4">
+                <div class="card border-success mb-3" style="max-width: 28rem;">
+                    <div class="card-header card-header-success bg-transparent border-success">{{project.name}}</div>
+                    <div class="card-body text-success">
+                      <h5 class="card-title">{{project.id}}</h5>
+                      <p class="card-text">{{project.description}}</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-success">Footer</div>
                   </div>
-                  <p class="card-category">{{project.name}}</p>
-                  <h3 class="card-title">{{project.description}}</h3>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">date_range</i> Last 24 Hours
-                  </div>
-                </div>
-              </div>
             </div>
             
           </div>
