@@ -9,7 +9,7 @@ body {
     border-color: #e3e3e3;
 }
 .form-control:focus {
-    border-color: #70c5c0;
+    border-color: rgb(3, 3, 97);
 }
 .form-control, .btn {        
     border-radius: 2px;
@@ -43,7 +43,7 @@ body {
     height: 95px;
     border-radius: 50%;
     z-index: 9;
-    background: #70c5c0;
+    background: rgb(3, 3, 97);
     padding: 15px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
@@ -56,7 +56,7 @@ body {
 .login-form .btn {        
     font-size: 16px;
     font-weight: bold;
-    background: #70c5c0;
+    background: rgb(3, 3, 97);
     border: none;
     margin-bottom: 20px;
 }
