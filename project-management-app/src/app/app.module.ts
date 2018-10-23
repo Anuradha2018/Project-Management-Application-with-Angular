@@ -10,6 +10,8 @@ import { ProjectComponent } from './project/project.component';
 import { TeamsComponent } from './teams/teams.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ProjectService } from '././services/project.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,9 +27,10 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ProjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
