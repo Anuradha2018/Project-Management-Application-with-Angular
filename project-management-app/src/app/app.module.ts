@@ -1,3 +1,4 @@
+import { TaskService } from './services/task.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -12,6 +13,7 @@ import { TasksComponent } from './tasks/tasks.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProjectService } from '././services/project.service';
 import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +32,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [ProjectService],
+  providers: [ProjectService, TaskService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
