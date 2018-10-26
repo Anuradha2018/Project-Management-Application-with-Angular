@@ -1,8 +1,11 @@
+import { TeamService } from './../services/team.service';
 import { TaskService } from './../services/task.service';
 import { ProjectService } from './../services/project.service';
+
 import { Component, OnInit } from '@angular/core';
 import { Project } from './../models/project';
 import { Task } from './../models/task';
+import { Team } from './../models/team';
 
 @Component({
   selector: 'app-dashboard',
@@ -12,12 +15,14 @@ import { Task } from './../models/task';
 export class DashboardComponent implements OnInit {
   projects: Project[];
   tasks: Task[];
-  constructor(private projectService: ProjectService, private taskService: TaskService) {
+  teamMembers: Team[];
+  constructor(private projectService: ProjectService, private taskService: TaskService, private teamService: TeamService) {
   }
 
   ngOnInit() {
     this.getProjects();
     this.getTasks();
+    this.getMembers();
   }
   getProjects() {
     this.projectService.getAllProjects()
@@ -26,6 +31,10 @@ export class DashboardComponent implements OnInit {
   getTasks() {
     this.taskService.getAllTasks()
     .subscribe(tasks => this.tasks = tasks);
+  }
+  getMembers() {
+    this.teamService.getAllMembers()
+    .subscribe(members => this.teamMembers = members);
   }
 
 

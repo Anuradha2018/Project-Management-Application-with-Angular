@@ -102,10 +102,10 @@
                 <div class="card border-success mb-3" style="max-width: 28rem;">
                     <div class="card-header card-header-success bg-transparent border-success">{{project.name}}</div>
                     <div class="card-body text-success">
-                      <h5 class="card-title">{{project.id}}</h5>
-                      <p class="card-text">{{project.description}}</p>
+                      <h5 class="card-title">{{project.description}}</h5>
+                      <p class="card-text">{{project.team.memberName}}, ({{project.team.memberRole}})</p>
                     </div>
-                    <div class="card-footer bg-transparent border-success">Footer</div>
+                    <div class="card-footer bg-transparent border-success"></div>
                   </div>
             </div>
             
@@ -114,15 +114,15 @@
               <a class="navbar-brand" href="#">My Team Members</a>
             </div>
           <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-4">
+            <div  *ngFor ="let member of teamMembers" class="col-lg-4 col-md-6 col-sm-4">
               <div class="card card-chart">
                 <div class="card-header card-header-primary">
-                  <div class="ct-chart" id="dailySalesChart">UX/UI designer</div>
+                  <div class="ct-chart" id="dailySalesChart">{{member.memberRole}}</div>
                 </div>
                 <div class="card-body">
                   <h4 class="card-title"></h4>
                   <p class="card-category">
-                    <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.</p>
+                    <span class="text-success">{{member.memberName}}</span></p>
                 </div>
                 <div class="card-footer">
                   <div class="stats">
@@ -131,7 +131,7 @@
                 </div>
               </div>
             </div>
-             <div class="col-md-4">
+             <!--<div class="col-md-4">
               <div class="card card-chart">
                 <div class="card-header card-header-primary">
                   <div class="ct-chart" id="dailySalesChart">Front-end Developer</div>
@@ -163,9 +163,9 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div>-->
           </div>
-            <div class="row">
+            <!--<div class="row">
             <div class="col-md-5">
               <div class="card card-chart">
                 <div class="card-header card-header-primary">
@@ -200,7 +200,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div>-->
           
           <div class="row">
             <div class="col-lg-6 col-md-12">
@@ -229,7 +229,7 @@
                             <td>
                               <div class="form-check">
                                 <label class="form-check-label">
-                                  <input class="form-check-input" type="checkbox" value="" checked>
+                                  <input class="form-check-input" type="checkbox" value="" [checked]="task.taskStatus">
                                   <span class="form-check-sign">
                                     <span class="check"></span>
                                   </span>

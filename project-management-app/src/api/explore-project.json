@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "name": "Project1",
+        "description": "Project1Description",
+        "projectManager":"Alex",
+        "projectDeadline":"26-11-2018",
+        "locations": [
+            {
+                "locationId":1,
+                "locationName":"Bangalore"
+            }
+        ],
+        "technologies": [
+            {
+                "technologyId": 1,
+                "technologyName": "JavaScript"
+            }
+        ]
+    }
+]

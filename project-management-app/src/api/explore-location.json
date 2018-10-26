@@ -1,0 +1,27 @@
+[
+    {
+        "locationId":1,
+        "locationName":"Bangalore",
+        "siteManager":"Joe",
+        "siteStrength": 5,
+        "technologies":[
+            {
+            "technologyId": 1,
+            "technologyName": "JavaScript"
+        }
+    ],
+        "projects":[
+             {
+            "id": 1,
+            "name": "Project1",
+            "description": "Project1Description"
+             }
+    ],
+        "teams":[
+            {
+                "memberName": "John",
+                "memberRole": "UX/UI designer"
+            }
+        ]
+    }
+]

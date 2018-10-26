@@ -1,0 +1,26 @@
+[
+    {
+        "memberName": "John",
+        "memberRole": "UX/UI designer"
+    },
+    {
+        "memberName": "Jill",
+        "memberRole": "Front-end Developer"
+        
+    },
+    {
+        "memberName": "Alex",
+        "memberRole": "Back-end Developer"
+        
+    },
+    {
+        "memberName": "Mark",
+        "memberRole": "Quality Assurance engineer"
+        
+    },
+    {
+        "memberName": "Martin",
+        "memberRole": "Project Manager"
+        
+    }
+]

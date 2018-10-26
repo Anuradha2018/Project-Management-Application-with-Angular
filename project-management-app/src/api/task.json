@@ -2,21 +2,21 @@
     {
         "taskName":"Task1",
         "taskDescription":"Task1description",
-        "taskStatus":"Completed"
+        "taskStatus": true
     },
     {
         "taskName":"Task2",
         "taskDescription":"Task2description",
-        "taskStatus":"Incomplete"
+        "taskStatus":false
     },
     {
         "taskName":"Task3",
         "taskDescription":"Task3description",
-        "taskStatus":"Incomplete"
+        "taskStatus":true
     },
     {
         "taskName":"Task3",
         "taskDescription":"Task4description",
-        "taskStatus":"Completed"
+        "taskStatus":false
     }
 ]

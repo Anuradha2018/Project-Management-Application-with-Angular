@@ -2,26 +2,58 @@
     {
         "id": 1,
         "name": "Project1",
-        "description": "Project1Description"
+        "description": "Project1Description",
+        "team": 
+            {
+            "memberName": "John",
+            "memberRole": "UX/UI designer"
+            }
+        
+
     },
     {
         "id": 2,
         "name": "Project2",
-        "description": "Project2Description"
+        "description": "Project2Description",
+        "team":
+            {
+                
+        "memberName": "Jill",
+        "memberRole": "Front-end Developer"
+            }
+        
     },
     {
         "id": 3,
         "name": "Project3",
-        "description": "Project3Description"
+        "description": "Project3Description",
+        "team": 
+            {
+                "memberName": "Alex",
+        "memberRole": "Back-end Developer"
+            }
+        
     },
     {
         "id": 4,
         "name": "Project4",
-        "description": "Project4Description"
+        "description": "Project4Description",
+        "team":
+            {
+                "memberName": "Mark",
+        "memberRole": "Quality Assurance engineer"
+            }
+        
     },
     {
         "id": 5,
         "name": "Project5",
-        "description": "Project5Description"
+        "description": "Project5Description",
+        "team": 
+            {
+                "memberName": "Martin",
+                 "memberRole": "Project Manager"
+            }
+        
     }
 ]
