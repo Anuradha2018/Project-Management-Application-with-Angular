@@ -2,6 +2,7 @@ import { TeamsComponent } from './teams/teams.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { ProjectComponent } from './project/project.component';
 import { LoginComponent } from './login/login.component';
+import { ExploreComponent} from './explore/explore.component';
 import { NgModule } from '@angular/core';
 
 import { RouterModule, Routes } from '@angular/router';
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'project', component: ProjectComponent },
   { path: 'tasks', component: TasksComponent },
-  { path: 'teams', component: TeamsComponent }
+  { path: 'teams', component: TeamsComponent },
+  { path: 'explore', component: ExploreComponent }
 ];
 
 @NgModule({

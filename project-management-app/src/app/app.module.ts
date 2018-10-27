@@ -13,6 +13,7 @@ import { TasksComponent } from './tasks/tasks.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProjectService } from '././services/project.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ExploreComponent } from './explore/explore.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     DashboardComponent,
     ProjectComponent,
     TeamsComponent,
-    TasksComponent
+    TasksComponent,
+    ExploreComponent
   ],
   imports: [
     BrowserModule,
