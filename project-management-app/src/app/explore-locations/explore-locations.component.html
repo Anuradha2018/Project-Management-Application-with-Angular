@@ -1,0 +1,19 @@
+<div class="content">
+    <div class="container-fluid">
+        <div class="navbar-wrapper">
+            <a class="navbar-brand" href="#">My Projects</a>
+          </div>
+      <div class="row">
+        <div  *ngFor ="let location of locations" class="col-lg-4 col-md-6 col-sm-4">
+            <div class="card border-success mb-3" style="max-width: 28rem;">
+                <div class="card-header card-header-success bg-transparent border-success">{{location.locationId}}, {{location.locationName}}</div>
+                    <div class="card-body text-success">
+                        <h5 class="card-title">{{project.description}}</h5>
+                        <p class="card-text">{{project.team.memberName}}, ({{project.team.memberRole}})</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-success"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

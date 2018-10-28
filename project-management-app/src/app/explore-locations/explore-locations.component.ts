@@ -1,3 +1,4 @@
+import { ExploreLocationService } from './../services/explore-location.service';
 import { ExploreTeam } from './../models/explore-team';
 import { ExploreProject } from './../models/explore-project';
 import { Location} from './../models/explore-location';
@@ -6,13 +7,15 @@ import { ExploreTeamsComponent } from './../explore-teams/explore-teams.componen
 import { ExploreProjectsComponent } from './../explore-projects/explore-projects.component';
 
 
+
 @Component({
   selector: 'app-explore-locations',
   templateUrl: './explore-locations.component.html',
   styleUrls: ['./explore-locations.component.css']
 })
 export class ExploreLocationsComponent implements OnInit {
-  constructor() { }
+locations: Location[];
+  constructor(private exploreLocationService: ExploreLocationService) { }
 
   ngOnInit() {
   }
