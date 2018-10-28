@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ExploreComponent } from './explore/explore.component';
 import { ExploreLocationsComponent } from './explore-locations/explore-locations.component';
 import { ExploreProjectsComponent } from './explore-projects/explore-projects.component';
+import { ExploreTeamsComponent } from './explore-teams/explore-teams.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ExploreProjectsComponent } from './explore-projects/explore-projects.co
     TasksComponent,
     ExploreComponent,
     ExploreLocationsComponent,
-    ExploreProjectsComponent
+    ExploreProjectsComponent,
+    ExploreTeamsComponent
   ],
   imports: [
     BrowserModule,

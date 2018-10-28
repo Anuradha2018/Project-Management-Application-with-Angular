@@ -1,3 +1,4 @@
+import { ExploreTeamsComponent } from './explore-teams/explore-teams.component';
 import { ExploreProjectsComponent } from './explore-projects/explore-projects.component';
 import { ExploreLocationsComponent } from './explore-locations/explore-locations.component';
 import { TeamsComponent } from './teams/teams.component';
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'teams', component: TeamsComponent },
   { path: 'explore', component: ExploreComponent },
   { path: 'explore/locations', component: ExploreLocationsComponent },
-  { path: 'explore/projects', component: ExploreProjectsComponent}
+  { path: 'explore/projects', component: ExploreProjectsComponent},
+  { path: 'explore/teams', component: ExploreTeamsComponent}
 ];
 
 @NgModule({
