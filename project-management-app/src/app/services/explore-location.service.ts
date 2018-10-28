@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
 export class ExploreLocationService {
 
   constructor(private http: HttpClient) { }
-  getExploreProjects(): Observable<ExploreProject[]> {
-    return this.http.get<ExploreProject[]>('/api/project.json');
+  getLocations(): Observable<Location[]> {
+    return this.http.get<Location[]>('/api/explore-location.json');
 }
 }
