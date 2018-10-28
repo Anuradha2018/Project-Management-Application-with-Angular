@@ -1,7 +1,7 @@
 import { Location } from './explore-location';
 import { Technology } from './technology';
 
-export class ExportProject {
+export class ExploreProject {
     id: number;
     name: string;
     description: string;
