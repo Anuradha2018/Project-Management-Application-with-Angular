@@ -14,6 +14,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { ProjectService } from '././services/project.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ExploreComponent } from './explore/explore.component';
+import { ExploreLocationsComponent } from './explore-locations/explore-locations.component';
+import { ExploreProjectsComponent } from './explore-projects/explore-projects.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { ExploreComponent } from './explore/explore.component';
     ProjectComponent,
     TeamsComponent,
     TasksComponent,
-    ExploreComponent
+    ExploreComponent,
+    ExploreLocationsComponent,
+    ExploreProjectsComponent
   ],
   imports: [
     BrowserModule,
