@@ -3,7 +3,7 @@ import { Project } from './project';
 import { Team } from './team';
 
 export class Location {
-    locationId: number;
+    locationId: string;
     locationName: string;
     siteManager: string;
     siteStrength: string;

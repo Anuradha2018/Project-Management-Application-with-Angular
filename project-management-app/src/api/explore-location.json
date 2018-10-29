@@ -1,6 +1,6 @@
 [
     {
-        "locationId":1,
+        "locationId":"BLR",
         "locationName":"Bangalore",
         "siteManager":"Joe",
         "siteStrength": 5,

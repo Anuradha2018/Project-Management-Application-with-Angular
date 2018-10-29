@@ -23,6 +23,11 @@ locations: Location[];
   constructor(private exploreLocationService: ExploreLocationService) { }
 
   ngOnInit() {
+    this.getLocations();
+  }
+  getLocations() {
+    this.exploreLocationService.getLocations()
+    .subscribe(locations => this.locations = locations);
   }
 
 }

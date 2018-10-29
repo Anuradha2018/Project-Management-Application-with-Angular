@@ -1,18 +1,24 @@
-<div class="featureListItem">
-    <div class="featureListItem__icon">
-      <div class="icon fa fa-calendar"></div>
+<!--<div class="row">
+  <div *ngFor = "let location of locations" class="col s12 m6">
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <span style="background-color:dodgerblue;color:black" class="card-title">{{location.locationId}}: {{location.locationName}}</span>
+        <p>I am a very simple card. I am good at containing small bits of information.
+        I am convenient because I require little markup to use effectively.</p>
+      </div>
+      <div class="card-action">
+        <a href="#">This is a link</a>
+        <a href="#">This is a link</a>
+      </div>
     </div>
-    <div class="featureListItem__description">The calendar feature makes scheduling a snap.</div>
   </div>
-  <div class="featureListItem featureListItem--reverse">
-    <div class="featureListItem__icon">
-      <div class="icon fa fa-dashboard"></div>
+</div>-->
+<div class="row">
+  <div *ngFor = "let location of locations" class="card bg-light mb-3" style="max-width: 18rem;">
+    <div class="card-header">{{location.locationId}}: {{location.locationName}}</div>
+    <div class="card-body">
+      <h5 class="card-title">Light card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     </div>
-    <div class="featureListItem__description">Our dashboard gives you a bird&rsquo;s-eye-view-at-a-glance-on-the-go.</div>
   </div>
-  <div class="featureListItem">
-    <div class="featureListItem__icon">
-      <div class="icon fa fa-envelope"></div>
-    </div>
-    <div class="featureListItem__description">You can get notified by email or SMS.</div>
-  </div>
+</div>
