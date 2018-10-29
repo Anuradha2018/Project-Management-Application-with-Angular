@@ -1,23 +1,24 @@
 <div  class="container">
-    <div *ngFor = "let location of locations" class="row">
-        <div  class="col-lg-4 col-md-6 col-sm-4" style="width:40%">
-            <div class="card bg-light mb-3" style="max-width: 18rem;">
+    <div *ngFor = "let project of exploreProjects" class="row">
+        <div  class="col-lg-4 col-md-6 col-sm-4" style="width:20%; column-gap: 10px">
+            <div class="card bg-light mb-4" style="max-width: 15rem;">
               <div class="card-header">
-                Project: {{location.projects[0].name}}, Strength: {{location.projects[0].description}}
+                Project: {{project.name}}, <br> Description: {{project.description}} <br>Manager: {{project.projectManager}}<br>
+                DeadLine: {{project.projectDeadline}}
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-4" style="width:60%">
-            <div class="card bg-light mb-3" style="max-width: 18rem;">
+          <div class="col-lg-4 col-md-6 col-sm-4" style="width:20%;  column-gap: 10px">
+            <div class="card bg-light mb-4" style="max-width: 15rem;">
               <div class="card-header">
-                Manager: {{location.siteManager}}, Strength: {{location.siteStrength}}
+                Team: {{project.locations[0].locationId}}, Strength: {{project.locations[0].locationName}}
               </div>
              </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-4">
-            <div class="card bg-light mb-3" style="max-width: 18rem;">
+          <div class="col-lg-4 col-md-6 col-sm-4" style="width:20%; column-gap: 10px">
+            <div class="card bg-light mb-4" style="max-width: 15rem;">
               <div class="card-header">
-                  Project: {{location.projects[0].name}}, Strength: {{location.projects[0].description}}
+                  Technology: {{project.technologies[0].technologyId}},{{project.technologies[0].technologyName}}
               </div>
             </div>
           </div>

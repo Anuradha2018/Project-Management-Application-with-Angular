@@ -7,14 +7,22 @@
         "projectDeadline":"26-11-2018",
         "locations": [
             {
-                "locationId":1,
+                "locationId":"BLR",
                 "locationName":"Bangalore"
+            },
+            {
+                "locationId":"COP",
+                "locationName":"Copenhagen"
             }
         ],
         "technologies": [
             {
-                "technologyId": 1,
+                "technologyId": "JS",
                 "technologyName": "JavaScript"
+            },
+            {
+                "technologyId": "Ang",
+                "technologyName": "Angular"
             }
         ]
     }
