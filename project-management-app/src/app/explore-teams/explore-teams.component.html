@@ -1,24 +1,27 @@
 <div  class="container">
-    <div *ngFor = "let teams of exploreTeams" class="row">
+    <div *ngFor = "let team of exploreTeams" class="row">
         <div  class="col-lg-4 col-md-6 col-sm-4" style="width:20%; column-gap: 10px">
             <div class="card bg-light mb-4" style="max-width: 15rem;">
               <div class="card-header">
-                Project: {{project.name}}, <br> Description: {{project.description}} <br>Manager: {{project.projectManager}}<br>
-                DeadLine: {{project.projectDeadline}}
+                Location: {{team.locationName}}
+                Team: {{team.teamLead}}, <br> Details: {{team.teamSize}} <br> {{team.teamMembers[0].memberName}}<br>
+                 {{team.teamMembers[0].memberRole}}
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-4" style="width:20%;  column-gap: 10px">
             <div class="card bg-light mb-4" style="max-width: 15rem;">
               <div class="card-header">
-                Team: {{project.locations[0].locationId}}, Strength: {{project.locations[0].locationName}}
+                Team:{{team.teamMembers[0].memberName}}<br>{{team.teamMembers[0].memberRole}}
               </div>
              </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-4" style="width:20%; column-gap: 10px">
             <div class="card bg-light mb-4" style="max-width: 15rem;">
               <div class="card-header">
-                  Technology: {{project.technologies[0].technologyId}},{{project.technologies[0].technologyName}}
+                  Project: {{team.currentProjects[0].id}},<br>
+                  {{team.currentProjects[0].name}},<br>
+                   {{team.currentProjects[0].description}}
               </div>
             </div>
           </div>
