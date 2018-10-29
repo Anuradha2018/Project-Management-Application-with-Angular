@@ -1,22 +1,22 @@
 [
     {
-        "technologyId": 1,
+        "technologyId": "JS",
         "technologyName": "JavaScript"
     },
     {
-        "technologyId": 2,
+        "technologyId": "Ang",
         "technologyName": "Angular"
     },
     {
-        "technologyId": 3,
+        "technologyId": "RjS",
         "technologyName": "React"
     },
     {
-        "technologyId": 4,
+        "technologyId": "RN",
         "technologyName": "React native"
     },
     {
-        "technologyId": 5,
+        "technologyId": ".NET",
         "technologyName": ".Net"
     }
 ]

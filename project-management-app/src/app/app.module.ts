@@ -17,6 +17,7 @@ import { ExploreComponent } from './explore/explore.component';
 import { ExploreLocationsComponent } from './explore-locations/explore-locations.component';
 import { ExploreProjectsComponent } from './explore-projects/explore-projects.component';
 import { ExploreTeamsComponent } from './explore-teams/explore-teams.component';
+import { TechnologyComponent } from './technology/technology.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ExploreTeamsComponent } from './explore-teams/explore-teams.component';
     ExploreComponent,
     ExploreLocationsComponent,
     ExploreProjectsComponent,
-    ExploreTeamsComponent
+    ExploreTeamsComponent,
+    TechnologyComponent
   ],
   imports: [
     BrowserModule,

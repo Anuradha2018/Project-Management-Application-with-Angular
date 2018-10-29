@@ -6,7 +6,82 @@
         "siteStrength": 5,
         "technologies":[
             {
-            "technologyId": 1,
+            "technologyId": "JS",
+            "technologyName": "JavaScript"
+        }
+    ],
+        "projects":[
+             {
+            "id": 1,
+            "name": "Project1",
+            "description": "Project1Description"
+             }
+    ],
+        "teams":[
+            {
+                "memberName": "John",
+                "memberRole": "UX/UI designer"
+            }
+        ]
+    },
+    {
+        "locationId":"HYD",
+        "locationName":"Hyderabad",
+        "siteManager":"Joe",
+        "siteStrength": 5,
+        "technologies":[
+            {
+            "technologyId": "JS",
+            "technologyName": "JavaScript"
+        }
+    ],
+        "projects":[
+             {
+            "id": 1,
+            "name": "Project1",
+            "description": "Project1Description"
+             }
+    ],
+        "teams":[
+            {
+                "memberName": "John",
+                "memberRole": "UX/UI designer"
+            }
+        ]
+    },
+    {
+        "locationId":"COP",
+        "locationName":"Copenhagen",
+        "siteManager":"Joe",
+        "siteStrength": 5,
+        "technologies":[
+            {
+            "technologyId": "JS",
+            "technologyName": "JavaScript"
+        }
+    ],
+        "projects":[
+             {
+            "id": 1,
+            "name": "Project1",
+            "description": "Project1Description"
+             }
+    ],
+        "teams":[
+            {
+                "memberName": "John",
+                "memberRole": "UX/UI designer"
+            }
+        ]
+    },
+    {
+        "locationId":"AAR",
+        "locationName":"Aarhus",
+        "siteManager":"Joe",
+        "siteStrength": 5,
+        "technologies":[
+            {
+            "technologyId": "JS",
             "technologyName": "JavaScript"
         }
     ],
