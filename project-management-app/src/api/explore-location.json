@@ -1,6 +1,6 @@
 [
     {
-        "locationId":"BLR",
+        "locationId":1,
         "locationName":"Bangalore",
         "siteManager":"Joe",
         "siteStrength": 5,
@@ -25,10 +25,10 @@
         ]
     },
     {
-        "locationId":"HYD",
+        "locationId":2,
         "locationName":"Hyderabad",
-        "siteManager":"Joe",
-        "siteStrength": 5,
+        "siteManager":"Alex",
+        "siteStrength": 15,
         "technologies":[
             {
             "technologyId": "JS",
@@ -50,10 +50,10 @@
         ]
     },
     {
-        "locationId":"COP",
+        "locationId":3,
         "locationName":"Copenhagen",
-        "siteManager":"Joe",
-        "siteStrength": 5,
+        "siteManager":"Jill",
+        "siteStrength": 25,
         "technologies":[
             {
             "technologyId": "JS",
@@ -75,7 +75,7 @@
         ]
     },
     {
-        "locationId":"AAR",
+        "locationId":4,
         "locationName":"Aarhus",
         "siteManager":"Joe",
         "siteStrength": 5,

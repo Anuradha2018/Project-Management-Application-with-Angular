@@ -24,6 +24,7 @@ import { TechnologyComponent } from './../technology/technology.component';
 export class ExploreLocationsComponent implements OnInit {
 locations: Location[];
 exploreProjects: ExploreProject[];
+locationDetail: Location;
 
   constructor(private exploreLocationService: ExploreLocationService, private exploreProjectService: ExploreProjectService) { }
 
@@ -33,11 +34,24 @@ exploreProjects: ExploreProject[];
   }
   getLocations() {
     this.exploreLocationService.getLocations()
-    .subscribe(locations => this.locations = locations);
+    .subscribe((locations) => {
+      this.locations = locations;
+      this.getLocationDetail(this.locations[0].locationId);
+    });
   }
   getExploreProject() {
     this.exploreProjectService.getExploreProjects()
       .subscribe(exploreProjects => this.exploreProjects = exploreProjects);
+  }
+  getLocationDetail(locationId) {
+    this.locationDetail = this.getLocationById(locationId);
+  }
+  getLocationById(locationId): Location {
+     for (let i = 0; i < this.locations.length; i++) {
+      if (locationId === this.locations[i].locationId) {
+        return this.locations[i];
+      }
+     }
   }
 
 }

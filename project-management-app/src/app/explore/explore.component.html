@@ -23,6 +23,22 @@
                   <a class="dropdown-item" routerLink="/explore/teams">Teams</a>
                 </div>
             </div>
+            
+<div class="form-group">
+    <label for="businessType">Business Type<span style="color:red">*</span></label>
+    <div class="select-box">
+    <label>
+    <select (change)="redirct123(dropdownValue)" class="form-control form-control-sm" id="businessType" required [(ngModel)]="dropdownValue" name="businessType"
+    #businessType="ngModel" aria-placeholder="select">
+    <option [value]="explore/locations">1</option>
+    <option [value]="explore/projects">2</option>
+    <option [value]="explore/teams">3</option>
+    </select>
+    </label>
+    </div>
+    
+    
+    </div>
             </div>
         </div>
       </div>

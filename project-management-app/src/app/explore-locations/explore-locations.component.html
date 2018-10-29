@@ -1,5 +1,5 @@
 <div  class="container">
-  <div *ngFor = "let location of locations" class="row">
+  <div *ngFor = "let location of locations" (click) ="getLocationDetail(location.locationId)" class="row">
       <div  class="col-lg-4 col-md-6 col-sm-4" style="width:40%">
           <div class="card bg-light mb-3" style="max-width: 18rem;">
             <div class="card-header">
@@ -7,21 +7,24 @@
             </div>
           </div>
         </div>
+    </div>
+    <div *ngIf = "locationDetail">
         <div class="col-lg-4 col-md-6 col-sm-4" style="width:60%">
-          <div class="card bg-light mb-3" style="max-width: 18rem;">
-            <div class="card-header">
-              Manager: {{location.siteManager}}, Strength: {{location.siteStrength}}
-            </div>
-           </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-4">
-          <div class="card bg-light mb-3" style="max-width: 18rem;">
-            <div class="card-header">
-                Project: {{location.projects[0].name}}, Strength: {{location.projects[0].description}}
+            <div class="card bg-light mb-3" style="max-width: 18rem;">
+              <div class="card-header">
+                Manager: {{locationDetail.siteManager}}, Strength: {{locationDetail.siteStrength}}
+              </div>
+             </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-4">
+            <div class="card bg-light mb-3" style="max-width: 18rem;">
+              <div class="card-header">
+                  Project: {{locationDetail.projects[0].name}}, Strength: {{locationDetail.projects[0].description}}
+              </div>
             </div>
           </div>
-        </div>
     </div>
+  
 </div>
 
 
