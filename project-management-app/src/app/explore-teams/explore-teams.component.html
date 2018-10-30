@@ -1,30 +1,32 @@
 <div  class="container">
-    <div *ngFor = "let team of exploreTeams" class="row">
+    <div *ngFor = "let team of exploreTeams" (click) ="getTeamDetail(team.teamLead)"  class="row">
         <div  class="col-lg-4 col-md-6 col-sm-4" style="width:20%; column-gap: 10px">
             <div class="card bg-light mb-4" style="max-width: 15rem;">
               <div class="card-header">
-                Location: {{team.locationName}}
                 Team: {{team.teamLead}}, <br> Details: {{team.teamSize}} <br> {{team.teamMembers[0].memberName}}<br>
-                 {{team.teamMembers[0].memberRole}}
+                 {{team.teamMembers[0].memberRole}}  <br>
+                 Location: {{team.locationName}}
               </div>
             </div>
           </div>
+      </div>
+      <div *ngIf = "teamDetail">
           <div class="col-lg-4 col-md-6 col-sm-4" style="width:20%;  column-gap: 10px">
-            <div class="card bg-light mb-4" style="max-width: 15rem;">
-              <div class="card-header">
-                Team:{{team.teamMembers[0].memberName}}<br>{{team.teamMembers[0].memberRole}}
-              </div>
-             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-4" style="width:20%; column-gap: 10px">
-            <div class="card bg-light mb-4" style="max-width: 15rem;">
-              <div class="card-header">
-                  Project: {{team.currentProjects[0].id}},<br>
-                  {{team.currentProjects[0].name}},<br>
-                   {{team.currentProjects[0].description}}
+              <div class="card bg-light mb-4" style="max-width: 15rem;">
+                <div class="card-header">
+                  Team:{{teamDetail.teamMembers[0].memberName}}<br>{{teamDetail.teamMembers[0].memberRole}}
+                </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-4" style="width:20%; column-gap: 10px">
+              <div class="card bg-light mb-4" style="max-width: 15rem;">
+                <div class="card-header">
+                    Project: {{teamDetail.currentProjects[0].id}},<br>
+                    {{teamDetail.currentProjects[0].name}},<br>
+                     {{teamDetail.currentProjects[0].description}}
+                </div>
               </div>
             </div>
-          </div>
       </div>
   </div>
   
