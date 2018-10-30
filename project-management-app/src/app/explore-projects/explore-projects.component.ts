@@ -23,6 +23,7 @@ export class ExploreProjectsComponent implements OnInit {
   locations: Location[];
   exploreProjects: ExploreProject[];
   exploreTeams: ExploreTeam[];
+  projectDetail: ExploreProject;
   constructor(private exploreLocationService: ExploreLocationService,
     private exploreProjectService: ExploreProjectService, private exploreTeamService: ExploreTeamService) { }
 
@@ -42,6 +43,16 @@ export class ExploreProjectsComponent implements OnInit {
   getExploreTeam() {
     this.exploreTeamService.getExploreTeam()
     .subscribe(exploreTeams => this.exploreTeams = exploreTeams);
+  }
+  getProjectDetail(id) {
+    this.projectDetail = this.getProjectById(id);
+  }
+  getProjectById(id): ExploreProject {
+    for (let i = 0; i < this.exploreProjects.length; i++) {
+      if (id === this.exploreProjects[i].id) {
+        return this.exploreProjects[i];
+      }
+     }
   }
 
 }
