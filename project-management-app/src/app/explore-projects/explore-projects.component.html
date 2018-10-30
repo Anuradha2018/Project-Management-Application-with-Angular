@@ -1,30 +1,30 @@
 <div  class="container">
-    <div *ngFor = "let project of exploreProjects" class="row">
-        <div  class="col-lg-4 col-md-6 col-sm-4" style="width:20%; column-gap: 10px">
-            <div class="card bg-light mb-4" style="max-width: 15rem;">
+    <div   *ngFor = "let project of exploreProjects" (click) ="getProjectDetail(project.id)" class="row">
+        <div class="col-lg-4 col-md-6 col-sm-4" style="width:40%;">
+            <div class="card bg-light mb-3" style="max-width: 18rem;">
               <div class="card-header">
-                Project: {{project.id}}, {{project.name}}
+                Project: ID: {{project.id}}, Name: {{project.name}}
               </div>
             </div>
           </div>
-      </div>
-      <div *ngIf = "projectDetail">
-          <div class="col-lg-4 col-md-6 col-sm-4" style="width:20%;  column-gap: 10px">
-              <div class="card bg-light mb-4" style="max-width: 15rem;">
+        </div>
+          <div *ngIf = "projectDetail">
+            <div class="col-lg-4 col-md-6 col-sm-4" style="width:60%;">
+              <div class="card bg-light mb-3" style="max-width: 18rem;">
                 <div class="card-header">
-                  Description: {{project.description}} <br>Manager: {{project.projectManager}}, <br>
-                  DeadLine: {{project.projectDeadline}}
-                  Location: {{project.locations[0].locationId}}, {{project.locations[0].locationName}}
+                  Description: {{projectDetail.description}} <br>Manager: {{projectDetail.projectManager}}, <br>
+                  DeadLine: {{projectDetail.projectDeadline}}
+                  Location: {{projectDetail.locations[0].locationId}}, {{projectDetail.locations[0].locationName}}
                 </div>
                </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-4" style="width:20%; column-gap: 10px">
-              <div class="card bg-light mb-4" style="max-width: 15rem;">
+            <div class="col-lg-4 col-md-6 col-sm-4">
+              <div class="card bg-light mb-3" style="max-width: 18rem;">
                 <div class="card-header">
-                    Technology: {{project.technologies[0].technologyId}},{{project.technologies[0].technologyName}}
+                    Technology: {{projectDetail.technologies[0].technologyId}},{{projectDetail.technologies[0].technologyName}}
                 </div>
               </div>
             </div>
-      </div>
-  </div>
+        </div>
+</div>
   
