@@ -1,9 +1,9 @@
 <div  class="container">
-    <div *ngFor = "let team of exploreTeams" (click) ="getTeamDetail(team.teamLead)"  class="row">
+    <div *ngFor = "let team of exploreTeams" (click) ="getTeamDetail(team.teamId)"  class="row">
         <div  class="col-lg-4 col-md-6 col-sm-4" style="width:20%; column-gap: 10px">
             <div class="card bg-light mb-4" style="max-width: 15rem;">
               <div class="card-header">
-                Team: {{team.teamLead}}, <br> Details: {{team.teamSize}} <br> {{team.teamMembers[0].memberName}}<br>
+                Team: {{team.teamId}} {{team.teamLead}}, <br> Details: {{team.teamSize}} <br> {{team.teamMembers[0].memberName}}<br>
                  {{team.teamMembers[0].memberRole}}  <br>
                  Location: {{team.locationName}}
               </div>

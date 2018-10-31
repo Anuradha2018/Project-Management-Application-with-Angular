@@ -41,14 +41,18 @@ export class ExploreTeamsComponent implements OnInit {
   }
   getExploreTeam() {
     this.exploreTeamService.getExploreTeam()
-    .subscribe(exploreTeams => this.exploreTeams = exploreTeams);
+    .subscribe((exploreTeams) => {
+      this.exploreTeams = exploreTeams;
+      this.getTeamDetail(this.exploreTeams[0].teamId);
+  });
+}
+  getTeamDetail(teamId) {
+    this.teamDetail = this.getTeamById(teamId);
+    console.log(teamId);
   }
-  getTeamDetail(teamLead) {
-    this.teamDetail = this.getTeamById(teamLead);
-  }
-  getTeamById(teamLead): ExploreTeam {
+  getTeamById(teamId): ExploreTeam {
      for (let i = 0; i < this.exploreTeams.length; i++) {
-      if (teamLead === this.exploreTeams[i].teamLead) {
+      if (teamId === this.exploreTeams[i].teamId) {
         return this.exploreTeams[i];
       }
      }
