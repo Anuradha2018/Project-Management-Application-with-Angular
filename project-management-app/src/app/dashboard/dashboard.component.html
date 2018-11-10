@@ -2,251 +2,532 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>
-   GrassHopper.Co
-  </title>
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-  <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-  <!-- CSS Files -->
-  <link href="./../../assets/dashboard/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="./../../assets/dashboard/demo/demo.css" rel="stylesheet" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Grasshopper. Co</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <!-- Bootstrap core CSS-->
+  <link href="./../../assets/dashboard/newDashboard/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template--> 
+ <link href="./../../assets/dashboard/newDashboard/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Page level plugin CSS-->
+  <link href="./../../assets/dashboard/newDashboard/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="./../../assets/dashboard/newDashboard/css/sb-admin.css" rel="stylesheet">
 </head>
 
-<body class="">
-  <div class="wrapper">
-    <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
-      <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
-
-        Tip 2: you can also add an image using data-image tag
-    -->
-    <div class="logo" style="background-color:green;">
-      <a href="#" style="font-weight: bold" class="simple-text logo-normal">
-        Grasshopper Co.
-      </a>
-    </div>
-      <div class="sidebar-wrapper">
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="material-icons">dashboard</i>
-              <p>Dashboard</p>
-            </a>
-          </li>
-         <li class="nav-item ">
-            <a class="nav-link" routerLink="/explore">
-              <i class="material-icons">content_paste</i>
-              <p>Explore</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./../../assets/dashboard/examples/typography.html">
-              <i class="material-icons">library_books</i>
-              <p>Reports</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./../../assets/dashboard/examples/icons.html">
-              <i class="material-icons">bubble_chart</i>
-              <p>Feedback</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./../../assets/dashboard/examples/user.html">
-              <i class="material-icons">person</i>
-              <p>Profiles</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./../../assets/dashboard/examples/notifications.html">
-              <i class="material-icons">notifications</i>
-              <p>Logout</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="main-panel">
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
-        <div class="container-fluid">
-          <div class="navbar-wrapper">
-            <a class="navbar-brand" href="#pablo">Dashboard</a>
-          </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="navbar-toggler-icon icon-bar"></span>
-            <span class="navbar-toggler-icon icon-bar"></span>
-            <span class="navbar-toggler-icon icon-bar"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end">
-          </div>
-        </div>
-      </nav>
-      <!-- End Navbar -->
-     
-      <div class="content">
-        <div class="container-fluid">
-            <div class="navbar-wrapper">
-                <a class="navbar-brand" href="#">My Projects</a>
-              </div>
-          <div class="row">
-            <div  *ngFor ="let project of projects" class="col-lg-4 col-md-6 col-sm-4">
-                <div class="card border-success mb-3" style="max-width: 28rem;">
-                    <div class="card-header card-header-success bg-transparent border-success">{{project.name}}</div>
-                    <div class="card-body text-success">
-                      <h5 class="card-title">{{project.description}}</h5>
-                      <p class="card-text">{{project.team.memberName}}, ({{project.team.memberRole}})</p>
-                    </div>
-                    <div class="card-footer bg-transparent border-success"></div>
-                  </div>
-            </div>
-            
-          </div>
-          <div class="navbar-wrapper">
-              <a class="navbar-brand" href="#">My Team Members</a>
-            </div>
-          <div class="row">
-            <div  *ngFor ="let member of teamMembers" class="col-lg-4 col-md-6 col-sm-4">
-              <div class="card card-chart">
-                <div class="card-header card-header-primary">
-                  <div class="ct-chart" id="dailySalesChart">{{member.memberRole}}</div>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title"></h4>
-                  <p class="card-category">
-                    <span class="text-success">{{member.memberName}}</span></p>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">access_time</i> updated 4 minutes ago
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <!--<div class="row">
-            <div class="col-md-5">
-              <div class="card card-chart">
-                <div class="card-header card-header-primary">
-                  <div class="ct-chart" id="dailySalesChart">Quality Assurance engineer</div>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title"></h4>
-                  <p class="card-category">
-                    <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.</p>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">access_time</i> updated 4 minutes ago
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-5">
-              <div class="card card-chart">
-                <div class="card-header card-header-primary">
-                  <div class="ct-chart" id="dailySalesChart">Project Manager</div>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title"></h4>
-                  <p class="card-category">
-                    <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.</p>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">access_time</i> updated 4 minutes ago
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>-->
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation-->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top" id="mainNav">
+    <a class="navbar-brand" href="index.html">Grasshopper. Co</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="index.html">
+            <i class="fas fa-tachometer-alt"></i>&nbsp;
+            <span class="nav-link-text">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link" href="">
+            <i class="fas fa-bars"></i>&nbsp;
+            <span class="nav-link-text">Explore</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="">
+            <i class="fas fa-inbox"></i>&nbsp;
+            <span class="nav-link-text">Reports</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="">
+            <i class="far fa-life-ring"></i>&nbsp;
+            <span class="nav-link-text">Help</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="">
+            <i class="fas fa-comments"></i>&nbsp;
+            <span class="nav-link-text">FeedBack</span>
+          </a>
+        </li>
+     <li class="nav-item bg-info text-white" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="">
+            <i class="fa fa-fw fa-comments-o"></i>
+            <span class="nav-link-text">Quick Commands</span>
+          </a>
+        </li>
+       
+      </ul>
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
           
-          <div class="row">
-            <div class="col-lg-6 col-md-12">
-              <div class="card">
-                <div class="card-header card-header-tabs card-header-warning">
-                  <div class="nav-tabs-navigation">
-                    <div class="nav-tabs-wrapper">
-                      <span class="nav-tabs-title">My Tasks:</span>
-                        <ul class="nav nav-tabs" data-tabs="tabs">
-                        <li class="nav-item">
-                          <a class="nav-link" href="#settings" data-toggle="tab">
-                            <i class="material-icons">add</i> Add task
-                            <div class="ripple-container"></div>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="tab-content">
-                    <div class="tab-pane active" id="profile">
-                      <table class="table">
-                        <tbody>
-                          <tr *ngFor ="let task of tasks">
-                            <td>
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input class="form-check-input" type="checkbox" value="" [checked]="task.taskStatus">
-                                  <span class="form-check-sign">
-                                    <span class="check"></span>
-                                  </span>
-                                </label>
+        <li class="nav-item">
+          <a class="nav-link" data-container="body" data-toggle="popover" data-placement="bottom" data-content="See how many people in China are working on more than 1 project">
+           <i class="fa fa-bolt"></i> </a>
+        </li>
+       <li class="nav-item dropdown">
+          <a class="nav-link mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+            <i class="fa fa-fw fa-bell"></i>
+            <div class="new-alert">4</div>
+          </a>
+         <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+            <h6 class="dropdown-header">New Alerts:</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                  <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-danger">
+                <strong>
+                  <i class="fa fa-long-arrow-down fa-fw"></i>Status Update</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                  <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item small" href="#">View all alerts</a>
+          </div>
+        </li>
+       
+        
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+           <i class="fa fa-user-circle-o"></i> Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="content-wrapper">
+  <div class="container-fluid">
+         <h6 class="text-uppercase  mt-4">Overview  <a href="#" class="text-capitalize font-13"> Edit</a></h6>
+      <div class="row">
+        <div class="col-md-8  col-sm-6 d-flex mt-2 d-flex  align-items-stretch  text-dark ">
+           <div class="d-flex w-100 d-flex justify-content-center border-2 rounded card-dashbord text-dark bg-three  align-items-center">
+         
+              <div class="row">
+                  <div class=" col align-items-stretch">
+                      <div class="py-2 ">
+                          <div class=" align-items-center">
+                              <div class="media-body text-center">  
+                                  <i class="text-success font-45 fa fa-check-circle" aria-hidden="true"></i>
+                                  <br/>
+                                  <strong>Resource</strong> 
+                                  <div class="text-muted font-13 font-weight-light">all Staffed!</div>
                               </div>
-                            </td>
-                            <td>{{task.taskDescription}}</td>
-                            <td class="td-actions text-right">
-                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
-                                <i class="material-icons">edit</i>
-                              </button>
-                              <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
-                                <i class="material-icons">close</i>
-                              </button>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
+                  <div class=" col align-items-stretch">
+                      <div class="py-2 ">
+                          <div class=" align-items-center">
+                              <div class="media-body text-center">  
+                                  <span class="fa-stack fa-lg" aria-hidden="true">
+                                      <i class="fa fa-circle fa-stack-2x font-45 text-warning"></i>
+                                      <i class="fa fa-exclamation-triangle fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                 
+                                  <br/>
+                                  <strong>Efficiency </strong> 
+                                  <div class="text-muted font-13 font-weight-light">Mismatched Requirements</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class=" col align-items-stretch">
+                      <div class="py-2 ">
+                          <div class=" align-items-center">
+                              <div class="media-body text-center">  
+                                  <span class="fa-stack fa-lg" aria-hidden="true">
+                                      <i class="fa fa-circle fa-stack-2x font-45 text-danger"></i>
+                                      <i class="fa fa-exclamation-circle font-28 fa-stack-1x fa-inverse" style="line-height: 46px;"></i>
+                                  </span>
+                                 
+                                  <br/>
+                                  <strong>Progress </strong> 
+                                  <div class="text-muted font-13 font-weight-light">3 Days delayed</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class=" col align-items-stretch">
+                      <div class="py-2 ">
+                          <div class=" align-items-center">
+                              <div class="media-body text-center">  
+                                  <i class="text-success font-45 fa fa-check-circle" aria-hidden="true"></i>
+                                  <br/>
+                                  <strong>Scope</strong> 
+                                  <div class="text-muted font-13 font-weight-light">all Good!</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class=" col align-items-stretch">
+                      <div class="py-2 ">
+                          <div class=" align-items-center">
+                              <div class="media-body text-center">  
+                                  <i class="text-success font-45 fa fa-check-circle" aria-hidden="true"></i>
+                                  <br/>
+                                  <strong>Risk</strong> 
+                                  <div class="text-muted font-13 font-weight-light">all Good!</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+               
               </div>
+        
+        </div>
+        </div>
+      
+        <div class="col-md-4 mt-2 col-sm-6 d-flex  align-items-stretch">
+          <div class="card card-dashbord  w-100 text-white bg-three  o-hidden ">
+            <div class="card-body">
+                <canvas id="myChart"></canvas>
+            </div>
+            <a class="card-footer text-white clearfix small z-1" >
+               <span class="float-left text-dark">Burn Down <span>36%</span></span>
+              
+            </a>
+          </div>
+        </div>
+        
+     
+      </div>
+
+ <div class="row">
+       <div class="col-xl-4 col-sm-6 mt-4">
+          <div class="card card-dashbord  text-white bg-three  o-hidden h-100">
+            <div class="card-body">
+                <canvas id="myChart-2"></canvas>
+            </div>
+            <a class="card-footer text-white clearfix small z-1" >
+                <span class="float-left text-dark"><strong>Sprint 3:</strong> <span>36%</span></span>
+              
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 mt-4">
+          <div class="card card-dashbord  text-white bg-one  o-hidden h-100">
+                <div class="card-body text-center">
+                </div>
+                <a class="card-footer text-white clearfix small z-1" >
+                    <span class="float-left">Bugs Triaging</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 mt-4">
+            <div class="card card-dashbord  text-white bg-two  o-hidden h-100">
+                <div class="card-body text-center">
+                </div>
+                <a class="card-footer text-white clearfix small z-1" >
+                    <span class="float-left">Bugs Triaging</span>
+                </a>
             </div>
           </div>
         </div>
+      
+        
+     
+      
+      <!-- Area Chart Example-->
+      
+     <div class="row mt-4">
+          <div class="col-lg-4">
+              <div class="card lg-3">
+                  <div class="card-header">
+                      <i class="fa fa-newspaper-o"></i> News </div>
+                  <div class="list-group list-group-flush small">
+                      <a class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                              <div class="id-detals border rounded ">MVP-125</div>
+                              <div class="media-body">
+                                  <div class="id-header"> Pulkit Arora
+                                      <div class="text-muted smaller">commented 4 minutes ago</div>
+                                  </div>
+                              </div>
+                          </div>
+                          <hr/>
+                          <div class="issue-more-detals"> What is the acceptance criteria for this story?</div>
+                      </a>
+                      <a class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                              <div class="id-detals border rounded ">MVP-46</div>
+                              <div class="media-body">
+                                  <div class="id-header">Willam Arora
+                                      <div class="text-muted smaller">commented 4 minutes ago</div>
+                                  </div>
+                              </div>
+                          </div>
+                          <hr/>
+                          <div class="issue-more-detals"> Please close this issue as it looks like a duplicate of MVP-112. Thaks.</div>
+                      </a>
+                       <a class="list-group-item list-group-item-action resolved" href="#">
+                          <div class="media">
+                              <div class="id-detals border rounded ">MVP-95</div>
+                              <div class="media-body">
+                                  <div class="id-header"> Pulkit Arora
+                                      <div class="text-muted smaller">Resolved 14 minutes ago</div>
+                                  </div>
+                              </div>
+                          </div>
+                            <hr/>
+                          <div class="issue-more-detals"><i class="fa color-green fa-check-circle"></i> Resolved</div>
+                      </a>
+                       <a class="list-group-item list-group-item-action new-bug" href="#">
+                          <div class="media">
+                              <div class="id-detals border rounded ">MVP-145</div>
+                              <div class="media-body">
+                                  <div class="id-header"> Kanika 
+                                      <div class="text-muted smaller">Created 24 minutes ago</div>
+                                  </div>
+                              </div>
+                          </div>
+                           <hr/>
+                          <div class="issue-more-detals"><i class="fa color-orange fa-exclamation-triangle"></i> New Bug Created</div>
+                      </a>
+                       <a class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                              <div class="id-detals border rounded ">MVP-46</div>
+                              <div class="media-body">
+                                  <div class="id-header">Willam Arora
+                                      <div class="text-muted smaller">commented 4 minutes ago</div>
+                                  </div>
+                              </div>
+                          </div>
+                          <hr/>
+                          <div class="issue-more-detals"> Please take this one on high priority! The upper button is not working.
+it should either show an error or execute the query.</div>
+                      </a>
+                     
+                   
+                  </div>
+                 
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <div class="card card-notifications lg-3">
+                  <div class="card-header">
+                      <i class="fa fa-bell-o"></i> Notifications </div>
+                  <div class="list-group list-group-flush small">
+                      <a class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                              <div class="user-logo border rounded-circle">PA</div>
+                              <div class="media-body">  
+                                  <strong>Pulkit Arora</strong> tagged you in a comment on
+                                  <strong>MVP-123</strong>.
+                                  <div class="text-muted smaller">4 minutes ago</div>
+                              </div>
+                          </div>
+                      </a>
+                      <a class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                              <div class="user-logo border rounded-circle">KB</div>
+                              <div class="media-body">  
+                                  <strong>Kanika</strong> assigned 
+                                  <strong>MVP-98</strong>to you
+                                  <div class="text-muted smaller">19 minutes ago</div>
+                              </div>
+                          </div>
+                      </a>
+                      <a class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                              <div class="user-logo border rounded-circle">ND</div>
+                              <div class="media-body">  
+                                  <strong>Nagendra Desai</strong> tagged you in a comment on
+                                  <strong>MVP-76</strong>.
+                                  <div class="text-muted smaller">24 minutes ago</div>
+                              </div>
+                          </div>
+                      </a>
+                       <a class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                              <div class="user-logo border rounded-circle">PA</div>
+                              <div class="media-body">  
+                                  <strong>Pulkit Arora</strong> createda bug and assigned you.
+                                  <div class="text-muted smaller">4 minutes ago</div>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <div class="card card-to-do lg-3">
+                  <div class="card-header">
+                      <i class="fa fa-bookmark-o"></i> To-do </div>
+                  <div class="list-group list-group-flush small">
+                      <a class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                              <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                              <div class="media-body">
+                                  Talk to Pulkit about designs
+                              </div>
+                          </div>
+                      </a>
+                      <a class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                              <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                              <div class="media-body">
+                                    Talk to Nagendra about PPT
+                              </div>
+                          </div>
+                      </a>
+                      <a class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                              <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                              <div class="media-body">
+                                    Ask Deepak to chnage color on homepage chat button
+                              </div>
+                          </div>
+                      </a>
+                      <a class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                              <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                              <div class="media-body">
+                                  Hire 2 more interns
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+          </div>
       </div>
+   
+     
+      <!-- Example DataTables Card-->
+   </div>
     </div>
-  </div>
-  <!--   Core JS Files   -->
-  <script src="./../../assets/dashboard/js/core/jquery.min.js" type="text/javascript"></script>
-  <script src="./../../assets/dashboard/js/core/popper.min.js" type="text/javascript"></script>
-  <script src="./../../assets/dashboard/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-  <script src="./../../assets/dashboard/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-  <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-  <!-- Chartist JS -->
-  <script src="./../../assets/dashboard/js/plugins/chartist.min.js"></script>
-  <!--  Notifications Plugin    -->
-  <script src="./../../assets/dashboard/js/plugins/bootstrap-notify.js"></script>
-  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="./../../assets/dashboard/js/material-dashboard.min.js?v=2.1.0" type="text/javascript"></script>
-  <!-- Material Dashboard DEMO methods, don't include it in your project! -->
-  <script src="./../../assets/dashboard/demo/demo.js"></script>
-  <script>
-    $(document).ready(function() {
-      // Javascript method's body can be found in assets/js/demos.js
-      md.initDashboardPageCharts();
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © Grasshopper.Co 2018</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+  
+    <!-- Bootstrap core JavaScript-->
+    <script src="./../../assets/dashboard/newDashboard/vendor/jquery/jquery.min.js"></script>
+    <script src="./../../assets/dashboard/newDashboard/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="./../../assets/dashboard/newDashboard/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="./../../assets/dashboard/newDashboard/vendor/chart.js/Chart.min.js"></script>
+    <!--    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>-->
+    <!-- Custom scripts for all pages-->
+    <script src="./../../assets/dashboard/newDashboard/js/sb-admin.js"></script>
+    <!-- Custom scripts for this page-->
+    <!--<script src="js/sb-admin-datatables.min.js"></script>-->
+    <!--<script src="js/sb-admin-charts.min.js"></script>-->
+    <script>
+   
+	// Datas
+      $(function () {
+  $('[data-toggle="popover"]').popover({
+      trigger:'hover'
+  })
+})  
+var ctx = document.getElementById("myChart");
 
-    });
-  </script>
+new Chart(document.getElementById("myChart"), {
+    
+    type: 'doughnut',
+    data: {
+      labels: ["High Priority", "Med Priority", "Low Priority"],
+      borderWidth: [0],
+      datasets: [
+        {
+          label: "Population (millions)",
+          position: 'bottom',
+          backgroundColor: ["#F7464A", "#46BFBD","#FDB45C"],
+          data: [2478,5267,734],
+          borderWidth: [0, 0, 0]
+        }
+      ],
+         options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+    
+    }
+  
+});
+var ctxx = document.getElementById("myChart-2");
+
+new Chart(document.getElementById("myChart-2"), {
+    
+    type: 'doughnut',
+    data: {
+      labels: ["Stories ", "bugs"],
+      borderWidth: [0],
+      datasets: [
+        {
+          label: "Population (millions)",
+          position: 'bottom',
+          backgroundColor: ["#736b5e", "#01b6ad"],
+          data: [2478,5267],
+          borderWidth: [0, 0, 0]
+        }
+      ],
+         options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+    
+    }
+  
+});
+
+
+</script>
+  
+
 </body>
 
 </html>
