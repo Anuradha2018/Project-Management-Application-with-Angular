@@ -78,21 +78,3 @@ body {
 .login-form form a:hover {
     text-decoration: underline;
 }
-
-.navbar {
-    overflow-x: hidden;
-    background-color:rgb(3, 3, 97);
-    height: 60px;
-    width: 100%;
-  }
-  
-  .navbar .nav-link {
-    font-size: 14px;
-    text-transform: uppercase;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
-  
-  .navbar .nav-item.active {
-    border-left: #444 3px solid;
-  }
