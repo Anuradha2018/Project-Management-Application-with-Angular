@@ -23,7 +23,7 @@
     <body class="fixed-nav sticky-footer bg-dark" id="page-top">
         <!-- Navigation-->
          <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="index.html">GrassHopper Co</a>
+    <a class="navbar-brand" href="index.html">GrassHopper Co.</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -31,42 +31,39 @@
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
           <a class="nav-link" href="index.html">
-            <i class="fa fa-fw fa-dashboard"></i>
+              <i class="fas fa-tachometer-alt"></i>&nbsp;
             <span class="nav-link-text">Dashboard</span>
           </a>
         </li>
         <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Charts">
           <a class="nav-link" href="">
-            <i class="fa fa-fw fa-bars"></i>
+              <i class="fas fa-bars"></i>&nbsp;
             <span class="nav-link-text">Explore</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" href="">
-            <i class="fa fa-fw fa-inbox"></i>
+              <i class="fas fa-inbox"></i>&nbsp;
             <span class="nav-link-text">Reports</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" href="">
-            <i class="fa fa-fw fa-life-ring"></i>
+              <i class="far fa-life-ring"></i>&nbsp;
             <span class="nav-link-text">Help</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" href="">
-            <i class="fa fa-fw fa-comments"></i>
+              <i class="fas fa-comments"></i>&nbsp;
             <span class="nav-link-text">FeedBack</span>
           </a>
         </li>
-     
-      
-       
-      </ul>
+    </ul>
       <ul class="navbar-nav sidenav-toggler">
         <li class="nav-item">
           <a class="nav-link text-center" id="sidenavToggler">
-            <i class="fa fa-fw fa-angle-left"></i>
+              <i class="fas fa-angle-left"></i>
           </a>
         </li>
       </ul>
@@ -74,7 +71,7 @@
         
        <li class="nav-item dropdown">
           <a class="nav-link mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-            <i class="fa fa-fw fa-bell"></i>
+              <i class="fas fa-bell"></i>
             <div class="new-alert">4</div>
           </a>
          <div class="dropdown-menu" aria-labelledby="alertsDropdown">
@@ -83,7 +80,7 @@
             <a class="dropdown-item" href="#">
               <span class="text-success">
                 <strong>
-                  <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+                    <i class="fas fa-long-arrow-up"></i>Status Update</strong>
               </span>
               <span class="small float-right text-muted">11:21 AM</span>
               <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
@@ -91,8 +88,7 @@
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">
               <span class="text-danger">
-                <strong>
-                  <i class="fa fa-long-arrow-down fa-fw"></i>Status Update</strong>
+                <strong><i class="fas fa-long-arrow-down"></i>Status Update</strong>
               </span>
               <span class="small float-right text-muted">11:21 AM</span>
               <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
@@ -100,8 +96,7 @@
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">
               <span class="text-success">
-                <strong>
-                  <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+                <strong><i class="fas fa-long-arrow-up"></i>Status Update</strong>
               </span>
               <span class="small float-right text-muted">11:21 AM</span>
               <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
@@ -113,7 +108,7 @@
        
         <li class="nav-item">
           <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-           <i class="fa fa-user-circle-o"></i> Logout</a>
+              <i class="fas fa-user-circle"></i> Logout</a>
         </li>
       </ul>
     </div>
@@ -130,16 +125,16 @@
                                         Technologies 
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">Product</a>
-                                        <a class="dropdown-item" href="#">Programs</a>
-                                        <a class="dropdown-item" href="#">Location</a>
-                                        <a class="dropdown-item" href="#">Technologies</a>
+                                        <a class="dropdown-item" [routerLink]="['/explore/projects']">Product</a>
+                                        <a class="dropdown-item" [routerLink]="['/explore']">Programs</a>
+                                        <a class="dropdown-item" [routerLink]="['/explore/locations']">Location</a>
+                                        <a class="dropdown-item" [routerLink]="['/explore/technology']">Technologies</a>
                                     </div>
                                 </div> 
 
                                 <div class="dropdown search input-group-addon  ml-auto">
                                     <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                        <i class="fas fa-search"></i>
                                     </button>
                                     <div class="dropdown-menu dropdown-menu-right">
                                         <form class="form-horizontal" role="form">
@@ -227,7 +222,7 @@
                                 <div class="list-group-item rounded list-one mb-3">
                                     <div class="media align-items-center">
                                         <div class="user-logo border rounded-circle">
-                                            <img src="img/user.png" alt="user" />
+                                            <img src="./../../assets/dashboard/newDashboard/img/user.png" alt="user" />
                                         </div>
                                         <div class="media-body">  
                                             <strong>Dr. Pulkit Arora</strong> 
@@ -254,7 +249,7 @@
                                  <div class="list-group-item rounded list-one mb-2">
                                         <div class="media align-items-center">
                                             <div class="">
-                                                <img src="img/flag-of-China.png" width="33" alt="user">
+                                                <img src="./../../assets/dashboard/newDashboard/img/flag-of-China.png" width="33" alt="user">
                                             </div>
                                             <div class="media-body">  
                                                 <strong>China - Mainland</strong> 
@@ -264,7 +259,7 @@
 
                                 <div class="list-group-item rounded list-one mb-2">
                                     <div class="media align-items-center">
-                                        <img src="img/flag-of-India.png" width="33" alt="user">
+                                        <img src="./../../assets/dashboard/newDashboard/img/flag-of-India.png" width="33" alt="user">
                                         <div class="media-body">  
                                             <strong>India - Bangalore</strong> 
                                         </div>
@@ -272,7 +267,7 @@
                                 </div>
                                 <div class="list-group-item rounded list-one mb-2">
                                     <div class="media align-items-center">
-                                        <img src="img/flag-of-India.png" width="33" alt="user">
+                                        <img src="./../../assets/dashboard/newDashboard/img/flag-of-India.png" width="33" alt="user">
                                         <div class="media-body">  
                                             <strong>India - Delhi</strong> 
                                         </div>
@@ -328,7 +323,7 @@
                                 <div class="list-group-item w-100 list-one mb-3">
                                     <div class="media align-items-center">
                                         <div class="">
-                                            <i class="fa fa-connectdevelop" aria-hidden="true"></i>
+                                            <i class="fab fa-connectdevelop"></i>
                                         </div>
                                         <div class="media-body">  
                                             <strong>Machine Learning</strong> 
@@ -340,7 +335,7 @@
                                 <div class="list-group-item w-100 list-one mb-3">
                                     <div class="media align-items-center">
                                         <div class="">
-                                            <i class="fa fa-connectdevelop" aria-hidden="true"></i>
+                                            <i class="fab fa-connectdevelop"></i>
                                         </div>
                                         <div class="media-body">  
                                             <strong>NLP</strong> 
@@ -352,7 +347,7 @@
                                 <div class="list-group-item w-100 list-one mb-3">
                                     <div class="media align-items-center">
                                         <div class="">
-                                             <img src="img/java.png" width="25" alt="user">
+                                             <img src="./../../assets/dashboard/newDashboard/img/java.png" width="25" alt="user">
                                         </div>
                                         <div class="media-body">  
                                             <strong>Java  Enterprise</strong> 
@@ -364,7 +359,7 @@
                                 <div class="list-group-item w-100 list-one mb-3">
                                     <div class="media align-items-center">
                                         <div class="">
-                                            <i class="fa fa-cc-visa" aria-hidden="true"></i>
+                                            <i class="fab fa-cc-visa"></i>
                                         </div>
                                         <div class="media-body">  
                                             <strong>Visa Payments</strong> 
@@ -376,7 +371,7 @@
                                 <div class="list-group-item w-100 list-one mb-3">
                                     <div class="media align-items-center">
                                         <div class="">
-                                            <i class="fa fa-amazon" aria-hidden="true"></i>
+                                            <i class="fab fa-amazon"></i>
                                         </div>
                                         <div class="media-body">  
                                             <strong>amazon (AWS)</strong> 

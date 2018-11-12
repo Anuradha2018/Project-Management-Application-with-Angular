@@ -1,3 +1,4 @@
+import { TechnologyComponent } from './technology/technology.component';
 import { ExploreTeamsComponent } from './explore-teams/explore-teams.component';
 import { ExploreProjectsComponent } from './explore-projects/explore-projects.component';
 import { ExploreLocationsComponent } from './explore-locations/explore-locations.component';
@@ -6,6 +7,7 @@ import { TasksComponent } from './tasks/tasks.component';
 import { ProjectComponent } from './project/project.component';
 import { LoginComponent } from './login/login.component';
 import { ExploreComponent} from './explore/explore.component';
+
 import { NgModule } from '@angular/core';
 
 import { RouterModule, Routes } from '@angular/router';
@@ -24,7 +26,8 @@ const routes: Routes = [
   { path: 'explore', component: ExploreComponent },
   { path: 'explore/locations', component: ExploreLocationsComponent },
   { path: 'explore/projects', component: ExploreProjectsComponent},
-  { path: 'explore/teams', component: ExploreTeamsComponent}
+  { path: 'explore/teams', component: ExploreTeamsComponent},
+  { path: 'explore/technology', component: TechnologyComponent }
 ];
 
 @NgModule({
