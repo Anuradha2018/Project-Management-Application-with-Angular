@@ -30,13 +30,13 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link" [routerLink]="['/dashboard']">
               <i class="fas fa-tachometer-alt"></i>&nbsp;
             <span class="nav-link-text">Dashboard</span>
           </a>
         </li>
         <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" href="">
+          <a class="nav-link" [routerLink]="['/explore']">
               <i class="fas fa-bars"></i>&nbsp;
             <span class="nav-link-text">Explore</span>
           </a>
@@ -132,7 +132,7 @@
                                     </div>
                                 </div> 
 
-                                <div class="dropdown search input-group-addon  ml-auto">
+                                <!--<div class="dropdown search input-group-addon  ml-auto">
                                     <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <i class="fas fa-search"></i>
                                     </button>
@@ -151,7 +151,7 @@
                                                 </ul>
                                         </form>
                                     </div>
-                                </div>
+                                </div>-->
                                 
 
                             </div>
