@@ -1,22 +1,42 @@
 [
     {
-        "technologyId": "JS",
-        "technologyName": "JavaScript"
+        "technologyId": 1,
+        "technologyName": "Machine Learning"
     },
     {
-        "technologyId": "Ang",
+        "technologyId": 2,
+        "technologyName": "NLP"
+    },
+    {
+        "technologyId": 3,
+        "technologyName": "Java Enterprise"
+    },
+    {
+        "technologyId": 4,
+        "technologyName": "Visa Payments"
+    },
+    {
+        "technologyId": 5,
+        "technologyName": "Amazon (AWS)"
+    },
+    {
+        "technologyId": 6,
         "technologyName": "Angular"
     },
     {
-        "technologyId": "RjS",
+        "technologyId": 7,
         "technologyName": "React"
     },
     {
-        "technologyId": "RN",
-        "technologyName": "React native"
+        "technologyId": 8,
+        "technologyName": "JavaScript"
     },
     {
-        "technologyId": ".NET",
-        "technologyName": ".Net"
+        "technologyId": 9,
+        "technologyName": "C#,.NET"
+    },
+    {
+        "technologyId": 10,
+        "technologyName": "Python"
     }
 ]

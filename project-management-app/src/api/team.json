@@ -22,5 +22,79 @@
         "memberName": "Martin",
         "memberRole": "Project Manager"
         
+    },
+    {
+        "memberName": "Paul",
+        "memberRole": "Web Developer"
+        
+    },
+    {
+        "memberName": "Neal",
+        "memberRole": "Front-end Engineer"
+        
+    },
+    {
+        "memberName": "Hugo",
+        "memberRole": "Multimedia Designer"
+        
+    },
+    {
+        "memberName": "Nemo",
+        "memberRole": "Automation Engineer"
+        
+    },
+    {
+        "memberName": "Tom",
+        "memberRole": "Software Developer"
+        
+    },
+    {
+        "memberName": "Casper",
+        "memberRole": "Software Developer"
+        
+    },
+    {
+        "memberName": "Dan",
+        "memberRole": "Automation Engineer"
+        
+    },
+    {
+        "memberName": "Tobias",
+        "memberRole": "Multimedia Designer"
+        
+    },
+    {
+        "memberName": "David",
+        "memberRole": "Front-end Engineer"
+        
+    },
+    {
+        "memberName": "Elisa",
+        "memberRole": "Web Developer"
+        
+    },
+    {
+        "memberName": "Rolf",
+        "memberRole": "Project Manager"
+        
+    },
+    {
+        "memberName": "Joana",
+        "memberRole": "Quality Assurance engineer"
+        
+    },
+    {
+        "memberName": "Jeppe",
+        "memberRole": "Back-end Developer"
+        
+    },
+    {
+        "memberName": "Henrik",
+        "memberRole": "Front-end Developer"
+        
+    },
+    {
+        "memberName": "Jenny",
+        "memberRole": "UX/UI designer"
     }
 ]

@@ -1,4 +1,4 @@
 export class Technology {
-    technologyId: string;
+    technologyId: number;
     technologyName: string;
 }

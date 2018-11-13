@@ -1,22 +1,42 @@
 [
     {
-        "taskName":"Task1",
-        "taskDescription":"Task1description",
+        "taskName":"Planning",
+        "taskDescription":"Development Process Planning: find out the scope of the problem and determine solutions",
         "taskStatus": true
     },
     {
-        "taskName":"Task2",
-        "taskDescription":"Task2description",
+        "taskName":"Systems Analysis and Requirements",
+        "taskDescription":"consider the functional requirements of the project or solution,analyzing the needs of the end users to ensure the new system can meet their expectations",
         "taskStatus":false
     },
     {
-        "taskName":"Task3",
-        "taskDescription":"Task3description",
+        "taskName":"Systems Design",
+        "taskDescription":"end users to discuss and determine their specific business information needs for the proposed system,consider the essential components (hardware and/or software) structure (networking capabilities), processing and procedures for the system to accomplish its objectives.",
         "taskStatus":true
     },
     {
-        "taskName":"Task3",
-        "taskDescription":"Task4description",
+        "taskName":"Development: Phase1",
+        "taskDescription":"start of production",
+        "taskStatus":false
+    },
+    {
+        "taskName":"Development: Phase2",
+        "taskDescription":"instillation and change",
+        "taskStatus": true
+    },
+    {
+        "taskName":"Integration and Testing",
+        "taskDescription":"Testing ,Repeatation, specifically to check for errors, bugs and interoperability",
+        "taskStatus":false
+    },
+    {
+        "taskName":"Implementation",
+        "taskDescription":"actual installation of the newly-developed system, putting the project into production by moving the data and components from the old system and placing them in the new system via a direct cutover",
+        "taskStatus":true
+    },
+    {
+        "taskName":"Operations and Maintenance",
+        "taskDescription":"boost performance, add new capabilities or meet additional user requirements if there",
         "taskStatus":false
     }
 ]

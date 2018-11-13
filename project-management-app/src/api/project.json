@@ -3,113 +3,221 @@
         "id": 1,
         "name": "Titan",
         "description": "Project1Description",
-        "team": 
+        "teamMembers": [
             {
-            "memberName": "John",
-            "memberRole": "UX/UI designer"
+                "memberName": "Alex",
+                "memberRole": "Back-end Developer"
+                
+            },
+            {
+                "memberName": "Jill",
+                "memberRole": "Front-end Developer"
+                
+            },
+            {
+                "memberName": "Martin",
+                "memberRole": "Project Manager"
+                
             }
-        
-
+        ]
     },
     {
         "id": 2,
         "name": "Project Hanks",
         "description": "Project2Description",
-        "team":
+        "teamMembers": [
             {
+                "memberName": "John",
+                "memberRole": "UX/UI designer"
                 
-        "memberName": "Jill",
-        "memberRole": "Front-end Developer"
-            }
+            },
+            {
+                "memberName": "Paul",
+                "memberRole": "Web Developer"
+                
+            },
+        {
+            "memberName": "Nemo",
+            "memberRole": "Automation Engineer"
+            
+        }
+        ]
         
     },
     {
         "id": 3,
         "name": "Kodiak",
         "description": "Project3Description",
-        "team": 
+        "teamMembers": [
             {
-                "memberName": "Alex",
-        "memberRole": "Back-end Developer"
+                "memberName": "Jill",
+                "memberRole": "Front-end Developer"
+                
+            },
+            {
+                "memberName": "Jeppe",
+                "memberRole": "Back-end Developer"
+                
+            },
+            {
+                "memberName": "Joana",
+                "memberRole": "Quality Assurance engineer"
+                
             }
-        
+        ]
     },
     {
         "id": 4,
         "name": "Code Talkers",
         "description": "Project4Description",
-        "team":
+        "teamMembers": [
             {
                 "memberName": "Mark",
-        "memberRole": "Quality Assurance engineer"
+                "memberRole": "Quality Assurance engineer"
+                
+            },
+            {
+                "memberName": "Tobias",
+                "memberRole": "Multimedia Designer"
+                
+            },
+            {
+                "memberName": "Casper",
+                "memberRole": "Software Developer"
+                
             }
-        
+        ]
     },
     {
         "id": 5,
         "name": "Project Blue Book",
         "description": "Project5Description",
-        "team": 
+        "teamMembers": [
             {
                 "memberName": "Martin",
-                 "memberRole": "Project Manager"
+                "memberRole": "Project Manager"
+                
+            },
+            {
+                "memberName": "Casper",
+                "memberRole": "Software Developer"
+                
+            },
+            {
+                "memberName": "Dan",
+                "memberRole": "Automation Engineer"
+                
             }
-        
+        ]
     },
     {
         "id": 6,
         "name": "X Lab",
         "description": "Project6Description",
-        "team": 
+        "teamMembers": [
+            {
+                "memberName": "Paul",
+                "memberRole": "Web Developer"
+                
+            },
+            {
+                "memberName": "Jenny",
+                "memberRole": "UX/UI designer"
+            },
             {
                 "memberName": "Martin",
-                 "memberRole": "Project Manager"
+                "memberRole": "Project Manager"
+                
             }
-        
+        ]
     },
     {
         "id": 7,
         "name": "Project 404",
         "description": "Project7Description",
-        "team": 
+        "teamMembers": [
             {
-                "memberName": "Martin",
-                 "memberRole": "Project Manager"
+                "memberName": "Neal",
+                "memberRole": "Front-end Engineer"
+                
+            },
+            {
+                "memberName": "Joana",
+                "memberRole": "Quality Assurance engineer"
+                
+            },
+            {
+                "memberName": "Jeppe",
+                "memberRole": "Back-end Developer"
+                
             }
-        
+        ]
     },
     {
         "id": 8,
         "name": "Manhattan Project",
         "description": "Project8Description",
-        "team": 
+        "teamMembers": [
             {
-                "memberName": "Martin",
-                 "memberRole": "Project Manager"
+                "memberName": "Hugo",
+                "memberRole": "Multimedia Designer"
+                
+            },
+            {
+                "memberName": "Elisa",
+                "memberRole": "Web Developer"
+                
+            },
+            {
+                "memberName": "Rolf",
+                "memberRole": "Project Manager"
+                
             }
-        
+        ]
     },
     {
         "id": 9,
         "name": "Durango",
         "description": "Project9Description",
-        "team": 
+        "teamMembers": [
             {
-                "memberName": "Martin",
-                 "memberRole": "Project Manager"
-            }
+                "memberName": "Nemo",
+                "memberRole": "Automation Engineer"
+                
+            },
+            
+    {
+        "memberName": "John",
+        "memberRole": "UX/UI designer"
+    },
+    {
+        "memberName": "Jill",
+        "memberRole": "Front-end Developer"
         
+    }
+        ]
     },
     {
         "id": 10,
         "name": "Apollo",
         "description": "Project10Description",
-        "team": 
+        "teamMembers": [
+            {
+                "memberName": "Tom",
+                "memberRole": "Software Developer"
+                
+            },
+            {
+                "memberName": "Mark",
+                "memberRole": "Quality Assurance engineer"
+                
+            },
             {
                 "memberName": "Martin",
-                 "memberRole": "Project Manager"
-            }
-        
+                "memberRole": "Project Manager"
+                
+            },
+        ]
     }
-
 ]
+   
