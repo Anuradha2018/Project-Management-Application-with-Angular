@@ -9,7 +9,26 @@
             {
                 "locationId":1,
                 "locationName":"Copenhagen"
+            }
+        ],
+        "technologies": [
+            {
+                "technologyId": 2,
+                "technologyName": "NLP"
             },
+            {
+                "technologyId": 1,
+                "technologyName": "Machine Learning"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Project Hanks",
+        "description": "Project2Description",
+        "projectManager":"Martin",
+        "projectDeadline":"26-11-2018",
+        "locations": [
             {
                 "locationId":2,
                 "locationName":"Odense"
@@ -17,33 +36,6 @@
         ],
         "technologies": [
             {
-                "technologyId": 2,
-                "technologyName": "NLP"
-            },
-            {
-                "technologyId": 1,
-                "technologyName": "Machine Learning"
-            }
-        ]
-    },
-    {
-        "id": 1,
-        "name": "Project1",
-        "description": "Project1Description",
-        "projectManager":"Alex",
-        "projectDeadline":"26-11-2018",
-        "locations": [
-            {
-                "locationId":1,
-                "locationName":"Copenhagen"
-            },
-            {
-                "locationId":"COP",
-                "locationName":"Copenhagen"
-            }
-        ],
-        "technologies": [
-            {
                 "technologyId": 1,
                 "technologyName": "Machine Learning"
             },
@@ -54,218 +46,156 @@
         ]
     },
     {
-        "id": 1,
-        "name": "Project1",
-        "description": "Project1Description",
+        "id": 3,
+        "name": "Kodiak",
+        "description": "Project3Description",
         "projectManager":"Alex",
         "projectDeadline":"26-11-2018",
         "locations": [
             {
-                "locationId":"BLR",
-                "locationName":"Bangalore"
-            },
-            {
-                "locationId":"COP",
-                "locationName":"Copenhagen"
+                "locationId":4,
+                "locationName":"Aalborg"
             }
         ],
         "technologies": [
             {
-                "technologyId": "JS",
-                "technologyName": "JavaScript"
-            },
+                "technologyId": 4,
+                "technologyName": "Visa Payments"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Code Talkers",
+        "description": "Project4Description",
+        "projectManager":"Alex",
+        "projectDeadline":"26-11-2018",
+        "locations": [
             {
-                "technologyId": "Ang",
+                "locationId":4,
+                "locationName":"Aalborg"
+            }
+        ],
+        "technologies": [
+            {
+                
+                    "technologyId": 4,
+                    "technologyName": "Visa Payments"
+                
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Project Blue Book",
+        "description": "Project5Description",
+        "projectManager":"Martin",
+        "projectDeadline":"26-11-2018",
+        "locations": [
+            {
+                "locationId":5,
+                "locationName":"Stockholm"
+            }
+        ],
+        "technologies": [
+            {
+                "technologyId": 5,
+                "technologyName": "Amazon (AWS)"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "X Lab",
+        "description": "Project6Description",
+        "projectManager":"Alex",
+        "projectDeadline":"26-11-2018",
+        "locations": [
+            {   
+                "locationId":6,
+                "locationName":"Gothenburg"
+            }
+        ],
+        "technologies": [
+            {
+                "technologyId": 6,
                 "technologyName": "Angular"
             }
         ]
     },
     {
-        "id": 1,
-        "name": "Project1",
-        "description": "Project1Description",
-        "projectManager":"Alex",
+        "id": 7,
+        "name": "Project 404",
+        "description": "Project7Description",
+        "projectManager":"Martin",
         "projectDeadline":"26-11-2018",
         "locations": [
             {
-                "locationId":"BLR",
-                "locationName":"Bangalore"
-            },
-            {
-                "locationId":"COP",
-                "locationName":"Copenhagen"
+                "locationId":7,
+                "locationName":"Lund"
             }
         ],
         "technologies": [
             {
-                "technologyId": "JS",
-                "technologyName": "JavaScript"
-            },
-            {
-                "technologyId": "Ang",
-                "technologyName": "Angular"
+                "technologyId": 7,
+                "technologyName": "React"
             }
         ]
     },
     {
-        "id": 1,
-        "name": "Project1",
-        "description": "Project1Description",
+        "id": 8,
+        "name": "Manhattan Project",
+        "description": "Project8Description",
         "projectManager":"Alex",
         "projectDeadline":"26-11-2018",
         "locations": [
             {
-                "locationId":"BLR",
-                "locationName":"Bangalore"
-            },
-            {
-                "locationId":"COP",
-                "locationName":"Copenhagen"
+                "locationId":8,
+                "locationName":"Oslo"
             }
         ],
         "technologies": [
             {
-                "technologyId": "JS",
+                "technologyId": 8,
                 "technologyName": "JavaScript"
-            },
-            {
-                "technologyId": "Ang",
-                "technologyName": "Angular"
             }
         ]
     },
     {
-        "id": 1,
-        "name": "Project1",
-        "description": "Project1Description",
-        "projectManager":"Alex",
+        "id": 9,
+        "name": "Durango",
+        "description": "Project9Description",
+        "projectManager":"Martin",
         "projectDeadline":"26-11-2018",
         "locations": [
             {
-                "locationId":"BLR",
-                "locationName":"Bangalore"
-            },
-            {
-                "locationId":"COP",
-                "locationName":"Copenhagen"
+                "locationId":8,
+                "locationName":"Oslo"
             }
         ],
         "technologies": [
             {
-                "technologyId": "JS",
+                "technologyId": 8,
                 "technologyName": "JavaScript"
-            },
-            {
-                "technologyId": "Ang",
-                "technologyName": "Angular"
             }
         ]
     },
     {
-        "id": 1,
-        "name": "Project1",
-        "description": "Project1Description",
+        "id": 10,
+        "name": "Apollo",
+        "description": "Project10Description",
         "projectManager":"Alex",
         "projectDeadline":"26-11-2018",
         "locations": [
             {
-                "locationId":"BLR",
-                "locationName":"Bangalore"
-            },
-            {
-                "locationId":"COP",
-                "locationName":"Copenhagen"
+                "locationId":10,
+                "locationName":"Helsinki"
             }
         ],
         "technologies": [
             {
-                "technologyId": "JS",
-                "technologyName": "JavaScript"
-            },
-            {
-                "technologyId": "Ang",
-                "technologyName": "Angular"
-            }
-        ]
-    },
-    {
-        "id": 1,
-        "name": "Project1",
-        "description": "Project1Description",
-        "projectManager":"Alex",
-        "projectDeadline":"26-11-2018",
-        "locations": [
-            {
-                "locationId":"BLR",
-                "locationName":"Bangalore"
-            },
-            {
-                "locationId":"COP",
-                "locationName":"Copenhagen"
-            }
-        ],
-        "technologies": [
-            {
-                "technologyId": "JS",
-                "technologyName": "JavaScript"
-            },
-            {
-                "technologyId": "Ang",
-                "technologyName": "Angular"
-            }
-        ]
-    },
-    {
-        "id": 1,
-        "name": "Project1",
-        "description": "Project1Description",
-        "projectManager":"Alex",
-        "projectDeadline":"26-11-2018",
-        "locations": [
-            {
-                "locationId":"BLR",
-                "locationName":"Bangalore"
-            },
-            {
-                "locationId":"COP",
-                "locationName":"Copenhagen"
-            }
-        ],
-        "technologies": [
-            {
-                "technologyId": "JS",
-                "technologyName": "JavaScript"
-            },
-            {
-                "technologyId": "Ang",
-                "technologyName": "Angular"
-            }
-        ]
-    },
-    {
-        "id": 1,
-        "name": "Project1",
-        "description": "Project1Description",
-        "projectManager":"Alex",
-        "projectDeadline":"26-11-2018",
-        "locations": [
-            {
-                "locationId":"BLR",
-                "locationName":"Bangalore"
-            },
-            {
-                "locationId":"COP",
-                "locationName":"Copenhagen"
-            }
-        ],
-        "technologies": [
-            {
-                "technologyId": "JS",
-                "technologyName": "JavaScript"
-            },
-            {
-                "technologyId": "Ang",
-                "technologyName": "Angular"
+                "technologyId": 10,
+                "technologyName": "Python"
             }
         ]
     }
