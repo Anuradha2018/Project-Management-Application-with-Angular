@@ -118,20 +118,19 @@
 <h3>Overview</h3>
       <!-- Icon Cards-->
       <div class="row">
-        <div class="col-xl-4 col-sm-6 mb-4">
+        <div *ngFor ="let project of projects" class="col-xl-4 col-sm-6 mb-4">
           <div class="card card-dashbord  text-white bg-one  o-hidden h-100">
             <div class="card-body">
                 <div class="jira-log">  Fetched from <img src="./../../assets/dashboard/newDashboard/img/jira.png" alt="jira logo" /></div>
-                <div class="content-one">18<span class="divider">/</span> <span class="font-light">32</span>
-                </div>
+                <div class="content-one"><h6>{{project.name}}</h6><span class="font-light"><p>{{project.description}}</p></span></div>
             </div>
             <a class="card-footer text-white clearfix small z-1" >
-              <span class="float-left">User Stories resolved</span>
+              <span class="float-left">ProjectId: {{project.id}}</span>
               
             </a>
           </div>
         </div>
-        <div class="col-xl-4 col-sm-6 mb-4">
+        <!--<div class="col-xl-4 col-sm-6 mb-4">
           <div class="card card-dashbord  text-white bg-two  o-hidden h-100">
             <div class="card-body">
                 <div class="jira-log">  Fetched from <img src="./../../assets/dashboard/newDashboard/img/jira.png" alt="jira logo" /></div>
@@ -149,14 +148,14 @@
             <div class="card-body">
                     <div class="jira-log">  Fetched from <img src="./../../assets/dashboard/newDashboard/img/jira.png" alt="jira logo" /></div>
                     <div class="content-one">9<span class="divider">/</span> <span class="font-light">16</span></div>
-                <!--<canvas id="myChart"></canvas>-->
+                <canvas id="myChart"></canvas>
             </div>
             <a class="card-footer text-white clearfix small z-1" >
                <span class="float-left text-dark">Productivity <span>36%</span></span>
               
             </a>
           </div>
-        </div>
+        </div>-->
         
      
       </div>

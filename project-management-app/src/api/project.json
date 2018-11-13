@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Project1",
+        "name": "Titan",
         "description": "Project1Description",
         "team": 
             {
@@ -13,7 +13,7 @@
     },
     {
         "id": 2,
-        "name": "Project2",
+        "name": "Project Hanks",
         "description": "Project2Description",
         "team":
             {
@@ -25,7 +25,7 @@
     },
     {
         "id": 3,
-        "name": "Project3",
+        "name": "Kodiak",
         "description": "Project3Description",
         "team": 
             {
@@ -36,7 +36,7 @@
     },
     {
         "id": 4,
-        "name": "Project4",
+        "name": "Code Talkers",
         "description": "Project4Description",
         "team":
             {
@@ -47,7 +47,7 @@
     },
     {
         "id": 5,
-        "name": "Project5",
+        "name": "Project Blue Book",
         "description": "Project5Description",
         "team": 
             {
@@ -55,5 +55,61 @@
                  "memberRole": "Project Manager"
             }
         
+    },
+    {
+        "id": 6,
+        "name": "X Lab",
+        "description": "Project6Description",
+        "team": 
+            {
+                "memberName": "Martin",
+                 "memberRole": "Project Manager"
+            }
+        
+    },
+    {
+        "id": 7,
+        "name": "Project 404",
+        "description": "Project7Description",
+        "team": 
+            {
+                "memberName": "Martin",
+                 "memberRole": "Project Manager"
+            }
+        
+    },
+    {
+        "id": 8,
+        "name": "Manhattan Project",
+        "description": "Project8Description",
+        "team": 
+            {
+                "memberName": "Martin",
+                 "memberRole": "Project Manager"
+            }
+        
+    },
+    {
+        "id": 9,
+        "name": "Durango",
+        "description": "Project9Description",
+        "team": 
+            {
+                "memberName": "Martin",
+                 "memberRole": "Project Manager"
+            }
+        
+    },
+    {
+        "id": 10,
+        "name": "Apollo",
+        "description": "Project10Description",
+        "team": 
+            {
+                "memberName": "Martin",
+                 "memberRole": "Project Manager"
+            }
+        
     }
+
 ]
