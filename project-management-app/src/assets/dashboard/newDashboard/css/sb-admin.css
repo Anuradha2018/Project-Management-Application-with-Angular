@@ -485,14 +485,15 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
 }
 
 footer.sticky-footer {
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   width: 100%;
   height: 56px;
-  background-color: #f7f5f199;
+  background-color:white;
   line-height: 55px;
 }
+
 
 @media (min-width: 992px) {
   footer.sticky-footer {
