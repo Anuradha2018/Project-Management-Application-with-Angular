@@ -1,20 +1,20 @@
 [
     {
         "locationId":1,
-        "locationName":"Bangalore",
+        "locationName":"Copenhagen",
         "siteManager":"Joe",
         "siteStrength": 5,
         "technologies":[
             {
-            "technologyId": "JS",
-            "technologyName": "JavaScript"
-        }
+                "technologyId": 2,
+                "technologyName": "NLP"
+            }
     ],
         "projects":[
              {
-            "id": 1,
-            "name": "Project1",
-            "description": "Project1Description"
+                "id": 1,
+                "name": "Titan",
+                "description": "Project1Description"
              }
     ],
         "teams":[
@@ -26,76 +26,235 @@
     },
     {
         "locationId":2,
-        "locationName":"Hyderabad",
+        "locationName":"Odense",
         "siteManager":"Alex",
         "siteStrength": 15,
         "technologies":[
             {
-            "technologyId": "JS",
-            "technologyName": "JavaScript"
-        }
+                "technologyId": 1,
+                "technologyName": "Machine Learning"
+            }
     ],
         "projects":[
              {
-            "id": 1,
-            "name": "Project1",
-            "description": "Project1Description"
+                "id": 2,
+                "name": "Project Hanks",
+                "description": "Project2Description"
              }
     ],
         "teams":[
-            {
-                "memberName": "John",
-                "memberRole": "UX/UI designer"
-            }
+        {
+            "memberName": "Martin",
+            "memberRole": "Project Manager"
+            
+        }
         ]
     },
     {
         "locationId":3,
-        "locationName":"Copenhagen",
+        "locationName":"Aarhus",
         "siteManager":"Jill",
         "siteStrength": 25,
         "technologies":[
             {
-            "technologyId": "JS",
-            "technologyName": "JavaScript"
-        }
+                "technologyId": 3,
+                "technologyName": "Java Enterprise"
+            }
     ],
         "projects":[
              {
-            "id": 1,
-            "name": "Project1",
-            "description": "Project1Description"
+                "id": 3,
+                "name": "Kodiak",
+                "description": "Project3Description"
              }
     ],
         "teams":[
             {
-                "memberName": "John",
-                "memberRole": "UX/UI designer"
+                
+                "memberName": "Jill",
+                "memberRole": "Front-end Developer"
             }
         ]
     },
     {
         "locationId":4,
-        "locationName":"Aarhus",
+        "locationName":"Aalborg",
         "siteManager":"Joe",
         "siteStrength": 5,
         "technologies":[
             {
-            "technologyId": "JS",
-            "technologyName": "JavaScript"
-        }
+                "technologyId": 4,
+                "technologyName": "Visa Payments"
+            }
     ],
         "projects":[
              {
-            "id": 1,
-            "name": "Project1",
-            "description": "Project1Description"
+                "id": 4,
+                "name": "Code Talkers",
+                "description": "Project4Description"
+             }
+    ],
+        "teams":[
+            {
+                "memberName": "Mark",
+                "memberRole": "Quality Assurance engineer"
+            }
+        ]
+    },
+    {
+        "locationId":5,
+        "locationName":"Stockholm",
+        "siteManager":"Dan",
+        "siteStrength": 7,
+        "technologies":[
+            {
+                "technologyId": 5,
+                "technologyName": "Amazon (AWS)"
+            }
+    ],
+        "projects":[
+             {
+           
+        "id": 5,
+        "name": "Project Blue Book",
+        "description": "Project5Description"
+             }
+    ],
+        "teams":[
+            {
+                "memberName": "Casper",
+                "memberRole": "Software Developer"
+                
+            }
+        ]
+    },
+    {
+        "locationId":6,
+        "locationName":"Gothenburg",
+        "siteManager":"Marci",
+        "siteStrength": 11,
+        "technologies":[
+            {
+                "technologyId": 6,
+                "technologyName": "Angular"
+            }
+    ],
+        "projects":[
+             {
+                "id": 6,
+                "name": "X Lab",
+                "description": "Project6Description"
+             }
+    ],
+        "teams":[
+            {
+                "memberName": "Paul",
+                "memberRole": "Web Developer"
+                
+            }
+        ]
+    },
+    {
+        "locationId":7,
+        "locationName":"Lund",
+        "siteManager":"Alizar",
+        "siteStrength": 15,
+        "technologies":[
+            {
+                "technologyId": 7,
+                "technologyName": "React"
+            }
+    ],
+        "projects":[
+             {
+                "id": 7,
+                "name": "Project 404",
+                "description": "Project7Description"
+             }
+    ],
+        "teams":[
+            {
+                
+                "memberName": "Neal",
+                "memberRole": "Front-end Engineer"
+                
+            }
+        ]
+    },
+    {
+        "locationId":8,
+        "locationName":"Oslo",
+        "siteManager":"Ryan",
+        "siteStrength": 10,
+        "technologies":[
+            {
+                "technologyId": 8,
+                "technologyName": "JavaScript"
+            }
+    ],
+        "projects":[
+             {
+                "id": 8,
+                "name": "Manhattan Project",
+                "description": "Project8Description"
+             }
+    ],
+        "teams":[
+            {
+                "memberName": "Hugo",
+                "memberRole": "Multimedia Designer"
+                
+            }
+        ]
+    },
+    {
+        "locationId":9,
+        "locationName":"Bergen",
+        "siteManager":"Hillary",
+        "siteStrength": 15,
+        "technologies":[
+            {
+                "technologyId": 9,
+                "technologyName": "C#,.NET"
+            }
+    ],
+        "projects":[
+             {
+                "id": 9,
+                "name": "Durango",
+                "description": "Project9Description"
              }
     ],
         "teams":[
             {
                 "memberName": "John",
                 "memberRole": "UX/UI designer"
+            }
+        ]
+    },
+    {
+        "locationId":10,
+        "locationName":"Helsinki",
+        "siteManager":"Benjamin",
+        "siteStrength": 7,
+        "technologies":[
+            {
+                "technologyId": 10,
+                "technologyName": "Python"
+            }
+    ],
+        "projects":[
+             {
+                "id": 10,
+                "name": "Apollo",
+                "description": "Project10Description"
+             }
+    ],
+        "teams":[
+            {
+                "memberName": "Martin",
+                "memberRole": "Project Manager"
+                
             }
         ]
     }

@@ -1,28 +1,28 @@
 [
     {
         "id": 1,
-        "name": "Project1",
+        "name": "Titan",
         "description": "Project1Description",
         "projectManager":"Alex",
         "projectDeadline":"26-11-2018",
         "locations": [
             {
-                "locationId":"BLR",
-                "locationName":"Bangalore"
+                "locationId":1,
+                "locationName":"Copenhagen"
             },
             {
-                "locationId":"COP",
-                "locationName":"Copenhagen"
+                "locationId":2,
+                "locationName":"Odense"
             }
         ],
         "technologies": [
             {
-                "technologyId": "JS",
-                "technologyName": "JavaScript"
+                "technologyId": 2,
+                "technologyName": "NLP"
             },
             {
-                "technologyId": "Ang",
-                "technologyName": "Angular"
+                "technologyId": 1,
+                "technologyName": "Machine Learning"
             }
         ]
     },
@@ -34,8 +34,8 @@
         "projectDeadline":"26-11-2018",
         "locations": [
             {
-                "locationId":"BLR",
-                "locationName":"Bangalore"
+                "locationId":1,
+                "locationName":"Copenhagen"
             },
             {
                 "locationId":"COP",
@@ -44,12 +44,12 @@
         ],
         "technologies": [
             {
-                "technologyId": "JS",
-                "technologyName": "JavaScript"
+                "technologyId": 1,
+                "technologyName": "Machine Learning"
             },
             {
-                "technologyId": "Ang",
-                "technologyName": "Angular"
+                "technologyId": 2,
+                "technologyName": "NLP"
             }
         ]
     },
