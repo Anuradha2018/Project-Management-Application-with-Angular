@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Team } from './../models/team';
+import { ExploreTeam } from './../models/explore-team';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class TeamService {
 
   constructor(private httpTeam: HttpClient) { }
-  getAllMembers(): Observable<Team[]> {
-    return this.httpTeam.get<Team[]>('/api/team.json');
+  getAllMembers(): Observable<ExploreTeam[]> {
+    return this.httpTeam.get<ExploreTeam[]>('/api/team.json');
 }
 }

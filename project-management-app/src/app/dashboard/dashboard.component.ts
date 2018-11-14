@@ -3,9 +3,9 @@ import { TaskService } from './../services/task.service';
 import { ProjectService } from './../services/project.service';
 
 import { Component, OnInit } from '@angular/core';
-import { Project } from './../models/project';
+import { ExploreProject } from './../models/explore-project';
 import { Task } from './../models/task';
-import { Team } from './../models/team';
+import { ExploreTeam } from './../models/explore-team';
 
 @Component({
   selector: 'app-dashboard',
@@ -13,9 +13,9 @@ import { Team } from './../models/team';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  projects: Project[];
+  projects: ExploreProject[];
   tasks: Task[];
-  teamMembers: Team[];
+  teamMembers: ExploreTeam[];
   constructor(private projectService: ProjectService, private taskService: TaskService, private teamService: TeamService) {
   }
 

@@ -5,8 +5,8 @@ import { ExploreLocationService } from './../services/explore-location.service';
 
 import { ExploreTeam } from './../models/explore-team';
 import { ExploreProject } from './../models/explore-project';
-import { Location} from './../models/explore-location';
-import { Technology } from './../models/technology';
+import { ExploreLocation} from './../models/explore-location';
+
 
 import { Component, OnInit } from '@angular/core';
 

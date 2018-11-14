@@ -4,8 +4,8 @@ import { ExploreLocationService } from './../services/explore-location.service';
 
 import { ExploreTeam } from './../models/explore-team';
 import { ExploreProject } from './../models/explore-project';
-import { Location} from './../models/explore-location';
-import { Technology } from './../models/technology';
+import { ExploreLocation} from './../models/explore-location';
+
 
 import { Component, OnInit } from '@angular/core';
 import { ExploreLocationsComponent } from './../explore-locations/explore-locations.component';
@@ -43,7 +43,7 @@ export class ExploreTeamsComponent implements OnInit {
     this.exploreTeamService.getExploreTeam()
     .subscribe((exploreTeams) => {
       this.exploreTeams = exploreTeams;
-      this.getTeamDetail(this.exploreTeams[0].teamId);
+      // this.getTeamDetail(this.exploreTeams[0].teamId);
   });
 }
   getTeamDetail(teamId) {
@@ -52,10 +52,10 @@ export class ExploreTeamsComponent implements OnInit {
   }
   getTeamById(teamId): ExploreTeam {
      for (let i = 0; i < this.exploreTeams.length; i++) {
-      if (teamId === this.exploreTeams[i].teamId) {
+     // if (teamId === this.exploreTeams[i].teamId) {
         return this.exploreTeams[i];
       }
      }
   }
 
-}
+// }
