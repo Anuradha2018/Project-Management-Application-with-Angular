@@ -1,13 +1,12 @@
-import { Technology } from './technology';
-import { Project } from './project';
-import { Team } from './team';
+import { Manager } from './manager';
+import { Base } from './base';
 
-export class Location {
-    locationId: number;
-    locationName: string;
-    siteManager: string;
+
+export class ExploreLocation {
+    location: Location;
+    siteManager: Manager;
     siteStrength: string;
-    technologies: Technology[];
-    projects: Project[];
-    teams: Team[];
+    technologies: Base[];
+    projects: Base[];
+    teams: Base[];
 }

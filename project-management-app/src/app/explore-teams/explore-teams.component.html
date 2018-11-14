@@ -36,13 +36,13 @@
             </a>
           </li>
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-            <a class="nav-link" href="">
+            <a class="nav-link" [routerLink]="['/explore']">
                 <i class="fas fa-bars"></i>&nbsp;
               <span class="nav-link-text">Explore</span>
             </a>
           </li>
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-            <a class="nav-link"[routerLink]="['/explore']">
+            <a class="nav-link"[routerLink]="['/reports']">
                 <i class="fas fa-inbox"></i>&nbsp;
               <span class="nav-link-text">Reports</span>
             </a>
@@ -140,7 +140,7 @@
                               <div class="input-group ">
                                   <div class="dropdown input-group-addon show-on-hover pull-left">
                                       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                          Select
+                                         Teams
                                       </button>
                                       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                           <a class="dropdown-item" [routerLink]="['/explore/projects']">Project</a>

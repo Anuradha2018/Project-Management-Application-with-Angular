@@ -18,6 +18,7 @@ import { ExploreLocationsComponent } from './explore-locations/explore-locations
 import { ExploreProjectsComponent } from './explore-projects/explore-projects.component';
 import { ExploreTeamsComponent } from './explore-teams/explore-teams.component';
 import { TechnologyComponent } from './technology/technology.component';
+import { ReportsComponent } from './reports/reports.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { TechnologyComponent } from './technology/technology.component';
     ExploreLocationsComponent,
     ExploreProjectsComponent,
     ExploreTeamsComponent,
-    TechnologyComponent
+    TechnologyComponent,
+    ReportsComponent
   ],
   imports: [
     BrowserModule,

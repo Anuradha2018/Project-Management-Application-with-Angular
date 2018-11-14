@@ -1,12 +1,15 @@
-import { Team } from './team';
-import { Project } from './project';
+import { Manager } from './manager';
+import { TeamMember } from './team-member';
+import { Base } from './base';
+
 
 export class ExploreTeam {
-    teamId: number;
-    locationName: string;
-    teamLead: string;
+    team: Base;
+    location: Location;
+    manager: Manager;
     teamSize: number;
-    teamMembers: Team[];
-    currentProjects: Project[];
+    teamMembers: TeamMember[];
+    currentProjects: Base[];
+    technologies: Base[];
 
 }

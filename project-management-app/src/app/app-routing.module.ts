@@ -1,3 +1,4 @@
+import { ReportsComponent } from './reports/reports.component';
 import { TechnologyComponent } from './technology/technology.component';
 import { ExploreTeamsComponent } from './explore-teams/explore-teams.component';
 import { ExploreProjectsComponent } from './explore-projects/explore-projects.component';
@@ -27,7 +28,8 @@ const routes: Routes = [
   { path: 'explore/locations', component: ExploreLocationsComponent },
   { path: 'explore/projects', component: ExploreProjectsComponent},
   { path: 'explore/teams', component: ExploreTeamsComponent},
-  { path: 'explore/technology', component: TechnologyComponent }
+  { path: 'explore/technology', component: TechnologyComponent },
+  { path: 'reports', component: ReportsComponent }
 ];
 
 @NgModule({
