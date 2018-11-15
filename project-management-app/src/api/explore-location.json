@@ -363,48 +363,77 @@
         "siteStrength": 15,
         "technologies":[
             {
-                "technologyId": 9,
-                "technologyName": "C#,.NET"
+                "id": 7,
+                "name": "Project 404"
+            },
+            {
+                "id": 8,
+                "name": "Manhattan Project"
             }
-    ],
+     ],
         "projects":[
              {
                 "id": 9,
-                "name": "Durango",
-                "description": "Project9Description"
+                "name": "X Lab"
+             },
+             {
+                "id": 9,
+                "name": "Project 404"
              }
     ],
         "teams":[
             {
-                "memberName": "John",
-                "memberRole": "UX/UI designer"
+               "id": 17,
+               "name": "The Swift Wombats"
+            },
+            {
+               "id": 18,
+               "name": "The Fantastic Badgers"
             }
-        ]
+   ]
     },
     {
         "locationId":10,
         "locationName":"Helsinki",
-        "siteManager":"Benjamin",
+        "siteManager":[
+            {
+                "id": 3,
+                "name":"Martin",
+                "role": "Manager"
+            }
+
+        ],
         "siteStrength": 7,
         "technologies":[
             {
-                "technologyId": 10,
-                "technologyName": "Python"
+                "id": 7,
+                "name": "React"
+            },
+            {
+                "id": 8,
+                "name": "JavaScript"
             }
     ],
         "projects":[
-             {
-                "id": 10,
-                "name": "Apollo",
-                "description": "Project10Description"
-             }
+            {
+                "id": 8,
+                "name": "Manhattan Project"
+            },
+            {
+                "id": 9,
+                "name": "Durango"
+            }
+           
     ],
         "teams":[
             {
-                "memberName": "Martin",
-                "memberRole": "Project Manager"
-                
-            }
+                "id": 19,
+                "name": "The Amazing Pythons"
+             },
+             {
+                "id": 20,
+                "name": "The Storm Turkeys"
+             }
         ]
     }
 ]
