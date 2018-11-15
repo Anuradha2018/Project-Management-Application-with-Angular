@@ -307,25 +307,44 @@
     {
         "locationId":8,
         "locationName":"Oslo",
-        "siteManager":"Ryan",
+        "siteManager":
+        [
+            {
+            "id": 1,
+            "name":"Joe",
+            "role": "Manager"
+        }
+    ],
         "siteStrength": 10,
         "technologies":[
             {
-                "technologyId": 8,
-                "technologyName": "JavaScript"
+                "id": 5,
+                "name": "Amazon (AWS)"
+            },
+            {
+                "id": 6,
+                "name": "Angular"
             }
     ],
         "projects":[
-             {
-                "id": 8,
-                "name": "Manhattan Project",
-                "description": "Project8Description"
-             }
-    ],
+            {
+               "id": 4,
+               "name": "Code Talkers"
+           },
+           {
+               "id": 5,
+               "name": "Project Blue Book"
+           }
+   ],
         "teams":[
             {
-                "memberName": "Hugo",
-                "memberRole": "Multimedia Designer"
+                "id": 15,
+                "name": "The Fiery Hogs"
+                
+            },
+            {
+                "id": 16,
+                "name": "The Hard Royals"
                 
             }
         ]
@@ -333,7 +352,14 @@
     {
         "locationId":9,
         "locationName":"Bergen",
-        "siteManager":"Hillary",
+        "siteManager":[
+            {
+                "id": 2,
+                "name":"Alex",
+                "role": "Manager"
+            }
+
+        ],
         "siteStrength": 15,
         "technologies":[
             {
