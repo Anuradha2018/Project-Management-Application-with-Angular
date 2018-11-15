@@ -2,183 +2,306 @@
     {
         "locationId":1,
         "locationName":"Copenhagen",
-        "siteManager":"Joe",
+        "siteManager":[
+            {
+                "id": 1,
+                "name":"Joe",
+                "role": "Manager"
+            }
+
+        ],
         "siteStrength": 5,
         "technologies":[
             {
-                "technologyId": 2,
-                "technologyName": "NLP"
+                "id": 2,
+                "name": "NLP"
+            },
+            {
+                "id": 3,
+                "name": "Java Enterprise"
             }
     ],
         "projects":[
              {
                 "id": 1,
-                "name": "Titan",
-                "description": "Project1Description"
+                "name": "Titan"
+             },
+             {
+                "id": 2,
+                "name": "Project Hanks"
              }
     ],
         "teams":[
             {
-                "memberName": "John",
-                "memberRole": "UX/UI designer"
+                "id": 1,
+                "name":"The Major Eagles"
+            },
+            {
+                "id": 1,
+                "name":"The Grand Cats"
             }
         ]
     },
     {
         "locationId":2,
         "locationName":"Odense",
-        "siteManager":"Alex",
+        "siteManager":
+        [
+            {
+                "id": 2,
+                "name":"Alex",
+                "role": "Manager"
+            }
+
+        ],
         "siteStrength": 15,
         "technologies":[
             {
-                "technologyId": 1,
-                "technologyName": "Machine Learning"
+                "id": 4,
+                "name": "Visa Payments"
+            },
+            {
+                "id": 5,
+                "name": "Amazon (AWS)"
             }
     ],
         "projects":[
              {
                 "id": 2,
-                "name": "Project Hanks",
-                "description": "Project2Description"
+                "name": "Project Hanks"
+             },
+             {
+                "id": 3,
+                "name": "Kodiak"
              }
     ],
         "teams":[
         {
-            "memberName": "Martin",
-            "memberRole": "Project Manager"
-            
-        }
+            "id": 3,
+            "name":"The Grave Sirens"
+        },
+        {
+            "id": 4,
+            "name":"The True Ravens"
+        } 
         ]
     },
     {
         "locationId":3,
         "locationName":"Aarhus",
-        "siteManager":"Jill",
+        "siteManager":[
+            {
+                "id": 3,
+                "name":"Martin",
+                "role": "Manager"
+            }
+
+        ],
         "siteStrength": 25,
         "technologies":[
             {
-                "technologyId": 3,
-                "technologyName": "Java Enterprise"
+                "id": 5,
+                "name": "Amazon (AWS)"
+            },
+            {
+                "id": 6,
+                "name": "Angular"
             }
     ],
         "projects":[
              {
-                "id": 3,
-                "name": "Kodiak",
-                "description": "Project3Description"
-             }
+                "id": 4,
+                "name": "Code Talkers"
+            },
+            {
+                "id": 5,
+                "name": "Project Blue Book"
+            }
     ],
         "teams":[
             {
                 
-                "memberName": "Jill",
-                "memberRole": "Front-end Developer"
+                "id": 5,
+                "name": "The Steel Wolves"
+            },
+            {
+                
+                "id": 6,
+                "name": "The Valiant Claws"
             }
         ]
     },
     {
         "locationId":4,
         "locationName":"Aalborg",
-        "siteManager":"Joe",
+        "siteManager": [
+            {
+            "id": 1,
+            "name":"Joe",
+            "role": "Manager"
+        }
+    ],
         "siteStrength": 5,
         "technologies":[
             {
-                "technologyId": 4,
-                "technologyName": "Visa Payments"
+                "id": 7,
+                "name": "React"
+            },
+            {
+                "id": 8,
+                "name": "JavaScript"
             }
     ],
         "projects":[
-             {
-                "id": 4,
-                "name": "Code Talkers",
-                "description": "Project4Description"
-             }
-    ],
+            {
+                "id": 7,
+                "name": "Project 404"
+            },
+            {
+                "id": 8,
+                "name": "Manhattan Project"
+            }
+     ],
         "teams":[
             {
-                "memberName": "Mark",
-                "memberRole": "Quality Assurance engineer"
+                "id": 7,
+                "name": "The Happy Toucans"
+            },
+            {
+                "id": 8,
+                "name": "The Red Beluga Whales"
             }
         ]
     },
     {
         "locationId":5,
         "locationName":"Stockholm",
-        "siteManager":"Dan",
+        "siteManager":
+        [
+            {
+                "id": 2,
+                "name":"Alex",
+                "role": "Manager"
+            }
+
+        ],
         "siteStrength": 7,
         "technologies":[
             {
-                "technologyId": 5,
-                "technologyName": "Amazon (AWS)"
+                "technologyId": 9,
+                "technologyName": "C#,.NET"
+            },
+            {
+                "technologyId": 10,
+                "technologyName": "Python"
             }
     ],
         "projects":[
              {
-           
-        "id": 5,
-        "name": "Project Blue Book",
-        "description": "Project5Description"
+                "id": 9,
+                "name": "Durango"
+             },
+             {
+                "id": 10,
+                "name": "Apollo"
              }
     ],
         "teams":[
             {
-                "memberName": "Casper",
-                "memberRole": "Software Developer"
-                
+                "id":9,
+                "name":"The Handsome Boars"
+            },
+            {
+                "id":10,
+                "name":"The Wild Tornadoes"
             }
         ]
     },
     {
         "locationId":6,
         "locationName":"Gothenburg",
-        "siteManager":"Marci",
+        "siteManager":
+        [
+            {
+                "id": 3,
+                "name":"Martin",
+                "role": "Manager"
+            }
+
+        ],
         "siteStrength": 11,
         "technologies":[
             {
-                "technologyId": 6,
-                "technologyName": "Angular"
+                "id": 1,
+                "name": "Machine Learning"
+            },
+            {
+                "id": 2,
+                "name": "NLP"
             }
     ],
         "projects":[
              {
-                "id": 6,
-                "name": "X Lab",
-                "description": "Project6Description"
+                "id": 1,
+                "name": "Titan"
+             },
+             {
+                "id": 2,
+                "name": "Project Hanks"
              }
     ],
         "teams":[
             {
-                "memberName": "Paul",
-                "memberRole": "Web Developer"
-                
+                "id": 11,
+                "name": "The Rapid Pumas"
+            },
+            {
+                "id": 12,
+                "name": "The Flying Titans"
             }
         ]
     },
     {
         "locationId":7,
         "locationName":"Lund",
-        "siteManager":"Alizar",
+        "siteManager":[
+            {
+                "id": 2,
+                "name":"Alex",
+                "role": "Manager"
+            }
+
+        ],
         "siteStrength": 15,
         "technologies":[
             {
-                "technologyId": 7,
-                "technologyName": "React"
+                "id": 3,
+                "name": "Java Enterprise"
+            },
+            {
+                "id": 4,
+                "name": "Visa Payments"
             }
     ],
         "projects":[
+            {
+                "id": 2,
+                "name": "Project Hanks"
+             },
              {
-                "id": 7,
-                "name": "Project 404",
-                "description": "Project7Description"
+                "id": 3,
+                "name": "Kodiak"
              }
     ],
         "teams":[
             {
-                
-                "memberName": "Neal",
-                "memberRole": "Front-end Engineer"
-                
-            }
+                "id": 13,
+                "name": "The Big Gnomes"
+             },
+             {
+                "id": 14,
+                "name": "The Storm Turkeys"
+             }
         ]
     },
     {

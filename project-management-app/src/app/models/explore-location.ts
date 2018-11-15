@@ -3,9 +3,9 @@ import { Base } from './base';
 
 
 export class ExploreLocation {
-    location: Location;
+    location: Base;
     siteManager: Manager;
-    siteStrength: string;
+    siteStrength: number;
     technologies: Base[];
     projects: Base[];
     teams: Base[];

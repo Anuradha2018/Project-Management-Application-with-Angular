@@ -7,7 +7,7 @@ export class ExploreProject {
     description: string;
     projectManager: Manager;
     projectDeadline: Date;
-    locations: Location[];
+    locations: Base[];
     teams: Base[];
     technologies: Base[];
 }
