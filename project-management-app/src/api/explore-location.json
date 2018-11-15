@@ -1,7 +1,7 @@
 [
     {
-        "locationId":1,
-        "locationName":"Copenhagen",
+        "id":1,
+        "name":"Copenhagen",
         "siteManager":[
             {
                 "id": 1,
@@ -43,8 +43,8 @@
         ]
     },
     {
-        "locationId":2,
-        "locationName":"Odense",
+        "id":2,
+        "name":"Odense",
         "siteManager":
         [
             {
@@ -87,8 +87,8 @@
         ]
     },
     {
-        "locationId":3,
-        "locationName":"Aarhus",
+        "id":3,
+        "name":"Aarhus",
         "siteManager":[
             {
                 "id": 3,
@@ -132,8 +132,8 @@
         ]
     },
     {
-        "locationId":4,
-        "locationName":"Aalborg",
+        "id":4,
+        "name":"Aalborg",
         "siteManager": [
             {
             "id": 1,
@@ -174,8 +174,8 @@
         ]
     },
     {
-        "locationId":5,
-        "locationName":"Stockholm",
+        "id":5,
+        "name":"Stockholm",
         "siteManager":
         [
             {
@@ -218,8 +218,8 @@
         ]
     },
     {
-        "locationId":6,
-        "locationName":"Gothenburg",
+        "id":6,
+        "name":"Gothenburg",
         "siteManager":
         [
             {
@@ -262,8 +262,8 @@
         ]
     },
     {
-        "locationId":7,
-        "locationName":"Lund",
+        "id":7,
+        "name":"Lund",
         "siteManager":[
             {
                 "id": 2,
@@ -305,8 +305,8 @@
         ]
     },
     {
-        "locationId":8,
-        "locationName":"Oslo",
+        "id":8,
+        "name":"Oslo",
         "siteManager":
         [
             {
@@ -350,8 +350,8 @@
         ]
     },
     {
-        "locationId":9,
-        "locationName":"Bergen",
+        "id":9,
+        "name":"Bergen",
         "siteManager":[
             {
                 "id": 2,
@@ -393,8 +393,8 @@
    ]
     },
     {
-        "locationId":10,
-        "locationName":"Helsinki",
+        "id":10,
+        "name":"Helsinki",
         "siteManager":[
             {
                 "id": 3,
