@@ -1,7 +1,7 @@
 [
     {
-        "teamId": 1,
-        "locationName": "Pune",
+        "id": 1,
+        "name": "Pune",
         "teamLead":"Jill",
         "teamSize":5,
         "teamMembers": [

@@ -5,7 +5,7 @@ import { Base } from './base';
 
 export class ExploreTeam {
     team: Base;
-    location: Location;
+    location: Base;
     manager: Manager;
     teamSize: number;
     teamMembers: TeamMember[];

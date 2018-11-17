@@ -1,7 +1,11 @@
 [
     {
-        "id":1,
-        "name":"Copenhagen",
+        "location": [
+            {
+                "id":1,
+                "name":"Copenhagen"
+            }
+        ],
         "siteManager":[
             {
                 "id": 1,

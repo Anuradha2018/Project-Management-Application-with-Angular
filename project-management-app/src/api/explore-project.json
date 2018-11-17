@@ -7,18 +7,29 @@
         "projectDeadline":"26-11-2018",
         "locations": [
             {
-                "locationId":1,
-                "locationName":"Copenhagen"
+                "id":1,
+                "name":"Copenhagen"
+            }
+        ],
+        
+        "teams":[
+            {
+                "id": 1,
+                "name":"The Major Eagles"
+            },
+            {
+                "id": 1,
+                "name":"The Grand Cats"
             }
         ],
         "technologies": [
             {
-                "technologyId": 2,
-                "technologyName": "NLP"
+                "id": 2,
+                "name": "NLP"
             },
             {
-                "technologyId": 1,
-                "technologyName": "Machine Learning"
+                "id": 1,
+                "name": "Machine Learning"
             }
         ]
     },
@@ -30,18 +41,28 @@
         "projectDeadline":"26-11-2018",
         "locations": [
             {
-                "locationId":2,
-                "locationName":"Odense"
+                "id":2,
+                "name":"Odense"
             }
         ],
-        "technologies": [
+        "teams":[
             {
-                "technologyId": 1,
-                "technologyName": "Machine Learning"
+                "id": 3,
+                "name":"The Grave Sirens"
             },
             {
-                "technologyId": 2,
-                "technologyName": "NLP"
+                "id": 4,
+                "name":"The True Ravens"
+            } 
+            ],
+        "technologies": [
+            {
+                "id": 1,
+                "name": "Machine Learning"
+            },
+            {
+                "id": 2,
+                "name": "NLP"
             }
         ]
     },
@@ -53,14 +74,26 @@
         "projectDeadline":"26-11-2018",
         "locations": [
             {
-                "locationId":4,
-                "locationName":"Aalborg"
+                "id":4,
+                "name":"Aalborg"
+            }
+        ],
+        "teams":[
+            {
+                
+                "id": 5,
+                "name": "The Steel Wolves"
+            },
+            {
+                
+                "id": 6,
+                "name": "The Valiant Claws"
             }
         ],
         "technologies": [
             {
-                "technologyId": 4,
-                "technologyName": "Visa Payments"
+                "id": 4,
+                "name": "Visa Payments"
             }
         ]
     },
@@ -72,15 +105,25 @@
         "projectDeadline":"26-11-2018",
         "locations": [
             {
-                "locationId":4,
-                "locationName":"Aalborg"
+                "id":4,
+                "name":"Aalborg"
+            }
+        ],
+        "teams":[
+            {
+                "id": 7,
+                "name": "The Happy Toucans"
+            },
+            {
+                "id": 8,
+                "name": "The Red Beluga Whales"
             }
         ],
         "technologies": [
             {
                 
-                    "technologyId": 4,
-                    "technologyName": "Visa Payments"
+                "id": 4,
+                "name": "Visa Payments"
                 
             }
         ]
@@ -93,14 +136,24 @@
         "projectDeadline":"26-11-2018",
         "locations": [
             {
-                "locationId":5,
-                "locationName":"Stockholm"
+                "id":5,
+                "name":"Stockholm"
+            }
+        ],
+        "teams":[
+            {
+                "id":9,
+                "name":"The Handsome Boars"
+            },
+            {
+                "id":10,
+                "name":"The Wild Tornadoes"
             }
         ],
         "technologies": [
             {
-                "technologyId": 5,
-                "technologyName": "Amazon (AWS)"
+                "id": 5,
+                "name": "Amazon (AWS)"
             }
         ]
     },
@@ -112,14 +165,24 @@
         "projectDeadline":"26-11-2018",
         "locations": [
             {   
-                "locationId":6,
-                "locationName":"Gothenburg"
+                "id":6,
+                "name":"Gothenburg"
+            }
+        ],
+        "teams":[
+            {
+                "id": 11,
+                "name": "The Rapid Pumas"
+            },
+            {
+                "id": 12,
+                "name": "The Flying Titans"
             }
         ],
         "technologies": [
             {
-                "technologyId": 6,
-                "technologyName": "Angular"
+                "id": 6,
+                "name": "Angular"
             }
         ]
     },
@@ -131,14 +194,24 @@
         "projectDeadline":"26-11-2018",
         "locations": [
             {
-                "locationId":7,
-                "locationName":"Lund"
+                "id":7,
+                "name":"Lund"
+            }
+        ],
+        "teams":[
+            {
+                "id": 11,
+                "name": "The Rapid Pumas"
+            },
+            {
+                "id": 12,
+                "name": "The Flying Titans"
             }
         ],
         "technologies": [
             {
-                "technologyId": 7,
-                "technologyName": "React"
+                "id": 7,
+                "name": "React"
             }
         ]
     },
@@ -150,14 +223,24 @@
         "projectDeadline":"26-11-2018",
         "locations": [
             {
-                "locationId":8,
-                "locationName":"Oslo"
+                "id":8,
+                "name":"Oslo"
             }
+        ],
+        "teams":[
+            {
+                "id": 13,
+                "name": "The Big Gnomes"
+             },
+             {
+                "id": 14,
+                "name": "The Storm Turkeys"
+             }
         ],
         "technologies": [
             {
-                "technologyId": 8,
-                "technologyName": "JavaScript"
+                "id": 8,
+                "name": "JavaScript"
             }
         ]
     },
@@ -169,14 +252,26 @@
         "projectDeadline":"26-11-2018",
         "locations": [
             {
-                "locationId":8,
-                "locationName":"Oslo"
+                "id":8,
+                "name":"Oslo"
+            }
+        ],
+        "teams":[
+            {
+                "id": 15,
+                "name": "The Fiery Hogs"
+                
+            },
+            {
+                "id": 16,
+                "name": "The Hard Royals"
+                
             }
         ],
         "technologies": [
             {
-                "technologyId": 8,
-                "technologyName": "JavaScript"
+                "id": 8,
+                "name": "JavaScript"
             }
         ]
     },
@@ -188,14 +283,24 @@
         "projectDeadline":"26-11-2018",
         "locations": [
             {
-                "locationId":10,
-                "locationName":"Helsinki"
+                "id":10,
+                "name":"Helsinki"
             }
         ],
+        "teams":[
+            {
+               "id": 17,
+               "name": "The Swift Wombats"
+            },
+            {
+               "id": 18,
+               "name": "The Fantastic Badgers"
+            }
+   ],
         "technologies": [
             {
-                "technologyId": 10,
-                "technologyName": "Python"
+                "id": 10,
+                "name": "Python"
             }
         ]
     }
