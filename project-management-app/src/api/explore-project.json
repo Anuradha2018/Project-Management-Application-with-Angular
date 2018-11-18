@@ -74,8 +74,8 @@
         "projectDeadline":"26-11-2018",
         "locations": [
             {
-                "id":4,
-                "name":"Aalborg"
+                "id":3,
+                "name":"Aahrus"
             }
         ],
         "teams":[
@@ -91,6 +91,10 @@
             }
         ],
         "technologies": [
+            {
+                "id": 3,
+                "name": "Java Enterprise"
+            },
             {
                 "id": 4,
                 "name": "Visa Payments"
@@ -125,6 +129,10 @@
                 "id": 4,
                 "name": "Visa Payments"
                 
+            },
+            {
+                "id": 5,
+                "name": "Amazon (AWS)"
             }
         ]
     },
