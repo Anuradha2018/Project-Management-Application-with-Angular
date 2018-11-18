@@ -1,8 +1,24 @@
 [
     {
-        "id": 1,
-        "name": "Pune",
-        "teamLead":"Jill",
+        "teams":[
+        {
+            "id": 1,
+            "name":"The Major Eagles"
+        }
+        ],
+        "location": [
+        {
+            "id":1,
+            "name":"Copenhagen"
+        }
+         ],
+        "manager":[
+        {
+            "id":1,
+            "name":"Jill",
+            "role": "Manager"
+        }
+        ],
         "teamSize":5,
         "teamMembers": [
             {
@@ -10,140 +26,303 @@
                 "memberRole": "Back-end Developer"
                 
             }
-        ],
+            ],
         "currentProjects": [
             {
                 "id": 1,
-                "name": "Project1",
-                "description": "Project1Description"
+                "name": "Titan"
             }
            
-        ]
+            ],
+        "technologies":[
+            {
+                "id": 2,
+                "name": "NLP"
+            },
+            {
+                "id": 3,
+                "name": "Java Enterprise"
+            }
+            ]
     },
     {
-        "teamId": 2,
-        "locationName": "Hyd",
-        "teamLead":"Jill",
+        "teams":[
+        {
+            "id": 2,
+            "name":"The Grand Cats"
+        }
+        ],
+    "location": [
+        {
+            "id":2,
+            "name":"Odense"
+        }
+        ],
+    "manager":[
+        {
+            "id":1,
+            "name":"Jill",
+            "role": "Manager"
+        }
+        ],
         "teamSize":5,
         "teamMembers": [
             {
-                "memberName": "Alex",
-                "memberRole": "Back-end Developer"
+                "memberName": "Paul",
+                "memberRole": "Web Developer"
                 
             }
         ],
         "currentProjects": [
             {
-                "id": 1,
-                "name": "Project1",
-                "description": "Project1Description"
+                "id": 2,
+                "name": "Project Hanks"
             }
            
-        ]
+        ],
+        "technologies":[
+            {
+                "id": 4,
+                "name": "Visa Payments"
+            },
+            {
+                "id": 5,
+                "name": "Amazon (AWS)"
+            }
+    ]
     },
     {
-        "teamId": 2,
-        "locationName": "Hyd",
-        "teamLead":"Jill",
+        "teams":[
+            {
+                "id": 19,
+                "name": "The Amazing Pythons"
+            }
+            ],
+        "location": [
+                {
+                    "id":10,
+                    "name":"Helsinki"
+                }
+            ],
+        "manager":[
+            {
+                "id":1,
+                "name":"Jill",
+                "role": "Manager"
+            }
+            ],
         "teamSize":5,
         "teamMembers": [
             {
-                "memberName": "Alex",
-                "memberRole": "Back-end Developer"
+                "memberName": "Elisa",
+                "memberRole": "Web Developer"
                 
             }
         ],
         "currentProjects": [
             {
-                "id": 1,
-                "name": "Project1",
-                "description": "Project1Description"
-            }
+                
+                "id": 8,
+                "name": "Manhattan Project"
+             }
            
-        ]
+        ],
+        "technologies":[
+            {
+                "id": 5,
+                "name": "Amazon (AWS)"
+            },
+            {
+                "id": 6,
+                "name": "Angular"
+            }
+    ]
     },
     {
-        "teamId": 2,
-        "locationName": "Hyd",
-        "teamLead":"Jill",
+        "teams":[
+            {
+                "id": 4,
+                "name":"The True Ravens"
+            }
+            ],
+        "location": [
+                {
+                    "id":3,
+                    "name":"Aarhus"
+                }
+            ],
+        "manager":[
+            {
+                "id":1,
+                "name":"Joe",
+                "role": "Manager"
+            }
+            ],
         "teamSize":5,
         "teamMembers": [
             {
-                "memberName": "Alex",
-                "memberRole": "Back-end Developer"
+                "memberName": "Tobias",
+                "memberRole": "Multimedia Designer"
                 
             }
         ],
         "currentProjects": [
             {
-                "id": 1,
-                "name": "Project1",
-                "description": "Project1Description"
+                "id": 4,
+                "name": "Code Talkers"
             }
            
-        ]
+        ],
+        "technologies":[
+            {
+                "id": 7,
+                "name": "React"
+            },
+            {
+                "id": 8,
+                "name": "JavaScript"
+            }
+    ]
     },
     {
-        "teamId": 2,
-        "locationName": "Hyd",
-        "teamLead":"Jill",
+        
+        "teams":[
+            {
+                "id": 4,
+                "name":"The True Ravens"
+            }
+            ],
+        "location": [
+                {
+                    "id":4,
+                    "name":"Aalborg"
+                }
+            ],
+        "manager":[
+            {
+                "id":1,
+                "name":"Joe",
+                "role": "Manager"
+            }
+            ],
         "teamSize":5,
         "teamMembers": [
             {
-                "memberName": "Alex",
-                "memberRole": "Back-end Developer"
+                "memberName": "Dan",
+                "memberRole": "Automation Engineer"
                 
             }
         ],
         "currentProjects": [
             {
-                "id": 1,
-                "name": "Project1",
-                "description": "Project1Description"
+                "id": 5,
+                "name": "Project Blue Book"
             }
            
-        ]
+        ],
+        "technologies":[
+            {
+                "technologyId": 9,
+                "technologyName": "C#,.NET"
+            },
+            {
+                "technologyId": 10,
+                "technologyName": "Python"
+            }
+    ]
     },
     {
-        "teamId": 2,
-        "locationName": "Hyd",
-        "teamLead":"Jill",
+        
+        "teams":[
+            {
+                "id": 5,
+                "name": "The Steel Wolves"
+            }
+            ],
+        "location": [
+            {
+                "id":5,
+                "name":"Stockholm"
+            }
+            ],
+        "manager":[
+            {
+                "id":1,
+                "name":"Martin",
+                "role": "Manager"
+            }
+            ],
         "teamSize":5,
         "teamMembers": [
             {
-                "memberName": "Alex",
-                "memberRole": "Back-end Developer"
+                "memberName": "Tom",
+                "memberRole": "Software Developer"
                 
             }
         ],
         "currentProjects": [
             {
-                "id": 1,
-                "name": "Project1",
-                "description": "Project1Description"
-            }
+                "id": 10,
+                "name": "Apollo"
+             }
            
-        ]
+        ],
+        "technologies":[
+            {
+                "id": 1,
+                "name": "Machine Learning"
+            },
+            {
+                "id": 2,
+                "name": "NLP"
+            }
+    ]
     },
     {
-        "teamId": 2,
-        "locationName": "Hyd",
-        "teamLead":"Jill",
-        "teamSize":5,
+        "teams":[
+            {
+                "id": 11,
+                "name": "The Rapid Pumas"
+            }
+            ],
+        "location": [
+            {
+                "id":9,
+                "name":"Gothenburg"
+            }
+            ],
+        "manager":[
+            {
+                "id":1,
+                "name":"Martin",
+                "role": "Manager"
+            }
+            ],
+        "teamSize":7,
         "teamMembers": [
             {
-                "memberName": "Alex",
-                "memberRole": "Back-end Developer"
+                "memberName": "Paul",
+                "memberRole": "Web Developer"
                 
             }
         ],
         "currentProjects": [
             {
-                "id": 1,
-                "name": "Project1",
-                "description": "Project1Description"
+                "id": 2,
+                "name": "Project Hanks"
+                
             }
            
-        ]
+        ],
+        "technologies":[
+            {
+                "id": 3,
+                "name": "Java Enterprise"
+            },
+            {
+                "id": 4,
+                "name": "Visa Payments"
+            }
+    ]
     }
 ]

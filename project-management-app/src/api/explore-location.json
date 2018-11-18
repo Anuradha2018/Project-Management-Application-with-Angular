@@ -41,14 +41,18 @@
                 "name":"The Major Eagles"
             },
             {
-                "id": 1,
+                "id": 2,
                 "name":"The Grand Cats"
             }
         ]
     },
     {
-        "id":2,
-        "name":"Odense",
+        "location": [
+            {
+                "id":2,
+                "name":"Odense"
+            }
+        ],
         "siteManager":
         [
             {
@@ -91,8 +95,12 @@
         ]
     },
     {
-        "id":3,
-        "name":"Aarhus",
+        "location": [
+            {
+                "id":3,
+                "name":"Aarhus"
+            }
+        ],
         "siteManager":[
             {
                 "id": 3,
@@ -136,8 +144,12 @@
         ]
     },
     {
-        "id":4,
-        "name":"Aalborg",
+        "location": [
+            {
+                "id":4,
+            "name":"Aalborg"
+            }
+        ],
         "siteManager": [
             {
             "id": 1,
@@ -178,9 +190,13 @@
         ]
     },
     {
-        "id":5,
-        "name":"Stockholm",
-        "siteManager":
+        "location": [
+            {
+                "id":5,
+                "name":"Stockholm"
+            }
+        ],
+         "siteManager":
         [
             {
                 "id": 2,
@@ -222,9 +238,13 @@
         ]
     },
     {
-        "id":6,
-        "name":"Gothenburg",
-        "siteManager":
+    "location": [
+            {
+                "id":9,
+                "name":"Gothenburg"
+            }
+        ],
+    "siteManager":
         [
             {
                 "id": 3,
@@ -266,8 +286,12 @@
         ]
     },
     {
-        "id":7,
-        "name":"Lund",
+        "location": [
+            {
+                "id":7,
+                "name":"Lund"
+            }
+        ],
         "siteManager":[
             {
                 "id": 2,
@@ -309,8 +333,12 @@
         ]
     },
     {
-        "id":8,
-        "name":"Oslo",
+        "location": [
+            {
+                "id":8,
+                "name":"Oslo"
+            }
+        ],
         "siteManager":
         [
             {
@@ -354,8 +382,13 @@
         ]
     },
     {
-        "id":9,
-        "name":"Bergen",
+        
+        "location": [
+            {
+                "id":9,
+                "name":"Bergen"
+            }
+        ],
         "siteManager":[
             {
                 "id": 2,
@@ -397,8 +430,13 @@
    ]
     },
     {
-        "id":10,
-        "name":"Helsinki",
+        
+        "location": [
+            {
+                "id":10,
+                "name":"Helsinki"
+            }
+        ],
         "siteManager":[
             {
                 "id": 3,

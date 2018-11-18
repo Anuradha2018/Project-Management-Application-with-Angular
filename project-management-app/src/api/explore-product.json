@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "name": "steway",
+        "description": "product1description",
+        "manager":[
+            {
+                "id":1,
+                "name":"Jill",
+                "role": "Manager"
+            }
+            ],
+        "location": [
+                {
+                    "id":1,
+                    "name":"Copenhagen"
+                }
+            ],
+        "technologies":[
+                {
+                    "id": 2,
+                    "name": "NLP"
+                },
+                {
+                    "id": 3,
+                    "name": "Java Enterprise"
+                }
+            ],
+        "teams":[
+                {
+                    "id": 2,
+                    "name":"The Grand Cats"
+                }
+            ],
+        "program":[
+            {
+                "id": 1,
+                "name":""
+            }
+        ]
+
+    }
+]
