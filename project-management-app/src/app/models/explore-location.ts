@@ -3,7 +3,8 @@ import { Base } from './base';
 
 
 export class ExploreLocation {
-    location: Base;
+    id: number;
+    name: string;
     siteManager: Manager;
     siteStrength: number;
     technologies: Base[];
