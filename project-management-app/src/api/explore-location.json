@@ -1,11 +1,8 @@
 [
     {
-        "location": [
-            {
-                "id":1,
-                "name":"Copenhagen"
-            }
-        ],
+        
+        "id":1,
+        "name":"Copenhagen",
         "siteManager":[
             {
                 "id": 1,
@@ -47,12 +44,10 @@
         ]
     },
     {
-        "location": [
-            {
-                "id":2,
-                "name":"Odense"
-            }
-        ],
+      
+        "id":2,
+        "name":"Odense",
+       
         "siteManager":
         [
             {
@@ -94,13 +89,9 @@
         } 
         ]
     },
-    {
-        "location": [
-            {
-                "id":3,
-                "name":"Aarhus"
-            }
-        ],
+    {   
+        "id":3,
+        "name":"Aarhus",
         "siteManager":[
             {
                 "id": 3,
@@ -144,12 +135,8 @@
         ]
     },
     {
-        "location": [
-            {
-                "id":4,
-            "name":"Aalborg"
-            }
-        ],
+        "id":4,
+        "name":"Aalborg",
         "siteManager": [
             {
             "id": 1,
@@ -190,12 +177,8 @@
         ]
     },
     {
-        "location": [
-            {
-                "id":5,
-                "name":"Stockholm"
-            }
-        ],
+        "id":5,
+        "name":"Stockholm",
          "siteManager":
         [
             {
@@ -238,12 +221,8 @@
         ]
     },
     {
-    "location": [
-            {
-                "id":9,
-                "name":"Gothenburg"
-            }
-        ],
+    "id":9,
+    "name":"Gothenburg",
     "siteManager":
         [
             {
@@ -286,12 +265,9 @@
         ]
     },
     {
-        "location": [
-            {
-                "id":7,
-                "name":"Lund"
-            }
-        ],
+       
+        "id":7,
+        "name":"Lund",
         "siteManager":[
             {
                 "id": 2,
@@ -333,12 +309,9 @@
         ]
     },
     {
-        "location": [
-            {
-                "id":8,
-                "name":"Oslo"
-            }
-        ],
+        
+        "id":8,
+        "name":"Oslo",
         "siteManager":
         [
             {
@@ -382,13 +355,8 @@
         ]
     },
     {
-        
-        "location": [
-            {
-                "id":9,
-                "name":"Bergen"
-            }
-        ],
+       "id":9,
+        "name":"Bergen",
         "siteManager":[
             {
                 "id": 2,
@@ -430,13 +398,8 @@
    ]
     },
     {
-        
-        "location": [
-            {
-                "id":10,
-                "name":"Helsinki"
-            }
-        ],
+        "id":10,
+        "name":"Helsinki",
         "siteManager":[
             {
                 "id": 3,
