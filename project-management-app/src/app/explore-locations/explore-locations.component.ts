@@ -35,7 +35,7 @@ locationDetail: ExploreLocation;
   getLocations() {
     this.exploreLocationService.getLocations()
     .subscribe((locations) => {
-      this.locations = locations;
+       this.locations = locations;
       // this.getLocationDetail(this.locations[0].locationId);
     });
   }
@@ -44,15 +44,14 @@ locationDetail: ExploreLocation;
       .subscribe(exploreProjects => this.exploreProjects = exploreProjects);
   }
   getLocationDetail(locationId) {
-    this.locationDetail = this.getLocationById(locationId);
+    // this.locationDetail = this.getLocationById(locationId);
   }
   getLocationById(locationId): Location {
      for (let i = 0; i < this.locations.length; i++) {
       // if (locationId === this.locations[i].locationId) {
         return this.locations[i];
-      }
+        }
      }
   }
 
 // }
-

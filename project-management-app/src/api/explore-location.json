@@ -26,10 +26,6 @@
              {
                 "id": 1,
                 "name": "Titan"
-             },
-             {
-                "id": 2,
-                "name": "Project Hanks"
              }
     ],
         "teams":[
@@ -72,10 +68,6 @@
              {
                 "id": 2,
                 "name": "Project Hanks"
-             },
-             {
-                "id": 3,
-                "name": "Kodiak"
              }
     ],
         "teams":[
@@ -113,12 +105,8 @@
     ],
         "projects":[
              {
-                "id": 4,
-                "name": "Code Talkers"
-            },
-            {
-                "id": 5,
-                "name": "Project Blue Book"
+                "id": 3,
+                "name": "Kodiak"
             }
     ],
         "teams":[
@@ -157,12 +145,8 @@
     ],
         "projects":[
             {
-                "id": 7,
-                "name": "Project 404"
-            },
-            {
-                "id": 8,
-                "name": "Manhattan Project"
+                "id": 4,
+                "name":"Code Talkers"
             }
      ],
         "teams":[
@@ -191,22 +175,18 @@
         "siteStrength": 7,
         "technologies":[
             {
-                "technologyId": 9,
-                "technologyName": "C#,.NET"
+                "id": 9,
+                "name": "C#"
             },
             {
-                "technologyId": 10,
-                "technologyName": "Python"
+                "id": 10,
+                "name": "Python"
             }
     ],
         "projects":[
              {
-                "id": 9,
-                "name": "Durango"
-             },
-             {
-                "id": 10,
-                "name": "Apollo"
+                "id": 5,
+                "name": "Project Blue Book"
              }
     ],
         "teams":[
@@ -245,12 +225,8 @@
     ],
         "projects":[
              {
-                "id": 1,
-                "name": "Titan"
-             },
-             {
-                "id": 2,
-                "name": "Project Hanks"
+                "id": 6,
+                "name": "X Lab"
              }
     ],
         "teams":[
@@ -289,12 +265,8 @@
     ],
         "projects":[
             {
-                "id": 2,
-                "name": "Project Hanks"
-             },
-             {
-                "id": 3,
-                "name": "Kodiak"
+                "id": 7,
+                "name": "Project 404"
              }
     ],
         "teams":[
@@ -333,12 +305,8 @@
     ],
         "projects":[
             {
-               "id": 4,
-               "name": "Code Talkers"
-           },
-           {
-               "id": 5,
-               "name": "Project Blue Book"
+               "id": 8,
+               "name": "Manhattan Project"
            }
    ],
         "teams":[
@@ -369,21 +337,17 @@
         "technologies":[
             {
                 "id": 7,
-                "name": "Project 404"
+                "name": "C++"
             },
             {
                 "id": 8,
-                "name": "Manhattan Project"
+                "name": "Computer Vision"
             }
      ],
         "projects":[
              {
                 "id": 9,
-                "name": "X Lab"
-             },
-             {
-                "id": 9,
-                "name": "Project 404"
+                "name": "Durango"
              }
     ],
         "teams":[
@@ -421,12 +385,8 @@
     ],
         "projects":[
             {
-                "id": 8,
-                "name": "Manhattan Project"
-            },
-            {
-                "id": 9,
-                "name": "Durango"
+                "id": 10,
+                "name": "Apollo"
             }
            
     ],

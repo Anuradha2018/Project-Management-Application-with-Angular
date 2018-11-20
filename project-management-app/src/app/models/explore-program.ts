@@ -3,7 +3,7 @@ import { Base } from './base';
 
 
 
-export class Program {
+export class ExploreProgram {
    id: number;
    name: string;
    description: string;

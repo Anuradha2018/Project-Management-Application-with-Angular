@@ -168,10 +168,9 @@
                                 <li><span>Product A</span>
 
                                     <ul>
-                                        <li><span>Program A</span>
+                                        <li><span>{{location.project}}</span>
                                             <ul>
-                                                <li><span>Project A1</span>
-                                                </li>
+                                                <li><span>Project A1</span></li>
                                                 <li><span>Project A2</span></li>
                                             </ul>
                                         </li>
@@ -224,15 +223,14 @@
 
                     </div>
                     
-                 <div class="col-lg-8 pr-4">
+                 <div *ngFor ="let location of locations" class="col-lg-8 pr-4">
                      <div class="row">
                       
                          <div class="col-sm-12 pt-3">
-                             <h3>Bangalore India </h3>
-                             <p>In addition to the above code, the following Javascript library files are loaded for use in this example: In addition to the above code, the following Javascript libra</p>
-
-                         </div>
-  </div>
+                             <h3>{{location.name}}</h3>
+                             <p></p>
+                        </div>
+                     </div>
                      <div class="row ">
                          <div class="col-12">
                              <h6 class="text-uppercase mt-4">Location Details </h6>  
@@ -244,7 +242,7 @@
                                          <img src="./../../assets/dashboard/newDashboard/img/user.png" alt="user" />
                                      </div>
                                      <div class="media-body">  
-                                         <strong>Dr. Pulkit Arora</strong> 
+                                         <strong>{{location.siteManager[0].name}}</strong> 
                                          <div class="text-muted font-13 font-weight-light">Site Manager</div>
                                      </div>
                                  </div>
@@ -255,7 +253,7 @@
                                  <div class="media align-items-center">
                                      <div class="media-body text-center">  
                                          <div class="text-muted font-13 font-weight-light">Site Strength </div>
-                                         <strong>18,321</strong> 
+                                         <strong>{{location.siteStrength}}</strong> 
                                      </div>
                                  </div>
                              </div>
@@ -266,26 +264,26 @@
                             <div class="col-12">
                                 <h6 class="text-uppercase  mt-4">Technologies <span>(12)</span> <a href="#" class="text-capitalize font-13"> Show all</a></h6>
                             </div>
-                            <div class="d-flex col-sm-4 align-items-stretch">
+                            <div *ngFor ="let location of locations" class="d-flex col-sm-4 align-items-stretch">
                                 <div class="list-group-item w-100 list-one mb-3">
                                     <div class="media align-items-center">
                                         <div class="">
                                             <i class="fab fa-connectdevelop"></i>
                                         </div>
                                         <div class="media-body">  
-                                            <strong>Machine Learning</strong> 
+                                            <strong>{{location.technologies[0].name}}, {{location.technologies[1].name}}</strong> 
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex col-sm-4 align-items-stretch">
+                            <!--<div *ngFor ="let location of locations" class="d-flex col-sm-4 align-items-stretch">
                                 <div class="list-group-item w-100 list-one mb-3">
                                     <div class="media align-items-center">
                                         <div class="">
                                             <i class="fab fa-connectdevelop"></i>
                                         </div>
                                         <div class="media-body">  
-                                            <strong>NLP</strong> 
+                                            <strong></strong> 
                                         </div>
                                     </div>
                                 </div>
@@ -301,14 +299,14 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
                           
                          
 
                         </div>
-                      <div class="row">
+                      <!--<div class="row">
                             <div class="col-12">
-                                <h6 class="text-uppercase  mt-4 ">Program <span>(12)</span> <a href="#" class="text-capitalize font-13"> Show all</a></h6>
+                                <h6 class="text-uppercase  mt-4 ">Project <span>(12)</span> <a href="#" class="text-capitalize font-13"> Show all</a></h6>
                             </div>
                             <div class="d-flex col-sm-4 align-items-stretch">
                                 <div class="list-group-item w-100 list-one mb-3">
@@ -342,23 +340,22 @@
                                     </div>
                                 </div>
                             </div>
-
-                        </div>
-                        <div class="row">
+                        </div>-->
+                        <div  class="row">
                             <div class="col-12">
                                 <h6 class="text-uppercase  mt-4 ">Project <span>(18)</span> <a href="#" class="text-capitalize font-13"> Show all</a></h6>
                             </div>
-                             <div class="d-flex col-sm-4 align-items-stretch">
+                             <div  *ngFor ="let location of locations" class="d-flex col-sm-4 align-items-stretch">
                                 <div class="list-group-item w-100 list-one mb-3">
                                     <div class="media align-items-center">
                                         <div class="media-body text-center">  
-                                            <strong>Project  A</strong> 
-                                            <div class="text-muted font-13 font-weight-light">Whoi Hong</div>
+                                            <strong>{{location.projects[0].name}}</strong> 
+                                            <div class="text-muted font-13 font-weight-light">ID: {{location.projects[0].id}}</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex col-sm-4 align-items-stretch">
+                            <!--<div class="d-flex col-sm-4 align-items-stretch">
                                 <div class="list-group-item w-100 list-one mb-3">
                                     <div class="media align-items-center">
                                         <div class="media-body text-center">  
@@ -379,7 +376,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
                           
 
                         </div>
@@ -388,7 +385,7 @@
                             <div class="col-12">
                                 <h6 class="text-uppercase  mt-4 ">Teams (24) <a href="#" class="text-capitalize font-13"> Show all</a></h6>
                             </div>
-                            <div class="d-flex col-sm-4 align-items-stretch">
+                            <div  *ngFor ="let location of locations" class="d-flex col-sm-4 align-items-stretch">
                                 <div class="list-group-item w-100 list-one mb-3 ">
                                     <div class="text-muted font-13 font-weight-light">
                                         <i class="fas fa-map-marker-alt"></i> 3 More Location</div>
@@ -400,7 +397,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex col-sm-4 align-items-stretch">
+                           <!-- <div class="d-flex col-sm-4 align-items-stretch">
                                 <div class="list-group-item w-100 list-one mb-3 ">
                                     <div class="text-muted font-13 font-weight-light">
                                         <i class="fas fa-map-marker-alt"></i> 5 More Location</div>
@@ -422,16 +419,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                          
-                          
-
+                            </div>-->
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
 
          
