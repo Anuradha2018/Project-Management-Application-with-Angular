@@ -161,9 +161,9 @@
 
                             </div>
                         </div>
-                        <div class="tree pl-3 pr-2 ">
+                        <div *ngFor ="let location of locations" class="tree pl-3 pr-2 ">
                             <ul id="tree1">
-                                 <li><span>Bangalore, india</span>
+                                 <li><span>ID: {{location.id}}, {{location.name}} </span>
                                      <ul>
                                 <li><span>Product A</span>
 
@@ -203,7 +203,7 @@
                                 </li>
                                      </ul>
                                  </li>
-                                  <li><span>Delhi, India</span>
+                                  <!--<li><span>Delhi, India</span>
                                      <ul>
                                 <li><span>Product B</span>
                                     <ul>
@@ -217,7 +217,7 @@
                                         <li><span>Employee Maint.</span></li>
                                     </ul></li>
                                      </ul>
-                                  </li>
+                                  </li>-->
 
                             </ul>
                         </div>

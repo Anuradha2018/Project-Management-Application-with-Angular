@@ -22,9 +22,9 @@ import { TechnologyComponent } from './../technology/technology.component';
   styleUrls: ['./explore-locations.component.css']
 })
 export class ExploreLocationsComponent implements OnInit {
-locations: Location[];
+locations: ExploreLocation[];
 exploreProjects: ExploreProject[];
-locationDetail: Location;
+locationDetail: ExploreLocation;
 
   constructor(private exploreLocationService: ExploreLocationService, private exploreProjectService: ExploreProjectService) { }
 
