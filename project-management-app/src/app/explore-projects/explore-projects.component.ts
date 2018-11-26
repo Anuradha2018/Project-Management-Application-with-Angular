@@ -20,7 +20,7 @@ import { TechnologyComponent } from './../technology/technology.component';
   styleUrls: ['./explore-projects.component.css']
 })
 export class ExploreProjectsComponent implements OnInit {
-  locations: Location[];
+  locations: ExploreLocation[];
   exploreProjects: ExploreProject[];
   exploreTeams: ExploreTeam[];
   projectDetail: ExploreProject;
@@ -28,21 +28,12 @@ export class ExploreProjectsComponent implements OnInit {
     private exploreProjectService: ExploreProjectService, private exploreTeamService: ExploreTeamService) { }
 
   ngOnInit() {
-    this.getLocations();
     this.getExploreProject();
-    this.getExploreTeam();
   }
-  getLocations() {
-    this.exploreLocationService.getLocations()
-    .subscribe(locations => this.locations = locations);
-  }
+
   getExploreProject() {
     this.exploreProjectService.getExploreProjects()
       .subscribe(exploreProjects => this.exploreProjects = exploreProjects);
-  }
-  getExploreTeam() {
-    this.exploreTeamService.getExploreTeam()
-    .subscribe(exploreTeams => this.exploreTeams = exploreTeams);
   }
   getProjectDetail(id) {
     this.projectDetail = this.getProjectById(id);

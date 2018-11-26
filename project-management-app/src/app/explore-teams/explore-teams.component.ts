@@ -27,17 +27,7 @@ export class ExploreTeamsComponent implements OnInit {
     private exploreTeamService: ExploreTeamService) { }
 
   ngOnInit() {
-    this.getLocations();
-    this.getExploreProject();
     this.getExploreTeam();
-  }
-  getLocations() {
-    this.exploreLocationService.getLocations()
-    .subscribe(locations => this.locations = locations);
-  }
-  getExploreProject() {
-    this.exploreProjectService.getExploreProjects()
-      .subscribe(exploreProjects => this.exploreProjects = exploreProjects);
   }
   getExploreTeam() {
     this.exploreTeamService.getExploreTeam()

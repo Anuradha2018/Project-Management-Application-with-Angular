@@ -137,7 +137,7 @@
                                     </div>
                                 </div> 
 
-                                <div class="dropdown search input-group-addon  ml-auto">
+                                <!--<div class="dropdown search input-group-addon  ml-auto">
                                     <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <i class="fas fa-search"></i>
                                     </button>
@@ -156,16 +156,16 @@
                                                 </ul>
                                         </form>
                                     </div>
-                                </div>
+                                </div>-->
                                 
 
                             </div>
                         </div>
                         <div *ngFor ="let location of locations" class="tree pl-3 pr-2 ">
                             <ul id="tree1">
-                                 <li><span>ID: {{location.id}}, {{location.name}} </span>
-                                     <ul>
-                                <li><span>Product A</span>
+                                 <li (click) = "getLocationDetail(location.id)"><span>ID: {{location.id}}, {{location.name}} </span>
+                                     <!--<ul>
+                              <li><span>Product A</span>
 
                                     <ul>
                                         <li><span>{{location.project}}</span>
@@ -200,7 +200,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                     </ul>
+                                     </ul>-->
                                  </li>
                                   <!--<li><span>Delhi, India</span>
                                      <ul>
@@ -223,11 +223,11 @@
 
                     </div>
                     
-                 <div *ngFor ="let location of locations" class="col-lg-8 pr-4">
+                 <div class="col-lg-8 pr-4">
                      <div class="row">
                       
                          <div class="col-sm-12 pt-3">
-                             <h3>{{location.name}}</h3>
+                             <h3>{{locationDetail.name}}</h3>
                              <p></p>
                         </div>
                      </div>
@@ -242,7 +242,7 @@
                                          <img src="./../../assets/dashboard/newDashboard/img/user.png" alt="user" />
                                      </div>
                                      <div class="media-body">  
-                                         <strong>{{location.siteManager[0].name}}</strong> 
+                                         <strong>{{locationDetail.siteManager[0].name}}</strong> 
                                          <div class="text-muted font-13 font-weight-light">Site Manager</div>
                                      </div>
                                  </div>
@@ -253,7 +253,7 @@
                                  <div class="media align-items-center">
                                      <div class="media-body text-center">  
                                          <div class="text-muted font-13 font-weight-light">Site Strength </div>
-                                         <strong>{{location.siteStrength}}</strong> 
+                                         <strong>{{locationDetail.siteStrength}}</strong> 
                                      </div>
                                  </div>
                              </div>
@@ -264,14 +264,14 @@
                             <div class="col-12">
                                 <h6 class="text-uppercase  mt-4">Technologies <span>(12)</span> <a href="#" class="text-capitalize font-13"> Show all</a></h6>
                             </div>
-                            <div *ngFor ="let location of locations" class="d-flex col-sm-4 align-items-stretch">
+                            <div class="d-flex col-sm-4 align-items-stretch">
                                 <div class="list-group-item w-100 list-one mb-3">
                                     <div class="media align-items-center">
                                         <div class="">
                                             <i class="fab fa-connectdevelop"></i>
                                         </div>
-                                        <div class="media-body">  
-                                            <strong>{{location.technologies[0].name}}, {{location.technologies[1].name}}</strong> 
+                                        <div *ngFor ="let technology of locationDetail.technologies" class="media-body">  
+                                            <strong>{{technology.name}}</strong> 
                                         </div>
                                     </div>
                                 </div>
@@ -345,12 +345,12 @@
                             <div class="col-12">
                                 <h6 class="text-uppercase  mt-4 ">Project <span>(18)</span> <a href="#" class="text-capitalize font-13"> Show all</a></h6>
                             </div>
-                             <div  *ngFor ="let location of locations" class="d-flex col-sm-4 align-items-stretch">
+                             <div  *ngFor ="let project of locationDetail.projects" class="d-flex col-sm-4 align-items-stretch">
                                 <div class="list-group-item w-100 list-one mb-3">
                                     <div class="media align-items-center">
                                         <div class="media-body text-center">  
-                                            <strong>{{location.projects[0].name}}</strong> 
-                                            <div class="text-muted font-13 font-weight-light">ID: {{location.projects[0].id}}</div>
+                                            <strong>{{project.name}}</strong> 
+                                            <div class="text-muted font-13 font-weight-light">ID: {{project.id}}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -385,14 +385,14 @@
                             <div class="col-12">
                                 <h6 class="text-uppercase  mt-4 ">Teams (24) <a href="#" class="text-capitalize font-13"> Show all</a></h6>
                             </div>
-                            <div  *ngFor ="let location of locations" class="d-flex col-sm-4 align-items-stretch">
+                            <div  *ngFor ="let team of locationDetail.teams" class="d-flex col-sm-4 align-items-stretch">
                                 <div class="list-group-item w-100 list-one mb-3 ">
                                     <div class="text-muted font-13 font-weight-light">
                                         <i class="fas fa-map-marker-alt"></i> 3 More Location</div>
                                     <div class="media align-items-center">
                                         <div class="media-body pt-2 text-center">  
-                                            <strong>Team A2-X</strong> 
-                                            <div class="text-muted font-15 font-weight-light">Whoi Hong</div>
+                                            <strong>{{team.name}}</strong> 
+                                            <div class="text-muted font-15 font-weight-light"></div>
                                         </div>
                                     </div>
                                 </div>
