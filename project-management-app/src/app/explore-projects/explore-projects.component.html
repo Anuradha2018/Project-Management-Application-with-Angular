@@ -220,9 +220,9 @@
                     </div>
                  <div class="col-lg-8 pr-4 pt-3">
                         <h3>{{projectDetail.name}}</h3>
-                        <p>In addition to the above code, the following Javascript library files are loaded for use in this example: In addition to the above code, the following Javascript libra</p>
+                        <p></p>
 
-                        <div class="row  ">
+                        <div class="row">
                             <div class="col-sm">
                                 <h6 class="text-uppercase mt-4">Project Details</h6>
                                 <div class="list-group-item rounded list-one mb-3">
@@ -231,22 +231,22 @@
                                             <img src="./../../assets/dashboard/newDashboard/img/user.png" alt="user" />
                                         </div>
                                         <div class="media-body">  
-                                            <strong>Dr. Pulkit Arora</strong> 
+                                            <strong>{{projectDetail.projectManager}}</strong> 
                                             <div class="text-muted font-13 font-weight-light">Program Manager</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="list-group-item rounded list-one mb-3">
+                                <!--<div class="list-group-item rounded list-one mb-3">
                                     <div class="media align-items-center">
                                         <div class="user-logo border rounded-circle">
                                             <img src="./../../assets/dashboard/newDashboard/img/user.png" alt="user" />
                                         </div>
                                         <div class="media-body">  
-                                            <strong>Dr. Pulkit dinga</strong> 
+                                            <strong>{{projectDetails.projectManager}}</strong> 
                                             <div class="text-muted font-13 font-weight-light">Project Manager</div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
                               
 
                             </div>
@@ -257,15 +257,15 @@
                                     <li class="list-group-item">
                                         <div class="media align-items-center">
                                             <div class="">
-                                                <img src="./../../assets/dashboard/newDashboard/img/flag-of-China.png" width="33" alt="user">
+                                                <img src="./../../assets/dashboard/newDashboard/img/Denmark.jpg" width="33" alt="user">
                                             </div>
                                             <div class="media-body">  
-                                                <strong>China - Mainland</strong> 
+                                                <strong>{{projectDetail.locations[0].name}}</strong> 
                                             </div>
                                         </div>
                                     </li>
 
-                                 <li class="list-group-item">
+                                 <!--<li class="list-group-item">
                                     <div class="media align-items-center">
                                         <img src="./../../assets/dashboard/newDashboard/img/flag-of-India.png" width="33" alt="user">
                                         <div class="media-body">  
@@ -280,7 +280,7 @@
                                             <strong>India - Delhi</strong> 
                                         </div>
                                     </div>
-                                </li>
+                                </li>-->
                                  </ul>
                             </div>
                         </div>
