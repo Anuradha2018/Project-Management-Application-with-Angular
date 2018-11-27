@@ -1,5 +1,4 @@
-import { ExploreTeam } from './../models/explore-team';
-import { ExploreProject } from './../models/explore-project';
+
 import { Injectable } from '@angular/core';
 import { ExploreLocation } from './../models/explore-location';
 import { HttpClient } from '@angular/common/http';

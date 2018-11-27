@@ -127,7 +127,7 @@
                             <div class="input-group ">
                                 <div class="dropdown input-group-addon show-on-hover pull-left">
                                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Locations
+                                      Products
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                             <a class="dropdown-item" [routerLink]="['/explore/projects']">Projects</a>
@@ -162,11 +162,11 @@
 
                             </div>
                         </div>
-                        <div *ngFor ="let location of locations" class="tree pl-3 pr-2 ">
+                        <div *ngFor ="let product of products" class="tree pl-3 pr-2 ">
                             <ul id="tree1">
-                                 <li (click) = "getLocationDetail(location.id)"><span>ID: {{location.id}}, {{location.name}} </span>
+                                 <li (click) = "getProductDetail(product.id)"><span>ID: {{product.id}}, {{product.name}} </span>
                                      <!--<ul>
-                              <li><span>Product A</span>
+                                        <li><span>Product A</span>
 
                                     <ul>
                                         <li><span>{{location.project}}</span>
@@ -228,7 +228,7 @@
                      <div class="row">
                       
                          <div class="col-sm-12 pt-3">
-                             <h3>{{locationDetail.name}}</h3>
+                             <h3>{{productDetail.name}}</h3>
                              <p></p>
                         </div>
                      </div>
@@ -240,16 +240,16 @@
                              <div class="list-group-item w-100 rounded list-one mb-3">
                                  <div class="media align-items-center">
                                      <div class="user-logo border rounded-circle">
-                                         <img src="./../../assets/dashboard/newDashboard/img/user.png" alt="user" />
+                                        <i class="fas fa-map-marker-alt"></i>
                                      </div>
                                      <div class="media-body">  
-                                         <strong>{{locationDetail.siteManager[0].name}}</strong> 
-                                         <div class="text-muted font-13 font-weight-light">Site Manager</div>
+                                         <strong>{{productDetail.location[0].name}}</strong> 
+                                         <div class="text-muted font-13 font-weight-light"></div>
                                      </div>
                                  </div>
                              </div>
                          </div>
-                         <div class="d-flex col-sm-4 align-items-stretch">
+                         <!--<div class="d-flex col-sm-4 align-items-stretch">
                              <div class="list-group-item rounded list-one mb-3">
                                  <div class="media align-items-center">
                                      <div class="media-body text-center">  
@@ -271,12 +271,12 @@
                                         <div class="">
                                             <i class="fab fa-connectdevelop"></i>
                                         </div>
-                                        <div *ngFor ="let technology of locationDetail.technologies" class="media-body">  
+                                        <div *ngFor ="let technology of productDetail.technologies" class="media-body">  
                                             <strong>{{technology.name}}</strong> 
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
                             <!--<div *ngFor ="let location of locations" class="d-flex col-sm-4 align-items-stretch">
                                 <div class="list-group-item w-100 list-one mb-3">
                                     <div class="media align-items-center">
@@ -344,14 +344,15 @@
                         </div>-->
                         <div  class="row">
                             <div class="col-12">
-                                <h6 class="text-uppercase  mt-4 ">Project <span>(18)</span> <a href="#" class="text-capitalize font-13"> Show all</a></h6>
+                                <h6 class="text-uppercase  mt-4 ">Programs <span>(18)</span> <a href="#" class="text-capitalize font-13"> Show all</a></h6>
                             </div>
-                             <div  *ngFor ="let project of locationDetail.projects" class="d-flex col-sm-4 align-items-stretch">
+                             <div  class="d-flex col-sm-4 align-items-stretch">
                                 <div class="list-group-item w-100 list-one mb-3">
                                     <div class="media align-items-center">
-                                        <div class="media-body text-center">  
-                                            <strong>{{project.name}}</strong> 
-                                            <div class="text-muted font-13 font-weight-light">ID: {{project.id}}</div>
+                                            <i class="fas fa-project-diagram"></i>
+                                        <div *ngFor ="let program of productDetail.program" class="media-body text-center">
+                                                <strong>{{program.name}}</strong> 
+                                            <div class="text-muted font-13 font-weight-light">ID: {{program.id}}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -384,15 +385,15 @@
                      
                         <div class="row">
                             <div class="col-12">
-                                <h6 class="text-uppercase  mt-4 ">Teams (24) <a href="#" class="text-capitalize font-13"> Show all</a></h6>
+                                <h6 class="text-uppercase  mt-4 ">Teams (5) <a href="#" class="text-capitalize font-13"> Show all</a></h6>
                             </div>
-                            <div  *ngFor ="let team of locationDetail.teams" class="d-flex col-sm-4 align-items-stretch">
+                            <div  *ngFor ="let team of productDetail.teams" class="d-flex col-sm-4 align-items-stretch">
                                 <div class="list-group-item w-100 list-one mb-3 ">
                                     <div class="text-muted font-13 font-weight-light">
-                                        <i class="fas fa-map-marker-alt"></i> 3 More Location</div>
+                                        <i class="fas fa-layer-group"></i>{{team.name}}</div>
                                     <div class="media align-items-center">
                                         <div class="media-body pt-2 text-center">  
-                                            <strong>{{team.name}}</strong> 
+                                            <strong>Manager: {{productDetail.manager[0].name}}</strong> 
                                             <div class="text-muted font-15 font-weight-light"></div>
                                         </div>
                                     </div>
@@ -422,6 +423,23 @@
                                 </div>
                             </div>-->
                         </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h6 class="text-uppercase  mt-4 ">Technology (5) <a href="#" class="text-capitalize font-13"> Show all</a></h6>
+                            </div>
+                            <div  *ngFor ="let technology of productDetail.technologies" class="d-flex col-sm-4 align-items-stretch">
+                                <div class="list-group-item w-100 list-one mb-3 ">
+                                    <div class="text-muted font-13 font-weight-light">
+                                        <i class="fab fa-connectdevelop"></i>{{technology.id}}</div>
+                                    <div class="media align-items-center">
+                                        <div class="media-body pt-2 text-center">  
+                                            <strong>{{technology.name}}</strong> 
+                                            <div class="text-muted font-15 font-weight-light"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
                     </div>
                 </div>
             </div>

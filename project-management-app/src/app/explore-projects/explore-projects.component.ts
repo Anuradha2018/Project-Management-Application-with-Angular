@@ -20,10 +20,9 @@ import { TechnologyComponent } from './../technology/technology.component';
   styleUrls: ['./explore-projects.component.css']
 })
 export class ExploreProjectsComponent implements OnInit {
-  // locations: ExploreLocation[];
   projects: ExploreProject[];
-  // exploreTeams: ExploreTeam[];
   projectDetail: ExploreProject;
+
   constructor(private exploreProjectService: ExploreProjectService) { }
 
   ngOnInit() {
