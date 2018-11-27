@@ -11,7 +11,8 @@ import { Observable } from 'rxjs';
 export class ExploreProjectService {
 
   constructor(private http: HttpClient) { }
-  getExploreProjects(): Observable<ExploreProject[]> {
+
+  getProjects(): Observable<ExploreProject[]> {
     return this.http.get<ExploreProject[]>('/api/explore-project.json');
 }
 }

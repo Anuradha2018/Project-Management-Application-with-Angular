@@ -20,31 +20,30 @@ import { TechnologyComponent } from './../technology/technology.component';
   styleUrls: ['./explore-projects.component.css']
 })
 export class ExploreProjectsComponent implements OnInit {
-  locations: ExploreLocation[];
-  exploreProjects: ExploreProject[];
-  exploreTeams: ExploreTeam[];
+  // locations: ExploreLocation[];
+  projects: ExploreProject[];
+  // exploreTeams: ExploreTeam[];
   projectDetail: ExploreProject;
-  constructor(private exploreLocationService: ExploreLocationService,
-    private exploreProjectService: ExploreProjectService, private exploreTeamService: ExploreTeamService) { }
+  constructor(private exploreProjectService: ExploreProjectService) { }
 
   ngOnInit() {
-    this.getExploreProject();
+    this.getProjects();
   }
 
-  getExploreProject() {
-    this.exploreProjectService.getExploreProjects()
-      .subscribe((exploreProjects) => {
-      this.exploreProjects = exploreProjects;
-      this.getProjectDetail(this.exploreProjects[0].id);
+  getProjects() {
+    this.exploreProjectService.getProjects()
+      .subscribe((projects) => {
+      this.projects = projects;
+      this.getProjectDetail(this.projects[0].id);
       });
   }
   getProjectDetail(id) {
     this.projectDetail = this.getProjectById(id);
   }
   getProjectById(id): ExploreProject {
-    for (let i = 0; i < this.exploreProjects.length; i++) {
-      if (id === this.exploreProjects[i].id) {
-        return this.exploreProjects[i];
+    for (let i = 0; i < this.projects.length; i++) {
+      if (id === this.projects[i].id) {
+        return this.projects[i];
       }
      }
   }

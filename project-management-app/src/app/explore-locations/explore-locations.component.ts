@@ -23,10 +23,10 @@ import { TechnologyComponent } from './../technology/technology.component';
 })
 export class ExploreLocationsComponent implements OnInit {
 locations: ExploreLocation[];
-exploreProjects: ExploreProject[];
+// exploreProjects: ExploreProject[];
 locationDetail: ExploreLocation;
 
-  constructor(private exploreLocationService: ExploreLocationService, private exploreProjectService: ExploreProjectService) { }
+  constructor(private exploreLocationService: ExploreLocationService) { }
 
   ngOnInit() {
     this.getLocations();
@@ -38,9 +38,11 @@ locationDetail: ExploreLocation;
       this.getLocationDetail(this.locations[0].id);
     });
   }
+
   getLocationDetail(locationId) {
     this.locationDetail = this.getLocationById(locationId);
   }
+
   getLocationById(locationId): ExploreLocation {
      for (let i = 0; i < this.locations.length; i++) {
       if (locationId === this.locations[i].id) {
