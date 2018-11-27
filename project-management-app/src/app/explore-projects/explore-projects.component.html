@@ -295,13 +295,13 @@
                                         <div class="">
                                             <i class="fab fa-connectdevelop"></i>
                                         </div>
-                                        <div class="media-body">  
-                                            <strong>Machine Learning</strong> 
+                                        <div *ngFor="let technology of projectDetail.technologies" class="media-body">  
+                                            <strong>{{technology.name}}</strong> 
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex col-sm-4 align-items-stretch">
+                            <!--<div class="d-flex col-sm-4 align-items-stretch">
                                 <div class="list-group-item w-100 list-one mb-3">
                                     <div class="media align-items-center">
                                         <div class="">
@@ -333,29 +333,29 @@
                                             <i class="fab fa-amazon"></i>
                                         </div>
                                         <div class="media-body">  
-                                            <strong>amazon (AWS)</strong> 
+                                            <strong>Amazon (AWS)</strong> 
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
 
                         </div>
                         <div class="row">
                             <div class="col-12">
                                 <h6 class="text-uppercase  mt-4 ">Teams</h6>
                             </div>
-                            <div class="d-flex col-sm-4 align-items-stretch">
-                                <div class="list-group-item w-100 list-one mb-3 disabledbutton">
-                                    <div class="text-muted font-13 font-weight-light"><img src="./../../assets/dashboard/newDashboard/img/flag-of-China.png" width="20" alt="user"> China -Whoi Hong</div>
+                            <div *ngFor ="let team of projectDetail.teams" class="d-flex col-sm-4 align-items-stretch">
+                                <div class="list-group-item w-100 list-one mb-3">
+                                    <div class="text-muted font-13 font-weight-light"><img src="./../../assets/dashboard/newDashboard/img/Denmark.jpg" width="20" alt="user"></div>
                                     <div class="media align-items-center">
                                         <div class="media-body pt-2 text-center">  
-                                            <strong>Team A2-X</strong> 
-                                            <div class="text-muted font-15 font-weight-light">Whoi Hong</div>
+                                            <strong>{{team.name}}</strong> 
+                                            
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex col-sm-4 align-items-stretch">
+                            <!--<div class="d-flex col-sm-4 align-items-stretch">
                                 <div class="list-group-item w-100 list-one mb-3 disabledbutton">
                                     <div class="text-muted font-13 font-weight-light"><img src="./../../assets/dashboard/newDashboard/img/flag-of-China.png" width="20" alt="user"> China -Whoi Hong</div>
                                     <div class="media align-items-center">
@@ -376,7 +376,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
                           
                           
 
