@@ -137,7 +137,7 @@
                                     </div>
                                 </div> 
 
-                                <div class="dropdown search input-group-addon  ml-auto">
+                                <!--<div class="dropdown search input-group-addon  ml-auto">
                                     <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i class="fas fa-search"></i>
                                     </button>
@@ -156,16 +156,16 @@
                                                 </ul>
                                         </form>
                                     </div>
-                                </div>
+                                </div>-->
                                 
 
                             </div>
                         </div>
-                        <div class="tree pl-3 pr-2 ">
+                        <div *ngFor ="let project of exploreProjects" class="tree pl-3 pr-2 ">
                             <ul id="tree1">
-                                <li><span>Product A</span>
+                                <li (click) = "getProjectDetail(project.id)"><span>Project A</span>
 
-                                    <ul>
+                                   <!--<ul>
                                         <li><span>Program A</span>
                                             <ul>
                                                 <li><span>Project A1</span>
@@ -197,9 +197,9 @@
                                                 <li><span>Employee Maint.</span></li>
                                             </ul>
                                         </li>
-                                    </ul>
+                                    </ul>-->
                                 </li>
-                                <li><span>Product B</span>
+                                <!--<li><span>Product B</span>
                                     <ul>
                                         <li><span>Reports</span>
                                             <ul>
@@ -209,7 +209,8 @@
                                             </ul>
                                         </li>
                                         <li><span>Employee Maint.</span></li>
-                                    </ul></li>
+                                    </ul>
+                                </li>-->
                                
 
                             </ul>

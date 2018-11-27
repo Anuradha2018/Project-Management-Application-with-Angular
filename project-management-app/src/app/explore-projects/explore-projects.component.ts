@@ -33,7 +33,10 @@ export class ExploreProjectsComponent implements OnInit {
 
   getExploreProject() {
     this.exploreProjectService.getExploreProjects()
-      .subscribe(exploreProjects => this.exploreProjects = exploreProjects);
+      .subscribe((exploreProjects) => {
+      this.exploreProjects = exploreProjects;
+      this.getProjectDetail(this.exploreProjects[0].id);
+      });
   }
   getProjectDetail(id) {
     this.projectDetail = this.getProjectById(id);
