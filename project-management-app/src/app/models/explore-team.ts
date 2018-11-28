@@ -4,7 +4,8 @@ import { Base } from './base';
 
 
 export class ExploreTeam {
-    team: Base;
+    id: number;
+    name: string;
     location: Base;
     manager: Manager;
     teamSize: number;

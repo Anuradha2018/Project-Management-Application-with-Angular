@@ -1,11 +1,7 @@
 [
     {
-        "teams":[
-        {
             "id": 1,
-            "name":"The Major Eagles"
-        }
-        ],
+            "name":"The Major Eagles",
         "location": [
         {
             "id":1,
@@ -46,12 +42,8 @@
             ]
     },
     {
-        "teams":[
-        {
             "id": 2,
-            "name":"The Grand Cats"
-        }
-        ],
+            "name":"The Grand Cats",
     "location": [
         {
             "id":2,
@@ -92,13 +84,10 @@
     ]
     },
     {
-        "teams":[
-            {
+
                 "id": 19,
-                "name": "The Amazing Pythons"
-            }
-            ],
-        "location": [
+                "name": "The Amazing Pythons",
+            "location": [
                 {
                     "id":10,
                     "name":"Helsinki"
@@ -139,12 +128,8 @@
     ]
     },
     {
-        "teams":[
-            {
-                "id": 4,
-                "name":"The True Ravens"
-            }
-            ],
+           "id": 4,
+                "name":"The True Ravens",
         "location": [
                 {
                     "id":3,
@@ -185,13 +170,8 @@
     ]
     },
     {
-        
-        "teams":[
-            {
                 "id": 4,
-                "name":"The True Ravens"
-            }
-            ],
+                "name":"The True Ravens",
         "location": [
                 {
                     "id":4,
@@ -232,13 +212,8 @@
     ]
     },
     {
-        
-        "teams":[
-            {
                 "id": 5,
-                "name": "The Steel Wolves"
-            }
-            ],
+                "name": "The Steel Wolves",
         "location": [
             {
                 "id":5,
@@ -279,12 +254,8 @@
     ]
     },
     {
-        "teams":[
-            {
                 "id": 11,
-                "name": "The Rapid Pumas"
-            }
-            ],
+                "name": "The Rapid Pumas",
         "location": [
             {
                 "id":9,

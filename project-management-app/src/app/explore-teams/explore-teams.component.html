@@ -151,7 +151,7 @@
                                       </div>
                                   </div> 
   
-                                  <div class="dropdown search input-group-addon  ml-auto">
+                                  <!--<div class="dropdown search input-group-addon  ml-auto">
                                       <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                           <i class="fas fa-search"></i>
                                       </button>
@@ -170,16 +170,16 @@
                                                   </ul>
                                           </form>
                                       </div>
-                                  </div>
+                                  </div>-->
                                   
   
                               </div>
                           </div>
-                          <div class="tree pl-3 pr-2 ">
+                          <div *ngFor="let team of teams" class="tree pl-3 pr-2 ">
                               <ul id="tree1">
-                                  <li><span>Machine Learning</span>
+                                  <li (click) = "getTeamDetail(team.id)"><span>{{team.name}}</span>
   
-                                      <ul>
+                                      <!--<ul>
                                           <li><span>Bangalore, India</span>
                                               <ul>
                                                   <li><span>Team A1-X</span>
@@ -211,9 +211,9 @@
                                                   <li><span>Employee Maint.</span></li>
                                               </ul>
                                           </li>
-                                      </ul>
+                                      </ul>-->
                                   </li>
-                                  <li><span>.Net Technologies</span>
+                                  <!--<li><span>.Net Technologies</span>
                                       <ul>
                                           <li><span>Reports</span>
                                               <ul>
@@ -247,7 +247,7 @@
                                               </ul>
                                           </li>
                                           <li><span>Employee Maint.</span></li>
-                                      </ul></li>
+                                      </ul></li>-->
   
                               </ul>
                           </div>
@@ -255,31 +255,31 @@
   
                       </div>
                    <div class="col-lg-8 pr-4 pt-3">
-                          <h3>Team Y3- A</h3>
-                          <p>In addition to the above code, the following Javascript library files are loaded for use in this example: In addition to the above code, the following Javascript libra</p>
+                          <h3>{{teamDetail.name}}</h3>
+                          <p></p>
   
                           <div class="row">
                               <div class="col-sm">
-                                  <h6 class="text-uppercase mt-4 ">Team Detals</h6>
-                                  <div class="list-group-item rounded list-one mb-3">
+                                  <h6 class="text-uppercase mt-4 ">Team Details</h6>
+                                  <div *ngFor="let manager of teamDetail.manager" class="list-group-item rounded list-one mb-3">
                                       <div class="media align-items-center">
                                           <div class="user-logo border rounded-circle">
                                               <img src="./../../assets/dashboard/newDashboard/img/user.png" alt="user" />
                                           </div>
                                           <div class="media-body">  
-                                              <strong>Dr. Pulkit Arora</strong> 
-                                              <div class="text-muted font-13 font-weight-light">Team Lead</div>
+                                              <strong>{{manager.name}}</strong> 
+                                              <div class="text-muted font-13 font-weight-light">{{manager.role}}</div>
                                           </div>
                                       </div>
                                   </div>
-                                  <div class="list-group-item rounded list-one mb-3">
+                                  <div *ngFor="let project of teamDetail.currentProjects" class="list-group-item rounded list-one mb-3">
                                       <div class="media align-items-center">
                                           <div class="user-logo border rounded-circle">
-                                              Logo
+                                                <i class="fas fa-layer-group"></i>
                                           </div>
                                           <div class="media-body">  
-                                              <strong>Project X</strong> 
-                                              <div class="text-muted font-13 font-weight-light">Program XZY</div>
+                                              <strong>{{project.name}}</strong> 
+                                              <div class="text-muted font-13 font-weight-light">ID: {{project.id}}</div>
                                           </div>
                                       </div>
                                   </div>
@@ -287,25 +287,26 @@
                               </div>
                               <div class="col-sm">
                                   <h6 class="text-uppercase mt-4">Location </h6>
-                                  <ul class="list-group">
+                                  <ul *ngFor="let location of teamDetail.location" class="list-group">
                                       <li class="list-group-item">
                                           <div class="media align-items-center">
                                               <div class="">
-                                                  <img src="./../../assets/dashboard/newDashboard/img/flag-of-China.png" width="33" alt="user">
+                                                  <img src="./../../assets/dashboard/newDashboard/img/Denmark.jpg" width="33" alt="user">
                                               </div>
                                               <div class="media-body">  
-                                                  <strong>China - Mainland</strong> 
+                                                  <strong>{{location.name}}</strong> 
                                               </div>
                                           </div>
                                       </li>
   
-                                      <li class="list-group-item">
+                                      <!--<li class="list-group-item">
                                           <div class="media align-items-center">
                                               <img src="./../../assets/dashboard/newDashboard/img/flag-of-India.png" width="33" alt="user">
                                               <div class="media-body">  
                                                   <strong>India - Bangalore</strong> 
                                               </div>
-                                          </div></li>
+                                          </div>
+                                        </li>-->
                                   </ul>
                               </div>
                           </div>
@@ -313,19 +314,19 @@
                               <div class="col-12">
                                   <h6 class="text-uppercase  mt-3 ">Technologies</h6>
                               </div>
-                              <div class="d-flex col-sm-4 align-items-stretch">
+                              <div *ngFor="let technology of teamDetail.technologies" class="d-flex col-sm-4 align-items-stretch">
                                   <div class="list-group-item w-100 list-one mb-3">
                                       <div class="media align-items-center">
                                           <div class="">
                                               <i class="fab fa-connectdevelop"></i>
                                           </div>
                                           <div class="media-body">  
-                                              <strong>Machine Learning</strong> 
+                                              <strong>{{technology.name}}</strong> 
                                           </div>
                                       </div>
                                   </div>
                               </div>
-                              <div class="d-flex col-sm-4 align-items-stretch">
+                              <!--<div class="d-flex col-sm-4 align-items-stretch">
                                   <div class="list-group-item w-100 list-one mb-3">
                                       <div class="media align-items-center">
                                           <div class="">
@@ -336,27 +337,27 @@
                                           </div>
                                       </div>
                                   </div>
-                              </div>
+                              </div>-->
   
                           </div>
                           <div class="row">
                               <div class="col-12">
-                                  <h6 class="text-uppercase mt-3 ">Contributions </h6>
+                                  <h6 class="text-uppercase mt-3 ">TEAM SIZE & TEAM MEMBERS </h6>
                               </div>
-                              <div class="d-flex col-sm-4 align-items-stretch">
+                              <div *ngFor="let teamMember of teamDetail.teamMembers" class="d-flex col-sm-4 align-items-stretch">
                                   <div class="list-group-item w-100 rounded list-one mb-3">
                                       <div class="media align-items-center">
                                           <div class="user-logo border rounded-circle">
-                                              <img src="./../../assets/dashboard/newDashboard/img/user.png" alt="user">
+                                                <i class="fas fa-hands"></i>
                                           </div>
                                           <div class="media-body">  
-                                              <strong>Dr. Pulkit Arora</strong> 
-                                              <div class="text-muted font-13 font-weight-light">Xxxx Xxxxx</div>
+                                              <strong>{{teamMember.memberName}}</strong> 
+                                              <div class="text-muted font-13 font-weight-light">{{teamMember.memberRole}}</div>
                                           </div>
                                       </div>
                                   </div>
                               </div>
-                              <div class="d-flex col-sm-4 align-items-stretch">
+                              <!--<div class="d-flex col-sm-4 align-items-stretch">
                                   <div class="list-group-item w-100 rounded list-one mb-3">
                                       <div class="media align-items-center">
                                           <div class="user-logo border rounded-circle">
@@ -407,7 +408,7 @@
                                           </div>
                                       </div>
                                   </div>
-                              </div>
+                              </div>-->
   
   
                           </div>

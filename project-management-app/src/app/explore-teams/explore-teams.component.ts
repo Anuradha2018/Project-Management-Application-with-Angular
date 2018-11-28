@@ -18,34 +18,29 @@ import { ExploreProjectsComponent } from './../explore-projects/explore-projects
   styleUrls: ['./explore-teams.component.css']
 })
 export class ExploreTeamsComponent implements OnInit {
-  locations: Location[];
-  exploreProjects: ExploreProject[];
-  exploreTeams: ExploreTeam[];
+  teams: ExploreTeam[];
   teamDetail: ExploreTeam;
-  constructor(private exploreLocationService: ExploreLocationService,
-    private exploreProjectService: ExploreProjectService,
-    private exploreTeamService: ExploreTeamService) { }
+  constructor(private exploreTeamService: ExploreTeamService) { }
 
   ngOnInit() {
-    this.getExploreTeam();
+    this.getTeams();
   }
-  getExploreTeam() {
+  getTeams() {
     this.exploreTeamService.getExploreTeam()
-    .subscribe((exploreTeams) => {
-      this.exploreTeams = exploreTeams;
-      // this.getTeamDetail(this.exploreTeams[0].teamId);
+    .subscribe((teams) => {
+      this.teams = teams;
+      this.getTeamDetail(this.teams[0].id);
   });
 }
-  getTeamDetail(teamId) {
-    this.teamDetail = this.getTeamById(teamId);
-    console.log(teamId);
+  getTeamDetail(id) {
+    this.teamDetail = this.getTeamById(id);
   }
-  getTeamById(teamId): ExploreTeam {
-     for (let i = 0; i < this.exploreTeams.length; i++) {
-     // if (teamId === this.exploreTeams[i].teamId) {
-        return this.exploreTeams[i];
+  getTeamById(id): ExploreTeam {
+     for (let i = 0; i < this.teams.length; i++) {
+     if (id === this.teams[i].id) {
+        return this.teams[i];
       }
      }
   }
 
-// }
+ }
