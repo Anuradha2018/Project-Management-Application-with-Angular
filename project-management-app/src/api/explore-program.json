@@ -24,6 +24,12 @@
                 "id": 3,
                 "name": "Java Enterprise"
             }
+        ],
+        "teams":[
+            {
+                "id": 2,
+                "name":"The Grand Cats"
+            }
         ]
     },
     {
@@ -51,7 +57,13 @@
                 "id": 2,
                 "name": "NLP"
             }
-        ]
+        ],
+        "teams":[
+            {
+                "id": 3,
+                "name":"The Grave Sirens"
+            }
+            ]
     },
     {
         "id": 3,
@@ -78,7 +90,13 @@
                 "id": 4,
                 "name": "Visa Payments"
             }
-            ]
+            ],
+            "teams":[
+                {
+                    "id": 4,
+                    "name":"The True Ravens"
+                } 
+                ]
     },
     {
         "id": 4,
@@ -107,7 +125,13 @@
                 "id": 5,
                 "name": "Amazon (AWS)"
             }
-        ]
+        ],
+        "teams":[
+            {
+                "id": 2,
+                "name":"The Grand Cats"
+            }
+            ]
     },
     {
         "id": 5,
@@ -130,6 +154,12 @@
                 "id": 5,
                 "name": "Amazon (AWS)"
             }
-        ]
+        ],
+        "teams":[
+            {
+                "id": 19,
+                "name": "The Amazing Pythons"
+            }
+            ]
     }
 ]
