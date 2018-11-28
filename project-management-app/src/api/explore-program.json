@@ -137,10 +137,10 @@
         "id": 5,
         "name":"RoundRock Program",
         "description": "program5description",
-        "locations": [
+        "location": [
             {
                 "id":5,
-                "name":"Stockholm"
+                "name":"Roskilde"
             }
         ],
         "project": [

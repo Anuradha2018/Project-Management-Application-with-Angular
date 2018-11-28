@@ -127,7 +127,7 @@
                             <div class="input-group ">
                                 <div class="dropdown input-group-addon show-on-hover pull-left">
                                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Locations
+                                      Programs
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                             <a class="dropdown-item" [routerLink]="['/explore/projects']">Projects</a>
@@ -236,20 +236,20 @@
                          <div class="col-12">
                              <h6 class="text-uppercase mt-4">Location Details </h6>  
                          </div>
-                         <div class="d-flex col-sm-4 align-items-stretch">
+                         <div *ngFor ="let location of programDetail.location" class="d-flex col-sm-4 align-items-stretch">
                              <div class="list-group-item w-100 rounded list-one mb-3">
                                  <div class="media align-items-center">
-                                     <div class="user-logo border rounded-circle">
-                                         <img src="./../../assets/dashboard/newDashboard/img/user.png" alt="user" />
-                                     </div>
+                                        <div class="user-logo border rounded-circle">
+                                         <img src="./../../assets/dashboard/newDashboard/img/Denmark.jpg" alt="user" />
+                                        </div>
                                      <div class="media-body">  
-                                         <strong>{{programDetail.location[0].name}}</strong> 
+                                         <strong>{{location.name}}</strong> 
                                          <div class="text-muted font-13 font-weight-light"></div>
                                      </div>
                                  </div>
                              </div>
                          </div>
-                         <div class="d-flex col-sm-4 align-items-stretch">
+                         <!--<div class="d-flex col-sm-4 align-items-stretch">
                              <div class="list-group-item rounded list-one mb-3">
                                  <div class="media align-items-center">
                                      <div class="media-body text-center">  
@@ -258,7 +258,7 @@
                                      </div>
                                  </div>
                              </div>
-                         </div>
+                         </div>-->
 
                      </div>
                      <div class="row">
@@ -349,6 +349,7 @@
                              <div  *ngFor ="let project of programDetail.project" class="d-flex col-sm-4 align-items-stretch">
                                 <div class="list-group-item w-100 list-one mb-3">
                                     <div class="media align-items-center">
+                                        <i class="fas fa-project-diagram"></i>
                                         <div class="media-body text-center">  
                                             <strong>{{project.name}}</strong> 
                                             <div class="text-muted font-13 font-weight-light">ID: {{project.id}}</div>
@@ -389,7 +390,7 @@
                             <div  *ngFor ="let team of programDetail.teams" class="d-flex col-sm-4 align-items-stretch">
                                 <div class="list-group-item w-100 list-one mb-3 ">
                                     <div class="text-muted font-13 font-weight-light">
-                                        <i class="fas fa-map-marker-alt"></i></div>
+                                            <i class="fas fa-layer-group"></i></div>
                                     <div class="media align-items-center">
                                         <div class="media-body pt-2 text-center">  
                                             <strong>{{team.name}}</strong> 
