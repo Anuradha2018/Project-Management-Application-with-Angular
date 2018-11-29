@@ -21,6 +21,7 @@ import { TechnologyComponent } from './technology/technology.component';
 import { ReportsComponent } from './reports/reports.component';
 import { ExploreProgramComponent } from './explore-program/explore-program.component';
 import { ExploreProductComponent } from './explore-product/explore-product.component';
+import { TodoComponent } from './todo/todo.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { ExploreProductComponent } from './explore-product/explore-product.compo
     TechnologyComponent,
     ReportsComponent,
     ExploreProgramComponent,
-    ExploreProductComponent
+    ExploreProductComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
