@@ -8,8 +8,8 @@ import { Task } from './../models/task';
 })
 export class TaskService {
 
-  constructor(private httpTask: HttpClient) { }
-  getAllTasks(): Observable<Task[]> {
+constructor(private httpTask: HttpClient) { }
+/*getAllTasks(): Observable<Task[]> {
     return this.httpTask.get<Task[]>('/api/task.json');
-}
+}*/
 }

@@ -21,17 +21,17 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
     this.getProjects();
-    this.getTasks();
+    // this.getTasks();
     this.getMembers();
   }
   getProjects() {
     this.projectService.getAllProjects()
     .subscribe(projects => this.projects = projects);
   }
-  getTasks() {
+  /*getTasks() {
     this.taskService.getAllTasks()
     .subscribe(tasks => this.tasks = tasks);
-  }
+  }*/
   getMembers() {
     this.teamService.getAllMembers()
     .subscribe(members => this.teamMembers = members);
