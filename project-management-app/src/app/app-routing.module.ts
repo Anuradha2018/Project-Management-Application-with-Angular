@@ -6,7 +6,6 @@ import { ExploreTeamsComponent } from './explore-teams/explore-teams.component';
 import { ExploreProjectsComponent } from './explore-projects/explore-projects.component';
 import { ExploreLocationsComponent } from './explore-locations/explore-locations.component';
 import { TeamsComponent } from './teams/teams.component';
-import { TasksComponent } from './tasks/tasks.component';
 import { ProjectComponent } from './project/project.component';
 import { LoginComponent } from './login/login.component';
 import { ExploreComponent} from './explore/explore.component';
@@ -27,7 +26,6 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'login', component: LoginComponent },
   { path: 'project', component: ProjectComponent },
-  { path: 'tasks', component: TasksComponent },
   { path: 'teams', component: TeamsComponent },
   { path: 'explore', component: ExploreComponent },
   { path: 'explore/locations', component: ExploreLocationsComponent },
