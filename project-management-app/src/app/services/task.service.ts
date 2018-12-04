@@ -27,7 +27,7 @@ deleteTaskById(id: number): TaskService {
   .filter(task => task.id !== id);
   return this;
 }
-// PUT /todos/:id
+// PUT /tasks/:id
 updateTaskById(id: number, values: Object = {}): Task {
   const task = this.getTaskById(id);
   if (!task) {
@@ -36,11 +36,11 @@ updateTaskById(id: number, values: Object = {}): Task {
   Object.assign(task, values);
   return task;
 }
-// GET /todos/:id
+// GET /tasks/:id
 getAllTasks(): Task[] {
   return this.tasks;
 }
-// GET /todos/:id
+// GET /tasks/:id
 getTaskById(id: number): Task {
   return this.tasks
   .filter(task => task.id === id)
