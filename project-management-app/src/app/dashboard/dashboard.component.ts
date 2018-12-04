@@ -16,6 +16,7 @@ export class DashboardComponent implements OnInit {
   projects: ExploreProject[];
   tasks: Task[];
   teamMembers: ExploreTeam[];
+  isClicked = true;
   constructor(private projectService: ProjectService, private taskService: TaskService, private teamService: TeamService) {
   }
 
@@ -23,6 +24,7 @@ export class DashboardComponent implements OnInit {
     this.getProjects();
     // this.getTasks();
     this.getMembers();
+    this. toggleClick();
   }
   getProjects() {
     this.projectService.getAllProjects()
@@ -35,6 +37,12 @@ export class DashboardComponent implements OnInit {
   getMembers() {
     this.teamService.getAllMembers()
     .subscribe(members => this.teamMembers = members);
+  }
+  toggleTaskComplete(task) {
+    this.taskService.toggleTaskComplete(task);
+  }
+  toggleClick() {
+    this.isClicked = !this.isClicked;
   }
 
 
