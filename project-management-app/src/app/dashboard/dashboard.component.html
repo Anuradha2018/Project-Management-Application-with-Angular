@@ -289,8 +289,8 @@ it should either show an error or execute the query.</div>
                         <input class="new-task" placeholder="Add Task" [(ngModel)]="newTask.title" (keyup.enter)="addTask()">
                     </div>
                 </div>
-                  <div *ngIf="tasks.length > 0" class="list-group list-group-flush small">
-                      <a  *ngFor="let task of tasks" [class.completed]="task.complete" class="list-group-item list-group-item-action" href="#">
+                  <div  class="list-group list-group-flush small">
+                      <a  *ngFor="let task of tasks" class="list-group-item list-group-item-action" href="#">
                           <div class="media">
                                 <i class="fas fa-check-square" aria-hidden="true"></i>
                               <div class="media-body">

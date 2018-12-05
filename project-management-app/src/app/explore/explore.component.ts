@@ -13,9 +13,9 @@ export class ExploreComponent implements OnInit {
   ngOnInit() {
     this.router.navigate(['/explore/projects']);
   }
-  public redirect123(dropdownValue) {
+  /*public redirect123(dropdownValue) {
     console.log(dropdownValue);
     this.router.navigate(['/' + dropdownValue]);
 
-  }
+  }*/
 }
