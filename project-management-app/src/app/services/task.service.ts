@@ -14,18 +14,17 @@ constructor(private httpTask: HttpClient) { }
     return this.httpTask.get<Task[]>('/api/task.json');
 }*/
 // POST
-addTask(task: Task): TaskService {
-  if (!task.id) {
+addTask(task: Task) {
+  /*if (!task.id) {
     task.id = ++this.lastId;
-  }
+  }*/
   this.tasks.push(task);
-  return this;
+  // return this;
+  console.log(this.tasks);
 }
 // DELETE /tasks/:id
-deleteTaskById(id: number): TaskService {
-  this.tasks = this.tasks
-  .filter(task => task.id !== id);
-  return this;
+deleteTaskById(id: number) {
+  this.tasks.splice(id, 1);
 }
 // PUT /tasks/:id
 updateTaskById(id: number, values: Object = {}): Task {
@@ -47,11 +46,7 @@ getTaskById(id: number): Task {
   .pop();
 }
 // Toggle task Complete
-toggleTaskComplete(task: Task) {
-  const updatedTask = this.updateTaskById(task.id, {
-    status: !task.status
-  });
-  return updatedTask;
+toggleTaskComplete(id: number) {
+  this.tasks[id].status = !this.tasks[id].status;
 }
-
 }

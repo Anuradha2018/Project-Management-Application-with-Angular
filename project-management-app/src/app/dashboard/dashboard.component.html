@@ -286,21 +286,40 @@ it should either show an error or execute the query.</div>
                         <i class="fas fa-plus"></i> 
                     </button>
                     <div *ngIf="isClicked">
-                        <input class="new-task" placeholder="Add Task" [(ngModel)]="newTask.title" (keyup.enter)="addTask()">
+                            <div class="float-left"><input class="new-task" placeholder="Add Task" [(ngModel)]="todoTitle"></div><br>
+                            <div class="float-right">
+                                    <button (click)= "toggleClick()" (click)="addTask()" class="btn" type="button">
+                                            Add 
+                                    </button>
+
+                            </div><br>
+                            
+                            
                     </div>
                 </div>
-                  <div  class="list-group list-group-flush small">
-                      <a  *ngFor="let task of tasks" class="list-group-item list-group-item-action" href="#">
+                <div class="list-group list-group-flush small">
+                        <ul class="task-list">
+                          <li *ngFor="let task of tasks ; index as todoId">
+                            <div class="view">
+                              <input class="toggle" type="checkbox" (click)="toggleTaskComplete(todoId)" [checked]="task.status">
+                              <label>{{task.title}}</label>
+                              <button class="destroy" (click)="removeTask(todoId)"></button>
+                            </div>
+                          </li>
+                        </ul>
+                    </div>
+                  <!--<div  class="list-group list-group-flush small">
+                      <a  *ngFor="let task of tasks" [class.completed]="task.status" class="list-group-item list-group-item-action" href="#">
                           <div class="media">
                                 <i class="fas fa-check-square" aria-hidden="true"></i>
                               <div class="media-body">
                                     <input class="toggle" type="checkbox" (click)="toggleTaskComplete(task)" [checked]="task.complete">
-                                    <label>{{task.title}}</label>
+                                    <label>{{task.name}}</label>
                                     <button class="destroy" (click)="removeTask(task)"></button>
                               </div>
                           </div>
                       </a>
-                      <!--<a class="list-group-item list-group-item-action" href="#">
+                      <a class="list-group-item list-group-item-action" href="#">
                           <div class="media">
                               <i class="fas fa-check-square" aria-hidden="true"></i>
                               <div class="media-body">
@@ -323,8 +342,8 @@ it should either show an error or execute the query.</div>
                                   Hire 2 more interns
                               </div>
                           </div>
-                      </a>-->
-                  </div>
+                      </a>
+                  </div>-->
               </div>
           </div>
         </div>

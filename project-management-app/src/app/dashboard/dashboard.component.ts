@@ -17,15 +17,21 @@ export class DashboardComponent implements OnInit {
   tasks: Task[];
   teamMembers: ExploreTeam[];
   isClicked = true;
-  newTask: Task = new Task();
-  constructor(private projectService: ProjectService, private taskService: TaskService, private teamService: TeamService) {
+  todoTitle: string;
+ 
+  constructor(
+    private projectService: ProjectService, 
+    private taskService: TaskService, 
+    private teamService: TeamService
+    ) {
   }
 
   ngOnInit() {
     this.getProjects();
-    // this.getTasks();
+    this.getTasks();
     this.getMembers();
     this. toggleClick();
+   
   }
   getProjects() {
     this.projectService.getAllProjects()
@@ -39,22 +45,29 @@ export class DashboardComponent implements OnInit {
     this.teamService.getAllMembers()
     .subscribe(members => this.teamMembers = members);
   }
-  toggleTaskComplete(task) {
-    this.taskService.toggleTaskComplete(task);
+  toggleTaskComplete(todoId) {
+    this.taskService.toggleTaskComplete(todoId);
+    this.getTasks();
   }
   toggleClick() {
     this.isClicked = !this.isClicked;
   }
   addTask() {
-    this.taskService.addTask(this.newTask);
-    this.newTask = new Task();
+    let taskItem: Task = new Task();
+    taskItem.title = this.todoTitle;
+    taskItem.status = false;
+    this.taskService.addTask(taskItem);
+    this.getTasks();
+   
   }
-  removeTask(task) {
-    this.taskService.deleteTaskById(task.id);
+  removeTask(todoId) {
+    this.taskService.deleteTaskById(todoId);
+    this.getTasks();
   }
 
   getTasks() {
-    return this.taskService.getAllTasks();
+
+    this.tasks =  this.taskService.getAllTasks();
   }
 
 
