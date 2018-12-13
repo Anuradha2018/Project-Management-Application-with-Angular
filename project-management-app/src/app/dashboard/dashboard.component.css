@@ -1,3 +1,7 @@
 .btn {
     float: right;
 }
+.right {
+    float: right;
+    margin-right: 7px;
+}

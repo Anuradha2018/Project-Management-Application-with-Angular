@@ -18,11 +18,12 @@
   <link href="./../../assets/dashboard/newDashboard/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="./../../assets/dashboard/newDashboard/css/sb-admin.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <a class="navbar-brand" href="index.html">GrassHopper.Co</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -297,16 +298,16 @@ it should either show an error or execute the query.</div>
                             
                     </div>
                 </div>
-                <div class="list-group list-group-flush small">
-                        <ul class="task-list">
-                          <li *ngFor="let task of tasks ; index as todoId">
+                <div class="list-group">
+                        <a class="list-group-item" *ngFor="let task of tasks ; index as todoId" class="task-list">
+                          
                             <div class="view">
-                              <input class="toggle" type="checkbox" (click)="toggleTaskComplete(todoId)" [checked]="task.status">
-                              <label>{{task.title}}</label>
-                              <button class="destroy" (click)="removeTask(todoId)"></button>
+                              <span> <input class="toggle" type="checkbox" (click)="toggleTaskComplete(todoId)" [checked]="task.status"></span>&nbsp;&nbsp;
+                              <a>{{task.title}}</a>&nbsp;&nbsp;&nbsp;
+                              <div class="right"><span (click)="removeTask(todoId)"><i class="fas fa-trash-alt"></i></span> </div>
                             </div>
-                          </li>
-                        </ul>
+                          
+                        </a>
                     </div>
                   <!--<div  class="list-group list-group-flush small">
                       <a  *ngFor="let task of tasks" [class.completed]="task.status" class="list-group-item list-group-item-action" href="#">
