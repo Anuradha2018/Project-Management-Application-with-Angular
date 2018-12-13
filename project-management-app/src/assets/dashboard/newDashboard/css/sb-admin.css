@@ -102,7 +102,8 @@ body.fixed-nav {
   padding: 0.5em 0;
 }
 
-#mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li > a:focus, #mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li > a:hover,
+#mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li > a:focus, 
+#mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li > a:hover,
 #mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level > li > a:focus,
 #mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level > li > a:hover {
   text-decoration: none;
@@ -453,7 +454,7 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
 .card-dashbord .content-one{ font-size: 60px; font-weight: 600;}
 .card-dashbord .card-footer{ border:none; font-size: 20px; font-weight: 100;}
 .card-dashbord .divider{ margin: 0 20px; font-weight: 100;}
-.card-dashbord.bg-one { background-color:#99004d!important;}
+.card-dashbord.bg-one { background-color: #cc0066!important;}
 .card-dashbord.bg-two { background-color: #6b735e78!important;}
 .card-dashbord.bg-three{ background-color: #cfd4dca6!important;}
 
