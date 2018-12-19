@@ -49,7 +49,7 @@ body.fixed-nav {
 }
 
 .scroll-to-top:hover {
-  background: #343a40;
+  background: #b808ee;
 }
 
 .scroll-to-top i {
@@ -371,7 +371,7 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
 }
 
 #mainNav.navbar-dark .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link:after {
-  color: #adb5bd;
+  color: #469aee;
 }
 
 @media (min-width: 992px) {
@@ -454,7 +454,7 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
 .card-dashbord .content-one{ font-size: 60px; font-weight: 600;}
 .card-dashbord .card-footer{ border:none; font-size: 20px; font-weight: 100;}
 .card-dashbord .divider{ margin: 0 20px; font-weight: 100;}
-.card-dashbord.bg-one { background-color: #cc0066!important;}
+.card-dashbord.bg-one { background-color: #cc0066a8!important;}
 .card-dashbord.bg-two { background-color: #6b735e78!important;}
 .card-dashbord.bg-three{ background-color: #cfd4dca6!important;}
 
@@ -515,8 +515,8 @@ footer.sticky-footer {
 .font-28{ font-size: 28px;}
 .font-45{ font-size: 45px;}
 .border-2{border:1px solid rgba(0,0,0,.125);}
-.bg-dark{    background-color: #736b5e!important;}
-a{ color: #888;}
+.bg-dark{    background-color: green!important;}
+a{ color: rgb(17, 248, 140);}
 .inner-wrapper .content-wrapper{
     padding-top: 0;
 }
@@ -596,7 +596,7 @@ font-weight: 600;
     margin:0;
     padding:5px 1em;
     line-height:2em;
-    color:#736b5e;
+    color:#3273eb;
     font-weight:700;
     position:relative
         
@@ -658,7 +658,7 @@ font-weight: 600;
 .search .dropdown-toggle::after{ content: none;}
 
 .left-section .btn-secondary.dropdown-toggle ,.left-section .btn-secondary:not(:disabled):not(.disabled):active
-{ color: #555; border: none; background: #fff;}
+{ color: #555; border: none; background: rgb(206, 81, 150);}
 .show-on-hover:hover > .dropdown-menu {
     display: block;    
 }
@@ -668,7 +668,7 @@ font-weight: 600;
     background: tan;
 }
 .search  .list-group-item{ padding: 5px; font-size: 12px;}
-.serch-box{ background: #f6e5cb96; padding: 10px;}
+.serch-box{ background: #6b2847d8; padding: 10px;}
 .serch-box .form-control{ border-radius: 15px;}
 .left-section .dropdown-menu{ padding: 0;}
 .left-section .dropdown-item:first-child{border: none;}
